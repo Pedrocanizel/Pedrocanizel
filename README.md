@@ -3,6 +3,7 @@
 - 🌱 I’m currently learning Python and Django, and i'm a Product Manager!
 - 💞️ I’m looking to collaborate on everything you ask me, my heart is open source!
 - 📫 How to reach me: https://www.linkedin.com/in/pedrocanizela/ 
+- [![Build Status](https://app.travis-ci.com/Pedrocanizel/Pedrocanizel.svg?branch=main)](https://app.travis-ci.com/Pedrocanizel/Pedrocanizel)
 
 <!---
 Pedrocanizel/Pedrocanizel is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
