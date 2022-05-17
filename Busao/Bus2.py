@@ -35,8 +35,9 @@ while True:
                       'considere a primeira linha como 0 e a última como 7'))
         if 0 <= x <= 7:
             break
-        elif 0 > x > 7:
-            print('Insira um número entre 0 e 7')
+        else:
+            print('Seu número foi menor do que 0 ou maior do que 7, insira um número entre 0 e 7'
+                  'referente á linha na qual se encontra o lugar que você deseja ocupar na matriz')
 
     except ValueError:
         print('Você digitou caracteres inválidos, insira um número entre 0 e 7')
@@ -47,6 +48,9 @@ while True:
         y = int(input('Agora digite a coluna onde se localiza a célula que deseja reservar'))
         if 0 <= y <= 4:
             break
+        else:
+            print('Seu número foi menor do que 0 ou maior do que 4, insira um número entre 0 e 4'
+                  'referente á coluna na qual se encontra o lugar que você deseja ocupar na matriz')
 
     except ValueError:
         print('Você digitou caracteres inválidos, insira um número entre 0 e 4')
