@@ -56,6 +56,8 @@ while True:
         print('Você digitou caracteres inválidos, insira um número entre 0 e 4')
 
 reservar_assento(x, y)
-print('Agora o ônibus se encontra da seguinte forma')
 
+with open('Ônibus atualizado', 'w') as busao:
+    for linha in bus:
+        busao.write(str(linha) + '\n')
 
