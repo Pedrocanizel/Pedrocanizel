@@ -30,6 +30,7 @@ def reservar_assento(x, y):
 
 
 def escolher_linha():
+    global x
 
     try:
         print('A MAtriz abaixo representa o ônibus que você vai viajar,'
@@ -59,6 +60,7 @@ def escolher_linha():
 
 
 def escolher_coluna():
+    global y
 
     try:
 
