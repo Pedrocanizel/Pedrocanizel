@@ -90,8 +90,6 @@ escolher_linha()
 escolher_coluna()
 reservar_assento(x, y)
 
-passo2 = input('Você deseja realizar uma nova reserva? (S/N)').upper()
-
 
 with open('Ônibus atualizado', 'w') as busao:
     for linha in bus:
