@@ -48,6 +48,7 @@ def escolher_linha():
 
         elif x == 9:
             mensagem_sair()
+            salvar_poltronas()
             exit()
 
         else:
@@ -74,6 +75,7 @@ def escolher_coluna():
 
         elif y == 9:
             mensagem_sair()
+            salvar_poltronas()
             exit()
 
         else:
