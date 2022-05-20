@@ -52,7 +52,7 @@ def escolher_linha():
             exit()
 
         else:
-            print('Seu número foi menor do que 0 ou maior do que 7, insira um número entre 0 e 7 '
+            print('Seu valor foi inválido, insira um número entre 0 e 7 '
                   'referente á linha na qual se encontra o lugar que você deseja ocupar na matriz, '
                   'ou digite 9 para sair')
             escolher_linha()
@@ -79,7 +79,7 @@ def escolher_coluna():
             exit()
 
         else:
-            print('Seu número foi menor do que 0 ou maior do que 4, insira um número entre 0 e 4'
+            print('Seu valor foi inválido, insira um número entre 0 e 4'
                   'referente á coluna na qual se encontra o lugar que você deseja ocupar na matriz')
             escolher_coluna()
     except ValueError:
@@ -109,6 +109,10 @@ def continuar_comprando():
         elif nova_compra == 2:
             mensagem_sair()
             salvar_poltronas()
+
+        else:
+            print('Você digitou um valor inválido.')
+            continuar_comprando()
 
     except ValueError:
         continuar_comprando()
