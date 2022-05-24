@@ -103,8 +103,8 @@ def continuar_comprando():
 
     try:
         if nova_compra == 1:
-            rodar_programa()
             salvar_poltronas()
+            rodar_programa()
 
         elif nova_compra == 2:
             mensagem_sair()
