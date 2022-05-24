@@ -119,7 +119,7 @@ def continuar_comprando():
 
 
 def salvar_poltronas():
-    with open('Ônibus atualizado', 'w') as busao:
+    with open('Ônibus atualizado', 'w+') as busao:
         for linha in bus:
             busao.write(str(linha) + '\n')
 
