@@ -1,4 +1,16 @@
 import datetime
+import pyodbc
+
+dados_conexao = (
+    "Driver={MySQL ODBC 8.0 ANSI Driver};"
+    "Server=DESKTOP-3776R5G;"
+    "Database=db_lab_02;"
+    "username=pedro;"
+    "password=8158;"
+)
+
+conexao = pyodbc.connect(dados_conexao)
+print("conexao bem sucedida")
 
 
 class Usuario:
