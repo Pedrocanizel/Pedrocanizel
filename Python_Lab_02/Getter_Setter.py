@@ -41,33 +41,36 @@ class Cartao:
 
 
 class Onibus:
-    def __init__(self, numplaca=int, numlinha=int, modelobus=str, anofabrica='ano_fabrica'):
+    def __init__(self, numplaca=int, numlinha=int, modelobus=str, anofabrica='ano_fabrica', id_motorista='id_motorist'):
 
         self.numplaca = numplaca
         self.numlinha = numlinha
         self.modelobus = modelobus
         self.anofabrica = anofabrica
+        self.id_motorista = id_motorista
 
     def get_onibus(self):
         return self.numplaca, self.numlinha, self.modelobus, self.anofabrica
 
-    def set_onibus(self, nova_placa, nova_linha, novo_modelo, nova_anofrabrica):
+    def set_onibus(self, nova_placa, nova_linha, novo_modelo, nova_anofrabrica, novo_id_motorista):
 
         self.numplaca = nova_placa
         self.numlinha = nova_linha
         self.modelobus = novo_modelo
         self.anofabrica = nova_anofrabrica
+        self.id_motorista = novo_id_motorista
 
 
 class Motorista:
     def __init__(self, numcnh=int, nome=str, sobrenome=str, nascimento='nascimento'):
+
         self.numcnh = numcnh
         self.nome = nome
         self.sobrenome = sobrenome
         self.nascimento = nascimento
 
     def get_motorista(self):
-        return self.numcnh, self.nome, self.sobrenome, self.nascimento
+        return self, self.numcnh, self.nome, self.sobrenome, self.nascimento
 
     def set_motorista(self, nova_cnh, novo_nome, novo_sobrenome, nova_data):
 
