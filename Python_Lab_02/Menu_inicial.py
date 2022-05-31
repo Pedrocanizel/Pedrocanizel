@@ -34,8 +34,8 @@ class Usuario:
         self.email = novo_email
         self.bairro = novo_bairro
         self.nascimento = nova_data
-        novo_usuario = f"INSERT INTO [PEDRO_CANIZELA_USUARIO] VALUES ('{self.nome}', '{self.sobrenome}'," \
-                       f" '{self.email}','{self.bairro}', '{self.nascimento}' "
+        novo_usuario = f"INSERT INTO [PEDRO_CANIZELA_USUARIO] VALUES ('{self.nome}', '{self.sobrenome}', \
+                       '{self.email}','{self.bairro}', '{self.nascimento}' "
         cursor.execute(novo_usuario)
         cursor.comit()
 
@@ -60,8 +60,8 @@ class Cartao:
         self.creditos = novo_credito
         self.tipocartao = novo_tipo
         self.emissao = nova_emissao
-        novo_cartao = f"INSERT INTO [PEDRO_CANIZELA_CARTAO] VALUES ('{self.idcartao}', '{self.idusu}'," \
-                      f" '{self.creditos}','{self.tipocartao}', '{self.emissao}' "
+        novo_cartao = f"INSERT INTO [PEDRO_CANIZELA_CARTAO] VALUES ('{self.idcartao}', '{self.idusu}', \
+                      '{self.creditos}','{self.tipocartao}', '{self.emissao}' "
         cursor.execute(novo_cartao)
         cursor.comit()
 
@@ -85,8 +85,8 @@ class Onibus:
         self.modelobus = novo_modelo
         self.anofabrica = nova_anofrabrica
         self.id_motorista = novo_id_motorista
-        novo_bus = f"INSERT INTO [PEDRO_CANIZELA_ONIBUS] VALUES ('{self.numplaca}', '{self.numlinha}'," \
-                   f" '{self.modelobus}','{self.anofabrica}', '{self.id_motorista}' "
+        novo_bus = f"INSERT INTO [PEDRO_CANIZELA_ONIBUS] VALUES ('{self.numplaca}', '{self.numlinha}', \
+                   '{self.modelobus}','{self.anofabrica}', '{self.id_motorista}' "
         cursor.execute(novo_bus)
         cursor.comit()
 
@@ -108,8 +108,8 @@ class Motorista:
         self.nome = novo_nome
         self.sobrenome = novo_sobrenome
         self.nascimento = nova_data
-        novo_motorista = f"INSERT INTO [PEDRO_CANIZELA_MOTORISTA] VALUES ('{self.numcnh}', '{self.nome}'," \
-                         f" '{self.sobrenome}', '{self.nascimento}' "
+        novo_motorista = f"INSERT INTO [PEDRO_CANIZELA_MOTORISTA] VALUES ('{self.numcnh}', '{self.nome}', \
+                         '{self.sobrenome}', '{self.nascimento}' "
         cursor.execute(novo_motorista)
         cursor.comit()
 
