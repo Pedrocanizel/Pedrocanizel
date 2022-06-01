@@ -2,12 +2,12 @@ import pyodbc
 import pandas as pd
 from os import system
 
-server = 'sql-estudo.database.windows.net'
-driver = '{ODBC Driver 17 for SQL Server}'
-database = 'db-estudos'
-username = 'pedro.canizela@blueshift.com.br'
-Authentication = 'ActiveDirectoryInteractive'
-port = '1433'
+server = '-------------------------------'
+driver = '-------------------------------'
+database = '-------------------'
+username = '------------------------'
+Authentication = '------------------------------'
+port = '----------------------'
 
 conn = pyodbc.connect('DRIVER='+driver+';SERVER='+server+';AUTHENTICATION='+Authentication+';PORT='+port+';DATABASE='+database+';UID='+username)#+';PWD='+password)
 
