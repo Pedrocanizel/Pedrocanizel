@@ -2,11 +2,11 @@ import datetime
 import pyodbc
 
 dados_conexao = (
-    "Driver={MySQL ODBC 8.0 ANSI Driver};"
-    "Server=DESKTOP-3776R5G;"
-    "Database=db_lab_02;"
-    "username=pedro;"
-    "password=8158;"
+    "Driver=----------------------;"
+    "Server=----------------------;"
+    "Database=-----------------------;"
+    "username=--------------------;"
+    "password=------------------------------;"
 )
 
 conexao = pyodbc.connect(dados_conexao)
@@ -14,8 +14,7 @@ print("conexao bem sucedida")
 
 
 class Usuario:
-    def __init__(self, idusu=int, nome=str, sobrenome=str, email=str, bairro=str, nascimento=datetime):
-        self.idusu = idusu
+    def __init__(self, nome=str, sobrenome=str, email=str, bairro=str, nascimento='nascimento'):
         self.nome = nome
         self.sobrenome = sobrenome
         self.email = email
