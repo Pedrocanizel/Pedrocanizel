@@ -3,16 +3,36 @@ from os import system
 
 
 def menu_inicial():
-    print(""" Bem Vindo ao sistema de cadastro de dados da PoccoBus,
- selecione qual açao você deseja realizar: 
-    
-    [1] Realizar cadastro;
-    
-    [2] Verificar tabelas;
-    
-    [3] Sair.""")
+    print("""    \033[1;36m\U0001F683 \U0001F683 \U0001F683 \U0001F683 \U0001F683 \U0001F683 \U0001F683
+    \U0001F683               \U0001F683
+    \U0001F683               \U0001F683
+    \U0001F683               \U0001F683
+    \U0001F683 \U0001F683 \U0001F683 \U0001F683 \U0001F683 \U0001F683 \U0001F683
+    \U0001F683               
+    \U0001F683
+    \U0001F683
+    \U0001F683
 
-    opcao1 = int(input('>>>'))
+    \033[1;35m\U0001F683 \U0001F683 \U0001F683 \U0001F683 \U0001F683 \U0001F683 \U0001F683
+    \U0001F683               \U0001F683
+    \U0001F683               \U0001F683
+    \U0001F683               \U0001F683
+    \U0001F683 \U0001F683 \U0001F683 \U0001F683 \U0001F683 \U0001F683 \U0001F683
+    \U0001F683               \U0001F683      
+    \U0001F683               \U0001F683
+    \U0001F683               \U0001F683
+    \U0001F683 \U0001F683 \U0001F683 \U0001F683 \U0001F683 \U0001F683 \U0001F683
+    """)
+    print("""\033[1;32mBEM VINDO AO SISTEMA DE CADASTRO DA POCCOBUS,
+ SELECIONE QUAL AÇAO VOCÊ DESEJA REALIZAR: 
+    
+    \033[1;33m[1] Realizar cadastro;
+    
+    \033[1;34m[2] Verificar tabelas;
+    
+    \033[1;31m[3] Sair.""")
+
+    opcao1 = int(input('\033[1;31m>>>'))
 
     if opcao1 == 1:
         print('Qual cadastro você deseja realizar?')
@@ -62,7 +82,7 @@ def menu_inicial():
 
 
 def mensagem_sair():
-    print('Esperamos ver você em breve, até logo')
+    print('\033[1;36mEsperamos ver você em breve, até logo')
 
 
 def ver_tabela_usuario():
