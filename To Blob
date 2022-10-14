@@ -1,0 +1,15 @@
+pip install azure-storage-blob
+from azure.identity import DefaultAzureCredential
+from azure.storage.blob import BlobServiceClient, BlobClient
+token_credential = DefaultAzureCredential()
+
+blob_service_client = BlobServiceClient(
+    account_url='URL_DO_BLOB',
+    credential=token_credential
+)
+
+string = f'DefaultEndpointsProtocol=http;AccountName=NOME_DA_CONTA;AccountKey=CHAVE=='
+
+blob = BlobClient.from_connection_string(conn_str=string, container_name='NOME_DO_C0NTAINER', blob_name='NOME_DO_BLOB.CSV')
+with open('nome_do_blob_csv', 'rb') as data:
+    blob.upload_blob(data, overwrite=True)
