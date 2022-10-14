@@ -1,0 +1,23 @@
+# pip install playwright pandas
+# playwright install firefox
+
+from playwright.sync_api import sync_playwright
+import pandas as pd
+
+with sync_playwright() as play:
+    browser = play.firefox.launch_persistent_context('./persistent', headless=True)
+    pg = browser.pages[0]
+    pg.goto('https://xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    pg.click('div.ms-OverflowSet:nth-child(1) > div:nth-child(4) > button:nth-child(1) > span:nth-child(1)')
+    
+    with pg.expect_download() as download_info:
+        # Perform the action that initiates download
+        pg.locator("li.ms-ContextualMenu-item:nth-child(1) > button:nth-child(1) > div:nth-child(1) > span:nth-child(1)").click()
+    
+    download = download_info.value
+    
+    # Wait for the download process to complete
+    print(download.path())
+
+    # Save downloaded file somewhere
+    download.save_as('tabela.txt')
