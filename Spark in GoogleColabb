@@ -1,0 +1,30 @@
+!apt-get install openjdk-11-jdk-headless -qq > /dev/null
+!wget https://archive.apache.org/dist/spark/spark-3.2.2/spark-3.2.2-bin-hadoop3.2.tgz
+!tar xf spark-3.2.2-bin-hadoop3.2.tgz
+!pip install -q findspark pandas numpy
+
+# configurar as variáveis de ambiente
+import os
+os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-11-openjdk-amd64"
+os.environ["SPARK_HOME"] = "/content/spark-3.2.2-bin-hadoop3.2"
+
+# tornar o pyspark "importável"
+import findspark
+findspark.init('spark-3.2.2-bin-hadoop3.2')
+
+
+from pyspark.sql import functions as func
+from pyspark.sql import SparkSession
+from pyspark.sql import types as T
+from pyspark.sql import functions as F
+import pyspark.pandas as ps
+import pandas as pd
+import numpy as np
+import warnings, re
+
+warnings.filterwarnings('ignore')
+pd.set_option('display.max_columns', None)
+
+
+# Instanciando Spark
+spark = SparkSession.builder.master('local[*]').getOrCreate()
