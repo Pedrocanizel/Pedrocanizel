@@ -1,0 +1,27 @@
+###operational system information###
+uname -a
+
+###base/root of the desktop###
+cd
+
+###print the path where i am###
+pwd
+
+###print do linux###
+echo
+
+###comand like ls###
+echo*
+
+###comand help###
+help
+
+###systems changes informations
+ls -ltr /{here you can tipe the path}
+>>>https://sobrelinux.info/questions/20511/difference-between-ls-l-ls-ltr-and-ll
+
+###Move one level in hierarchy of folders from where you are###
+cd ..
+
+###back to the directory before you are###
+cd –
