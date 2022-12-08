@@ -1,3 +1,5 @@
 pip install django
 
 pip freeze requirements.txt ###Creating a file.txt and writing all the libs and its versions
+
+django-admin startproject name_of_the_project . ###Starting a project in django, giving a name and the "." in the end create the project without creating a new folder
