@@ -1,0 +1,3 @@
+pip install django
+
+pip freeze requirements.txt ###Creating a file.txt and writing all the libs and its versions
