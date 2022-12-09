@@ -13,3 +13,9 @@ django-admin startapp name_of_the_app ###to creating an applicattion inside te d
 python manage.py runserver ###to run our server, we must to bem in the same local that tht file settings.py is, after that we must tipe the comand.
 
 ctrl c ###stop the server
+
+#inside the views.py you create python function that returns the messages you want to show on the screen, example:
+def index(request):
+    return render(request, 'index.html'
+    
+    
