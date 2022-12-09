@@ -29,6 +29,9 @@ ls -r
 ###sort by timestamp###
 ls -l
 
+###Sorting by size###
+ls -S
+
 ###Move one level in hierarchy of folders from where you are###
 cd ..
 
