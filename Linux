@@ -26,6 +26,9 @@ ls -l
 ###reverse the ordering###
 ls -r
 
+###sort by timestamp###
+ls -l
+
 ###Move one level in hierarchy of folders from where you are###
 cd ..
 
