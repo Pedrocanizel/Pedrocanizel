@@ -17,5 +17,20 @@ ctrl c ###stop the server
 #inside the views.py you create python function that returns the messages you want to show on the screen, example:
 def index(request):
     return render(request, 'index.html'
-    
-    
+
+
+###It's a good practice to create a urls.py inside the application, to be clearly in your code and not to swamp the urls.py from the project,
+inside the project.urls >>>from django.urls imoporth path, include this include will refer the core.urls that is in your app inside the project.urls,
+this way >>> path('', include('core.urls')).
+after this, inside the core.urls.py >>>from django.urls import path
+                                       from .views import index, contact
+                                       urlpatterns = [
+                                           path('', index)
+                                           path('contact', contact)
+                                       ]
+
+
+###in the file urls.py i need to import the functions from the views.py >>>from core.views import index, after this, inside the variable >>>urlpatterns you must insert
+the name of the path and the function it receives:
+path('', index), ###when i open and clos '' it becomes my root app
+path('contact', contact) ###when i insert the name 'contact' i say the name of the hierarchy 
