@@ -20,6 +20,9 @@ help
 ls -ltr /{here you can tipe the path}
 >>>https://sobrelinux.info/questions/20511/difference-between-ls-l-ls-ltr-and-ll
 
+###properts of files and folder, brings more information about###
+ls -l
+
 ###Move one level in hierarchy of folders from where you are###
 cd ..
 
