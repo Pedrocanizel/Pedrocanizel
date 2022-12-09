@@ -23,6 +23,9 @@ ls -ltr /{here you can tipe the path}
 ###properts of files and folder, brings more information about###
 ls -l
 
+###reverse the ordering###
+ls -r
+
 ###Move one level in hierarchy of folders from where you are###
 cd ..
 
