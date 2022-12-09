@@ -8,4 +8,4 @@ django-admin startapp name_of_the_app ###to creating an applicattion inside te d
 
 #to each aplicattion that you create you must add its name inside the settings.py, inside the variable INSTALLED_APPS
 
-#inside the settings.py, inside the "DIRS: []" we must add the string 'template', it refers to the file template that we will create to insert our templates.
+#inside the settings.py, inside the "DIRS: []" we must add the string 'templates', it refers to the file template that we will create to insert our templates.
