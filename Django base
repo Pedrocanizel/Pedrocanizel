@@ -34,3 +34,5 @@ after this, inside the core.urls.py >>>from django.urls import path
 the name of the path and the function it receives:
 path('', index), ###when i open and clos '' it becomes my root app
 path('contact', contact) ###when i insert the name 'contact' i say the name of the hierarchy 
+
+###create e directory inside the app core, and inside the directiory you create the page.html
