@@ -36,3 +36,9 @@ path('', index), ###when i open and clos '' it becomes my root app
 path('contact', contact) ###when i insert the name 'contact' i say the name of the hierarchy 
 
 ###create e directory inside the app core, and inside the directiory you create the page.html
+
+###inside Models.py you create your classes.
+
+###After creating tour models you must make make the migrations : python manage.py makemigrations
+
+###After each python manage.py makemigrations you must run the command: python manage.py migrate
