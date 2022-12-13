@@ -39,5 +39,4 @@ cd ..
 cd –
 
 ###alias commands
-which ls
 alias ll='ls -ltr'
