@@ -38,4 +38,6 @@ cd ..
 ###back to the directory before you are###
 cd –
 
-
+###alias commands
+which ls
+alias ll='ls -ltr'
