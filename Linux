@@ -71,3 +71,9 @@ ls -ltr *.*
 ###looking for strings with NYSE_19 starting it, the star in the end represents the string is in the begin.
 ls -ltr NYSE_19*
 
+###looking for strings with NYSE_19 starting it, the star in the end represents the string is in the begin.
+ls -ltr NYSE_19*
+
+find comands 
+
+find path -type f -name "*_FY????*"
