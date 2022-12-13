@@ -65,3 +65,9 @@ grep -i string$ filename
 wc -l filename
 
 
+###looking for strings with dot(.) in it, the dot between the star represents what i want to filter.
+ls -ltr *.*
+
+###looking for strings with NYSE_19 starting it, the star in the end represents the string is in the begin.
+ls -ltr NYSE_19*
+
