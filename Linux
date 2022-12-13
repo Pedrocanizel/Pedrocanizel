@@ -32,6 +32,9 @@ ls -l
 ###Sorting by size###
 ls -S
 
+###ls with pipe and grep
+ls -ltr | grep string
+
 ###Move one level in hierarchy of folders from where you are###
 cd ..
 
@@ -40,3 +43,25 @@ cd –
 
 ###alias commands
 alias ll='ls -ltr'
+
+###filtering with grep
+grep string /path/you/want/to/filter/
+
+###tail command
+
+###counting filter with pipe ans wc
+grep string file | wc -l
+
+#filtering by 2 conditions
+egrep "(COONDITION1|CONDITION2)" filename
+
+###filtering with case insesitive
+grep -i string filename
+
+###filtering with the word i wrote finishing the line, i must add a $ in the end, like the LIKE% IN SQL
+grep -i string$ filename
+
+###counting the numbers of...
+wc -l filename
+
+
