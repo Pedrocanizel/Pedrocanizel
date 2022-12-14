@@ -81,3 +81,6 @@ find comands
 
 find path -type f -name "*_FY????*"
 
+###Opening a file
+views path/name_of_the_file
+
