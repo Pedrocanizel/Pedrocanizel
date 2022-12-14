@@ -114,3 +114,7 @@ cut -n_arguments name_of_the_file
 
 ###cutting the info i want
 cut -d, -f1,4 --output-delimiter\; name_of_the_file
+
+###sorting files
+sort -arguments name_of_the_file
+
