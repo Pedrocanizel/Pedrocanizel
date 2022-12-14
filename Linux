@@ -148,8 +148,12 @@ cat /etc/group
 ###creating a user
 sudo useradd - name_of_the_user
 
+###creating a user and creeating a folder with the name of the user inside the /home
+sudo useradd name_of_the_user -m 
+
 ###deleting a user
 sudo userdel name_of_the_user
 
 ###getting informations about the user
 id
+
