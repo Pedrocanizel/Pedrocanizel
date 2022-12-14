@@ -105,3 +105,6 @@ find retail_db * -type f
 
 ###Finding files inside the folder with more details
 find retail_db * -type f -exec file {} +;
+
+###viewing the lines of the file, spacebar show more
+more name_of_the_file
