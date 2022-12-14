@@ -143,4 +143,4 @@ addgroup
 sudo su - root
 
 ###confirming if a group was created
-cat /etc/group/
+cat /etc/group
