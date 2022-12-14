@@ -35,6 +35,9 @@ ls -S
 ###ls with pipe and grep
 ls -ltr | grep string
 
+###Listing all the files inside the folder
+ls -ltr *
+
 ###Move one level in hierarchy of folders from where you are###
 cd ..
 
@@ -77,3 +80,4 @@ ls -ltr NYSE_19*
 find comands 
 
 find path -type f -name "*_FY????*"
+
