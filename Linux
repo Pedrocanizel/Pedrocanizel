@@ -96,3 +96,8 @@ file name_of_the_file
 ###deleting a file
 rm name_of_the_file
 
+###Finding files inside the folder
+find retail_db * -type f
+
+###Finding files inside the folder with more details
+find retail_db * -type f -exec file {} +;
