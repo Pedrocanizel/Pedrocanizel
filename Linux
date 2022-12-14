@@ -92,3 +92,7 @@ cat name_of_the_file
 
 ###checking the type of the file
 file name_of_the_file
+
+###deleting a file
+rm name_of_the_file
+
