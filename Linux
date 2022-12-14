@@ -142,3 +142,5 @@ addgroup
 ###loggind in the root
 sudo su - root
 
+###confirming if a group was created
+cat /etc/group/
