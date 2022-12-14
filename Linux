@@ -154,6 +154,9 @@ sudo useradd name_of_the_user -m
 ###deleting a user
 sudo userdel name_of_the_user
 
+###deleting the home folder of the user
+sudo userdel -r name_of_the_user
+
 ###getting informations about the user
 id
 
