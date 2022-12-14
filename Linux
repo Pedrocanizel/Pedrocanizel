@@ -127,3 +127,5 @@ sort -u name_of_the_file
 ###discovering the owner of the moment
 whoami
 
+###creating a file
+touch name_of_the_file
