@@ -120,3 +120,6 @@ sort -arguments name_of_the_file
 
 ###writing the cut in a file, the > simbol writes
 cut -d, -f4 path > name_of_the_file
+
+###Getting unique values with sort -u
+sort -u name_of_the_file
