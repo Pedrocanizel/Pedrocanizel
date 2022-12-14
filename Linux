@@ -134,7 +134,7 @@ touch name_of_the_file
 mkdir
 
 ###creating groups
-groupadd
+sudo groupadd name_pf_the_group
 
 ###adding person to a group
 addgroup
