@@ -130,6 +130,9 @@ whoami
 ###creating a file
 touch name_of_the_file
 
+###creating a folder
+mkdir
+
 ###loggind in the root
 sudo su - root
 
