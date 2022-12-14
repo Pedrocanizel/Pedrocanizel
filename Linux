@@ -50,7 +50,11 @@ alias ll='ls -ltr'
 ###filtering with grep
 grep string /path/you/want/to/filter/
 
-###tail command
+###tail command, 10 last comands of the file
+tail name of the file
+
+###Head command, 10 first registers of the file
+head name_of_the_file
 
 ###counting filter with pipe ans wc
 grep string file | wc -l
