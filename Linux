@@ -150,3 +150,6 @@ sudo useradd - name_of_the_user
 
 ###deleting a user
 sudo userdel name_of_the_user
+
+###getting informations about the user
+id
