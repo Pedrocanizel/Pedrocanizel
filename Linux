@@ -129,3 +129,7 @@ whoami
 
 ###creating a file
 touch name_of_the_file
+
+###loggind in the root
+sudo su - root
+
