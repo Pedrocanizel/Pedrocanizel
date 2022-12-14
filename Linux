@@ -90,3 +90,5 @@ vi name_of_the_file
 ###Opening and viewing the file
 cat name_of_the_file
 
+###checking the type of the file
+file name_of_the_file
