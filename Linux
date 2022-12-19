@@ -179,4 +179,7 @@ vi filename
 awk filename arguments
 
 ###copying a file
-cp filename /path/path/path
+cp filename /path/path
+
+###copying files with a begin pattern filename
+cp filename*1.mp4 /path/path/path/path/
