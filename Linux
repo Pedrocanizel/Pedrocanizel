@@ -130,6 +130,9 @@ whoami
 ###creating a file
 touch name_of_the_file
 
+###creating many files
+touch filename{1..5}
+
 ###creating a folder
 mkdir
 
