@@ -100,6 +100,9 @@ file name_of_the_file
 ###deleting a file
 rm name_of_the_file
 
+###deleting many files qieht the same name
+rm filename*
+
 ###Finding files inside the folder
 find retail_db * -type f
 
