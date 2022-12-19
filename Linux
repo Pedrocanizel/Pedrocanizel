@@ -160,3 +160,5 @@ sudo userdel -r name_of_the_user
 ###getting informations about the user
 id
 
+###editing a filename starting at line 1
+vi filename
