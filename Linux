@@ -177,3 +177,6 @@ vi filename
 
 ###awk command is like cut command
 awk filename arguments
+
+###copying a file
+cp filename /path/path/path
