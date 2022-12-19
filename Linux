@@ -142,6 +142,9 @@ touch album{1..4}_song{1..5}.mp4
 ###creating a folder
 mkdir
 
+###creating a hierarchy of folders
+mkdir -p folder1/folder2/folder3
+
 ###creating groups
 sudo groupadd name_pf_the_group
 
