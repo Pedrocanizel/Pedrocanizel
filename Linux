@@ -136,6 +136,9 @@ touch name_of_the_file
 ###creating many files
 touch filename{1..5}
 
+###creating many files with name patter
+touch album{1..4}_song{1..5}.mp4
+
 ###creating a folder
 mkdir
 
