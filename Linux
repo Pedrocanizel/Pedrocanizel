@@ -174,3 +174,6 @@ id
 
 ###editing a filename starting at line 1
 vi filename
+
+###awk command is like cut command
+awk filename arguments
