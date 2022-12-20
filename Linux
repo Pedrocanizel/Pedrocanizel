@@ -183,3 +183,6 @@ cp filename /path/path
 
 ###copying files with a begin pattern filename
 cp filename*1.mp4 /path/path/path/path/
+
+###Changing the permissions
+chmod
