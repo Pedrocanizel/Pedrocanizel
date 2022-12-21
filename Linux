@@ -203,3 +203,7 @@ $1 for first field
 $2 for second field
 $3 for third field
 $n for nth field
+
+###tar command to backups
+tar -cxfv newfilename.tar folder_i_want_to_create_backup
+
