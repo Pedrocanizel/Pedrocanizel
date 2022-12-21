@@ -196,3 +196,10 @@ mv album1_*.mp4 /path/path
 
 ###history command is used to view the previously executed command
 history
+
+###awk dolar
+$0 for whole line
+$1 for first field
+$2 for second field
+$3 for third field
+$n for nth field
