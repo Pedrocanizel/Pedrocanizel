@@ -210,5 +210,8 @@ tar -cxfv newfilename.tar folder_i_want_to_create_backup
 ###informations about size of folders
 du -sh name_of_the_folder
 
-###listing the contents of the tarball
+###listing the contents of the tarball uncompressed
 tar -tf filename.tar
+
+###listing the contents of the tarball uncompressed
+tar -tzf filename.tar
