@@ -186,3 +186,6 @@ cp filename*1.mp4 /path/path/path/path/
 
 ###Changing the permissions
 chmod
+
+###moving a file
+mv filename /path/path
