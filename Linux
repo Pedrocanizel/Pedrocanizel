@@ -111,6 +111,10 @@ rm -d foldername
 
 ###deleting all files
 rm -f *
+
+###deleting a file recursivelly 
+rm -r filename
+
 ###Finding files inside the folder
 find retail_db * -type f
 
