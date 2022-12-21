@@ -193,3 +193,6 @@ mv filename /path/path
 ###moving files with a certain pattern
 exemple:
 mv album1_*.mp4 /path/path
+
+###history command is used to view the previously executed command
+history
