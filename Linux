@@ -207,3 +207,5 @@ $n for nth field
 ###tar command to backups
 tar -cxfv newfilename.tar folder_i_want_to_create_backup
 
+###informations about size of folders
+du -sh name_of_the_folder
