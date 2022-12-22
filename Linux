@@ -250,3 +250,9 @@ free -h
 
 ###informations about storage
 df -h
+
+###disk usage informations
+du -h
+
+###disk usage informations
+du -s
