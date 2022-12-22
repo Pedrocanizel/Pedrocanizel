@@ -256,3 +256,6 @@ du -h
 
 ###disk usage informations
 du -s
+
+###disk usage informations
+du -sh
