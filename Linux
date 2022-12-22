@@ -247,3 +247,6 @@ lscpu
 
 ####informations about memory
 free -h
+
+###informations about storage
+df -h
