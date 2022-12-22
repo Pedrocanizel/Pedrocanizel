@@ -244,3 +244,6 @@ ________________________________________________________________________________
 
 ###informations about cpu
 lscpu
+
+####informations about memory
+free -h
