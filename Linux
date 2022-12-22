@@ -259,3 +259,6 @@ du -s
 
 ###disk usage informations
 du -sh
+
+###disk usage informations with ordering
+du -s *|sort -n
