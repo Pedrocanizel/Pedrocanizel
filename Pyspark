@@ -1,0 +1,180 @@
+
+pip install msal -q
+
+from pyspark.sql.functions import col, to_date, when, lit, upper, lower, explode
+from pyspark.sql.functions import regexp_replace as RR
+from pyspark.sql.functions import when as when
+import pyspark.sql.functions as F
+import pyspark.sql.types as T
+import msal
+
+df_ocorrencias = df_ocorrencias.select('id', 'occurrences.spaceId', 'occurrences')\
+                         .withColumn('spaceId', F.explode('spaceId'))\
+                         .withColumn('preco', F.col('occurrences.rule.price'))\
+                         .withColumn('data_start', F.col('occurrences.rule.startsOn'))
+                         
+df_ocorrencias = df_ocorrencias.select("id", "spaceId", "preco", "data_start")\
+                  .withColumn('preco', F.explode('preco'))\
+                  .withColumn('data_start', F.explode('data_start'))
+
+df_ocorrencias = df_ocorrencias.select('id', 'data_start', 'spaceId', 'preco') \
+    .withColumn('preco', F.lower(F.col('preco')))\
+    .withColumn('contem', F.col('preco').contains('grat'))
+
+@F.udf
+def tratamento(col1, col2):
+    
+    if col2 == True or col1.strip() == "" or col1.strip() == "entrada gratuita." or col1.strip() == "livre" or col1.strip() == "gratuita" or col1.strip() == "serviço gratuito. necessário aquisição de ingresso para visita ao museu."  or col1.strip() == "gratuito, mediante retirada de ingresso na bilheteria." or col1.strip() == "gratuita" or col1.strip() == "gratuito, mediante retirada de ingresso na bilheteria." or col1.strip() == "entrada franca." or col1.strip() == "gratuito" or col1.strip() == "grátis" or col1.strip() == "0000" or col1.strip() == "00,00" or col1.strip() == "0" or col1.strip() == "r$ 00,00" or col1.strip() == "r$ 0,00" or col1.strip() == "0,00" or col1.strip() == "00" or col1.strip() == "-":
+        
+        col1 = "entrada franca"
+        return col1
+        
+    if col1.strip() == "1144768,83" or col1.strip() == "ver site":
+        col1 = "inconclusivo"
+        return col1
+    
+df_ocorrencias = df_ocorrencias.withColumn('preco', tratamento(F.col('preco'), F.col('contem')))
+
+
+df_ocorrencias = df_ocorrencias.fillna(value= "pago", subset= ["preco"])
+
+df_ocorrencias = df_ocorrencias.select(col("id").alias("id_evento"), "data_start", col("preco").alias("price_evento"), col("spaceId").alias("id_museu"))
+
+df_ocorrencias = df_ocorrencias.dropDuplicates()
+
+
+
+
+df_ocorrencias = df_ocorrencias.withColumn("id_evento", col("id_evento").cast("int"))
+df_ocorrencias = df_ocorrencias.withColumn("id_museu", col("id_museu").cast("int"))
+df_ocorrencias = df_ocorrencias.withColumn("data_start", col("data_start").cast("date"))
+
+
+result= (df_museus
+.withColumn('left', F.lit(True))
+.join(df_ocorrencias.withColumn('right', F.lit(True)),
+on=['id_museu'],
+how='left')
+.withColumn("_merge", F.when(F.col('left').isNull(), "right_only").when(F.col('right').isNull(), "left_only").otherwise("both")))
+
+
+df_ocorrencias = result.select('id_evento', 'id_museu', 'data_start','price_evento').filter(result['_merge'] == 'both')
+
+
+df_ocorrencias = df_ocorrencias.filter(~col("id_evento").contains("3931"))
+df_ocorrencias = df_ocorrencias.filter(~col("id_evento").contains("8101"))
+df_ocorrencias = df_ocorrencias.filter(~col("id_evento").contains("5089"))
+
+
+df_join_ocorrencias_evento = (df_ocorrencias.join(df_eventos,
+                               'id_evento',
+                               how = 'inner'))
+                               
+
+df_eventos = df_eventos.filter(~col("nome_event").contains("teste"))
+
+
+df_eventos = df_eventos.withColumn("id_evento", col("id_evento").cast("int"))
+
+
+df_eventos = df_eventos.na.fill(value = "Nao informado", subset = ["trad_libras"])
+
+
+df_eventos = df_eventos.na.fill(value = "https://antigo.museus.gov.br/museus-do-brasil/", subset = ["site_event"])
+
+
+
+df_eventos = df_eventos.filter(~col("id_evento").contains("5089"))
+
+
+
+df_eventos = df_eventos.withColumn("descri_event",
+                when(df_eventos.descri_event == "", lit("Não informada"))
+               .otherwise(df_eventos.descri_event))
+               
+               
+df_eventos = df_eventos.na.drop(subset=["descri_event"])
+
+
+df_eventos = df_eventos.select(col("id").alias("id_evento"),
+                                           col("longDescription").alias("descri_event"),
+                                           col("name").alias("nome_event"),
+                                           col("site").alias("site_event"),
+                                           col("traducaoLibras").alias("trad_libras"))
+                                           
+                                           
+# ler arquivo dos eventos
+df_eventos = spark.read \
+.option("delimiter", ",") \
+.option("header", "true") \
+.json("dbfs:/mnt/pedro-canizela/link2")   
+
+
+df_museus = df_museus.withColumn("regiao",
+                when((df_museus.estado == "RJ"), lit("SUDESTE")) 
+               .when((df_museus.estado == "ES"), lit("SUDESTE")) 
+               .when((df_museus.estado == "SP"), lit("SUDESTE")) 
+               .when((df_museus.estado == "MG"), lit("SUDESTE")) 
+               .when((df_museus.estado == "RS"), lit("SUL"))                                        
+               .when((df_museus.estado == "SC"), lit("SUL")) 
+               .when((df_museus.estado == "PR"), lit("SUL"))               
+               .when((df_museus.estado == "MT"), lit("CENTRO OESTE")) 
+               .when((df_museus.estado == "GO"), lit("CENTRO OESTE")) 
+               .when((df_museus.estado == "DF"), lit("CENTRO OESTE")) 
+               .when((df_museus.estado == "MS"), lit("CENTRO OESTE")) 
+               .when((df_museus.estado == "PI"), lit("NORDESTE"))                                           
+               .when((df_museus.estado == "PB"), lit("NORDESTE")) 
+               .when((df_museus.estado == "SE"), lit("NORDESTE")) 
+               .when((df_museus.estado == "RN"), lit("NORDESTE")) 
+               .when((df_museus.estado == "MA"), lit("NORDESTE"))  
+               .when((df_museus.estado == "AL"), lit("NORDESTE")) 
+               .when((df_museus.estado == "BA"), lit("NORDESTE")) 
+               .when((df_museus.estado == "PE"), lit("NORDESTE")) 
+               .when((df_museus.estado == "CE"), lit("NORDESTE")) 
+               .when((df_museus.estado == "AM"), lit("NORTE")) 
+               .when((df_museus.estado == "RO"), lit("NORTE")) 
+               .when((df_museus.estado == "AC"), lit("NORTE")) 
+               .when((df_museus.estado == "PA"), lit("NORTE")) 
+               .when((df_museus.estado == "TO"), lit("NORTE")) 
+               .when((df_museus.estado == "AP"), lit("NORTE")) 
+               .when((df_museus.estado == "RR"), lit("NORTE"))
+               .otherwise(df_museus.estado))
+               
+               
+
+df_museus = df_museus.withColumn("id_museu", col("id_museu").cast("int"))
+df_museus = df_museus.withColumn("latitude", col("latitude").cast("float"))
+df_museus = df_museus.withColumn("longitude",col("longitude").cast("float"))
+df_museus.printSchema()
+
+df_museus = df_museus.withColumn("endereco_completo", 
+    when(df_museus.id_museu == ("25282") , RR(df_museus.endereco_completo, "Sem Endereco", "R. Herny Hugo Dreher, 127 - Planalto, Bento Gonçalves - RS, 95700-000"))
+    .when(df_museus.id_museu == ("25288") , RR(df_museus.endereco_completo, "Sem Endereco", "R. Venâncio Aires, 50, São João do Oeste - 89897-000, SC"))
+    .when(df_museus.id_museu == ("25323") , RR(df_museus.endereco_completo, "Sem Endereco", "União, Imperatriz - 65900-490, MA"))
+    .when(df_museus.id_museu == ("25344") , RR(df_museus.endereco_completo, "Sem Endereco", "R. São Pedro, 400 - Jardim Luciana, Santa Gertrudes - SP, 13510-000"))
+    .otherwise(df_museus.endereco_completo))
+    
+    # Display dos Enderecos nulos
+df_museus_nulos = df_museus.where(col("endereco_completo").isNull()).display()
+
+
+df_museus = df_museus.fillna("Sem descriçao", subset=["descricao"])
+
+
+df_museus.select("estado").distinct().display()
+
+df_museus = df_museus.select(col("endereco").alias("endereco_completo"),
+                                       col("En_estado").alias("estado"),
+                                       col("id").alias("id_museu"),
+                                       col("location.latitude").alias("latitude"),
+                                       col("location.longitude").alias("longitude"),
+                                       col("name").alias("nome_museu"),
+                                       col("shortDescription").alias("descricao"),
+                                       col("esfera")
+                                      )
+                                      
+
+df_museus.select('esfera').distinct().display()
+
+df_museus = df_museus.fillna(value="Pública", subset=["esfera"])
+     
