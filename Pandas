@@ -35,3 +35,9 @@ df.isnull() #Identifying Missing Values Isnull
 df.isna.any() #Isna function returns a dataframe filled with boolean values with true indicating missing values.
 
 df.isnull.sum() #You can calculate the number of missing values in each column by
+
+df.memory_usage() #returns how much memory each column uses in bytes.
+
+df.nsmallest(5, 'column_name') #Let’s see how we’d go about finding the 5 observations with the smallest value
+
+df.nlargest(5, 'column_name') #Let’s see how we’d go about finding the 5 observations with the largest value
