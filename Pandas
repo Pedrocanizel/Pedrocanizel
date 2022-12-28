@@ -60,3 +60,5 @@ novo_df['createTimestamp'] = pd.to_datetime(novo_df['createTimestamp']) #alter t
 df.column_name.unique() #select distinct
 
 df.column_name.replace('São José de todos os esportes', 'São José', inplace=True) #Replace the row value, inplace makes persistent in change.
+
+novo_df.rename(columns={'nome_antigo':'novo_nome'}, inplace=True) #Rename the column name
