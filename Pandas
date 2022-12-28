@@ -15,3 +15,13 @@ selec = ['id', 'name', 'shortDescription', 'longDescription'] #list of name of t
 novo_df = df.filter(items=selec)
 
 df.info() #getting detailed info about df
+
+df.dtypes #show the data type pf each column
+
+df.shape #return the numbers of lines and columns
+
+df.size #returns the numbers of lines mmultiplied by the numbers of columns
+
+df.describe() # method will do a quick statistical summary for every numerical column
+
+df.sample(n=8) #Sample method allows you to select values randomly from a Series or DataFrame. It is useful when we want to select a random sample from a distribution.
