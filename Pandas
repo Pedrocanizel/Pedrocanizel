@@ -41,3 +41,5 @@ df.memory_usage() #returns how much memory each column uses in bytes.
 df.nsmallest(5, 'column_name') #Let’s see how we’d go about finding the 5 observations with the smallest value
 
 df.nlargest(5, 'column_name') #Let’s see how we’d go about finding the 5 observations with the largest value
+
+df[0:4] #returns 4 rows
