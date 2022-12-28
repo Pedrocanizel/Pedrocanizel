@@ -207,7 +207,8 @@ df_eventos = spark.read \
 
 ##############################################################################
 
-
+_____________________________________________________________________________
+#####Regex Replace################################################################
 df_museus = df_museus.withColumn("endereco_completo", 
     when(df_museus.id_museu == ("25282") , RR(df_museus.endereco_completo, "Sem Endereco", "R. Herny Hugo Dreher, 127 - Planalto, Bento Gonçalves - RS, 95700-000"))
     .when(df_museus.id_museu == ("25288") , RR(df_museus.endereco_completo, "Sem Endereco", "R. Venâncio Aires, 50, São João do Oeste - 89897-000, SC"))
