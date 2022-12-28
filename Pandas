@@ -71,3 +71,8 @@ novo_df2.acessibilidade.replace(np.nan, 'Não informado', inplace=True) #Replace
 novo_df2.shortDescription[417]='novo valor' #Replace values in a row
 
 novo_df2.loc[417] #Look for a row
+
+novo_df2['nova_col'] = "" #Creating a new column, "" is where you insert the values
+
+for name, tipo in zip(novo_df2.name, novo_df2.tipo_museu):
+     print(name, tipo) ###For loop in columns, iterating columns
