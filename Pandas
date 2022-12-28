@@ -67,3 +67,5 @@ df.column_name.replace('São José de todos os esportes', 'São José', inplace=
 novo_df.rename(columns={'nome_antigo':'novo_nome'}, inplace=True) #Rename the column name
 
 novo_df2.acessibilidade.replace(np.nan, 'Não informado', inplace=True) #Replace num values using Numpy-np
+
+novo_df2.shortDescription[417]='novo valor' #Replace values in a row
