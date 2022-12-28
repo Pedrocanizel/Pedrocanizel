@@ -1,0 +1,17 @@
+eventos = pd.read_csv('/content/df_event.csv', sep=';')
+
+eventos.head()
+
+eventos.tail()
+
+help(pd.read_csv)
+
+df = pd.read_json('http://museus.cultura.gov.br/api/event/find?@select=*')
+
+eventos.columns.values #return the names of the columns
+
+###creating a new df
+selec = ['id', 'name', 'shortDescription', 'longDescription'] #list of name of the columns
+novo_df = df.filter(items=selec)
+
+df.info() #getting detailed info about df
