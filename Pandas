@@ -58,3 +58,5 @@ df.query('2000 < column_name < 4000')[:8]
 novo_df['createTimestamp'] = pd.to_datetime(novo_df['createTimestamp']) #alter the type of the column
 
 df.column_name.unique() #select distinct
+
+df.column_name.replace('São José de todos os esportes', 'São José', inplace=True) #Replace the row value, inplace makes persistent in change.
