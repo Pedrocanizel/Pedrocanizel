@@ -43,3 +43,5 @@ df.nsmallest(5, 'column_name') #Let’s see how we’d go about finding the 5 ob
 df.nlargest(5, 'column_name') #Let’s see how we’d go about finding the 5 observations with the largest value
 
 df[0:4] #returns 4 rows
+
+df[['columns', 'i_want', 'to_see']].groupby(['columns_name', 'column_2']).mean() #It makes it easier to unveil the underlying relationships among variables.
