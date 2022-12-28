@@ -8,19 +8,29 @@ import pyspark.sql.functions as F
 import pyspark.sql.types as T
 import msal
 
+###explodes############################################################################
+
+#Step 1
 df_ocorrencias = df_ocorrencias.select('id', 'occurrences.spaceId', 'occurrences')\
                          .withColumn('spaceId', F.explode('spaceId'))\
                          .withColumn('preco', F.col('occurrences.rule.price'))\
                          .withColumn('data_start', F.col('occurrences.rule.startsOn'))
+
+#Step 2
                          
 df_ocorrencias = df_ocorrencias.select("id", "spaceId", "preco", "data_start")\
                   .withColumn('preco', F.explode('preco'))\
                   .withColumn('data_start', F.explode('data_start'))
+                  
+#######################################################################################                  
+                  
 
 df_ocorrencias = df_ocorrencias.select('id', 'data_start', 'spaceId', 'preco') \
     .withColumn('preco', F.lower(F.col('preco')))\
     .withColumn('contem', F.col('preco').contains('grat'))
 
+
+______________________________________________________________________________
 @F.udf
 def tratamento(col1, col2):
     
@@ -34,14 +44,27 @@ def tratamento(col1, col2):
         return col1
     
 df_ocorrencias = df_ocorrencias.withColumn('preco', tratamento(F.col('preco'), F.col('contem')))
+________________________________________________________________________________
 
+######fillna##################################################################
 
-df_ocorrencias = df_ocorrencias.fillna(value= "pago", subset= ["preco"])
+df_ocorrencias = df_ocorrencias.fillna(value= "pago", subset= ["preco"]) #subset = nome da coluna
+
+##############################################################################
+
+______________________________________________________________________________
+#####alias####################################################################
 
 df_ocorrencias = df_ocorrencias.select(col("id").alias("id_evento"), "data_start", col("preco").alias("price_evento"), col("spaceId").alias("id_museu"))
 
+##############################################################################
+
+_____________________________________________________________________________
+#####drop column duplicates###################################################
+
 df_ocorrencias = df_ocorrencias.dropDuplicates()
 
+##############################################################################
 
 
 
