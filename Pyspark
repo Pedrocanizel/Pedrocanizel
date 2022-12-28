@@ -55,6 +55,9 @@ df_eventos = df_eventos.na.fill(value = "Nao informado", subset = ["trad_libras"
 df_eventos = df_eventos.na.fill(value = "https://antigo.museus.gov.br/museus-do-brasil/", subset = ["site_event"])
 
 df_museus = df_museus.fillna("Sem descriçao", subset=["descricao"])
+
+df_museus = df_museus.fillna(value="Pública", subset=["esfera"])
+     
 ##############################################################################
 
 ______________________________________________________________________________
@@ -210,8 +213,7 @@ df_eventos = spark.read \
 
 
 
-_____________________________________________________________________________
-#####Regex replace############################################################
+
 
 
 df_museus = df_museus.withColumn("endereco_completo", 
@@ -221,7 +223,6 @@ df_museus = df_museus.withColumn("endereco_completo",
     .when(df_museus.id_museu == ("25344") , RR(df_museus.endereco_completo, "Sem Endereco", "R. São Pedro, 400 - Jardim Luciana, Santa Gertrudes - SP, 13510-000"))
     .otherwise(df_museus.endereco_completo))
     
-############################################################################## 
 
     
 
@@ -229,11 +230,14 @@ df_museus = df_museus.withColumn("endereco_completo",
 
 
 
-
+_____________________________________________________________________________
+#####Distinct################################################################
 df_museus.select("estado").distinct().display()
                                      
 
 df_museus.select('esfera').distinct().display()
 
-df_museus = df_museus.fillna(value="Pública", subset=["esfera"])
-     
+
+############################################################################## 
+
+
