@@ -145,11 +145,7 @@ df_museus_nulos = df_museus.where(col("endereco_completo").isNull()).display()
 
 ##############################################################################
 
-
-
-                              
-
-
+                           
 _____________________________________________________________________________
 #####when####################################################################
 
@@ -212,10 +208,6 @@ df_eventos = spark.read \
 ##############################################################################
 
 
-
-
-
-
 df_museus = df_museus.withColumn("endereco_completo", 
     when(df_museus.id_museu == ("25282") , RR(df_museus.endereco_completo, "Sem Endereco", "R. Herny Hugo Dreher, 127 - Planalto, Bento Gonçalves - RS, 95700-000"))
     .when(df_museus.id_museu == ("25288") , RR(df_museus.endereco_completo, "Sem Endereco", "R. Venâncio Aires, 50, São João do Oeste - 89897-000, SC"))
@@ -223,13 +215,6 @@ df_museus = df_museus.withColumn("endereco_completo",
     .when(df_museus.id_museu == ("25344") , RR(df_museus.endereco_completo, "Sem Endereco", "R. São Pedro, 400 - Jardim Luciana, Santa Gertrudes - SP, 13510-000"))
     .otherwise(df_museus.endereco_completo))
     
-
-    
-
-
-
-
-
 _____________________________________________________________________________
 #####Distinct################################################################
 df_museus.select("estado").distinct().display()
