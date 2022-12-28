@@ -29,3 +29,9 @@ df.sample(n=8) #Sample method allows you to select values randomly from a Series
 df['column name'] #acess the column
 
 df['createTimestamp'][0] #Createtimestamp is the name of the column, 0 is the index of the line
+
+df.isnull() #Identifying Missing Values Isnull
+
+df.isna.any() #Isna function returns a dataframe filled with boolean values with true indicating missing values.
+
+df.isnull.sum() #You can calculate the number of missing values in each column by
