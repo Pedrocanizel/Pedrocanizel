@@ -555,6 +555,8 @@ df1 = df.withColumn('novo_valor', F.lit(valor))
 #criando mais colunas d euma unica vez
 df1 = df1.withColumn('coluna1', F.lit('Conteudo 1')).withColumn('Coluna2', F.lit("Conteudo 2"))
 
+df_novo = event.withColumn('conca', F.col('id_evento') * F.col('id_evento'))
+
 ##############################################################################
 
 _____________________________________________________________________________
