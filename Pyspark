@@ -193,6 +193,9 @@ df2.filter(F.col('regiao').isin(lista_regiao)).show(500)
 
 #utilizando o filtro de uma forma parecida com o likem, mas com func especifica
 df2.filter(F.col("regiao").startswith("Sul")).show()
+
+#utilizando o like como uma função
+df2.filter(F.col('regiao').like('C%')).show(100)
 ##############################################################################
 
                            
