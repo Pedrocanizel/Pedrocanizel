@@ -263,6 +263,15 @@ mudar_virgula_para_ponto("Total Profit")
 
 df1.withColumnRenamed("Sales Channel","Sales_Chanel")
 
+
+selecionados = ['nome','sobrenome','cpf','nascimento','mail',
+                'tel','raca','cep1','endereco1','numero1','compl',
+                'cidade1','estado1','escolaridade','formacao','tecnologia',
+                'bootcamp','residente','programa','def','gen','cadastro']
+
+for c,n in zip(df_selecionados.columns,selecionados):
+    df_selecionados = df_selecionados.withColumnRenamed(c,n)
+
 ############################################################################## 
 
 
