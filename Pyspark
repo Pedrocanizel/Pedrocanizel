@@ -552,5 +552,15 @@ df.filter(df.nome_coluna == "SEA").groupBy().max("nome_coluna").show()
 df.filter(df.nome_coluna == "PDX").groupBy().min("distance").show()
 
 
+# Duração Média dos Voos da compania delta
+df.filter(df.nome_coluna == "DL").filter(df.nome_coluna == "SEA").groupBy().avg("air_time").show()
+
+
+# Tempo total em Horas no ar 
+df.withColumn("duration_hrs", df.air_time/60).groupBy().sum("duration_hrs").show()
+
+
+
+
 
  ##############################################################################
