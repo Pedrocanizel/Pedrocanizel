@@ -182,6 +182,14 @@ df2.where((F.col('regiao') == 'Norte')).filter('estado like "%A"').show(10)
 
 #utilizando o ,like para consultar substrings especificas dentrode uma coluna,inicio e final
 df2.where((F.col('regiao') == 'Norte')).filter('estado like "%A%"').show(200)
+
+#utilizar o filro com mais de uma condição
+df2.filter("regiao in('Norte', 'Sul')").show(500)
+
+
+#filtro com lista de regiao
+lista_regiao = ['Norte', 'Sul']
+df2.filter(F.col('regiao').isin(lista_regiao)).show(500)
 ##############################################################################
 
                            
