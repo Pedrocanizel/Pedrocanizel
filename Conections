@@ -1,0 +1,12 @@
+
+nome_da_conta = 'conta_pedro' # Mude caso deseje acessar outra conta.
+container = 'container' # Nome do seu contêiner
+chave_da_conta_do_storage = dbutils.secrets.get(scope='scope-criado-databricks', 
+                            key='acess-key-blob-v1') # Não mudar
+local_arquivo = f"wasbs://{container}@{nome_da_conta}.blob.core.windows.net/"
+spark.conf.set(
+    f"fs.azure.account.key.{nome_da_conta}.blob.core.windows.net",
+    chave_da_conta_do_storage
+)
+
+_________________________________________________________________________________
