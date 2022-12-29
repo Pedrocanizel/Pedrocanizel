@@ -146,6 +146,7 @@ df_museus_nulos = df_museus.where(col("endereco_completo").isNull()).display()
 
 df_fato.filter(df_fato.nome_aluno.contains('1')).collect()
 
+df2.select(F.col('regiao'), F.col('estado'), F.col('casosNovos')).filter(F.col('regiao') == 'Sul').show(20)
 ##############################################################################
 
                            
