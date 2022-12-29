@@ -15,3 +15,27 @@ df_stage_bootcamp = spark.read.jdbc(conecctionstring,'b_camp.stage_preselecao')
 df_stage_bootcamp.display()
 
 _________________________________________________________________________________
+
+
+
+def popular_tabelas(df, tabela):
+
+    df.write \
+    .mode('overwrite')\
+    .format('jdbc')\
+    .option('url', 'jdbc:sqlserver://svr-nomenomenome.database.windows.net:1433;databaseName=db-xxxxxxxxx')\
+    .option('dbtable', f'{tabela}')\
+    .option('user', 'xxxxxxxxx')\
+    .option('password', f'{sql_password}')\
+    .save()
+    
+    
+popular_tabelas(dim_escolaridade, '[b_camp].[dim_escolaridade]')
+popular_tabelas(dim_capacitacao, '[b_camp].[dim_capacitacao]')
+popular_tabelas(dim_deficiencia, '[b_camp].[dim_deficiencia]')
+popular_tabelas(dim_genero, '[b_camp].[dim_genero]')
+popular_tabelas(dim_cor, '[b_camp].[dim_cor]')
+popular_tabelas(dim_formacao, '[b_camp].[dim_formacao]')
+popular_tabelas(df_fato, '[b_camp].[fato_aluno]')
+popular_tabelas(dim_regiao, '[b_camp].[dim_regiao]'
+    _________________________________________________________________________________
