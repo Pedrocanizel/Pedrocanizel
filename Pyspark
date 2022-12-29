@@ -293,6 +293,28 @@ df_eventos = spark.read \
 
 df1 = spark.read.format("csv").option("header", True).option("inferSchema", True).options(delimiter=';').load(local_arquivo)
 
+#segunda maneira
+lista_esquema = ['UM', 'DOIS', 'TRES', 'QUATRO', 'CINCO', 'SEIS', 'SETE']
+df1 = (spark
+       .read
+       .format("csv")
+       .option("header", "false")
+       .option("inferschema", "false")
+       .option("delimiter", ";")
+       .load('/content/drive/MyDrive/datasets/arquivo_geral.csv').toDF(*lista_esquema)
+)
+
+#TERCEIRA MANEIRA - UTILIZANDO O SELECT COM F.COL E ALIAS
+df2 = (spark
+       .read
+       .format("csv")
+       .option("header", "false")
+       .option("inferschema", "false")
+       .option("delimiter", ";")
+       .load('/content/drive/MyDrive/datasets/arquivo_geral.csv')
+)
+
+
 
 ##############################################################################
 
