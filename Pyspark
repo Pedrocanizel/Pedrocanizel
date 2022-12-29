@@ -113,6 +113,18 @@ event = event.withColumn("id_evento", F.col("id_evento").cast("int"))\
                .withColumn("frequencia_evento", F.col("frequencia_evento").cast("string"))\
                .withColumn("data_inicio", F.col("data_inicio").cast("date"))\
                .withColumn("data_final", F.col("data_final").cast("date"))
+               
+
+
+df2= (df.withColumn("id", df["id"].cast('int'))
+
+         .withColumn("nome", df["nome"].cast('string'))
+
+         .withColumn("idade", df["idade"].cast('int'))
+
+         .withColumn("gen", df["gen"].cast('string'))
+
+)
 
 df2_cast = df2.select(F.col('novo_valor').cast('string'))
 
