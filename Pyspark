@@ -159,6 +159,18 @@ df2.select(F.col('regiao'), F.col('estado'), F.col('casosNovos')).filter(df2.reg
 
 filtro = F.col('regiao') == 'Sul'
 df2.select(F.col('regiao'), F.col('estado'), F.col('casosNovos')).filter(filtro).show(15)
+
+#aplicar mais de um filtro dentro do dataframe
+#fazer filtragem pela regiao norte e estado do amazonas
+df2.select(F.col('regiao'), F.col('estado'), F.col('casosNovos')).filter(F.col('regiao') == 'Norte').filter(F.col('estado') == 'AM').show()
+
+#segunda maneira de utilizar filter mais de uam vez
+df2.filter("regiao = 'Norte' and estado = 'AM'").show(10)
+
+#terceira maneira de utilizar filter mais de uam vez
+df2.filter((F.col('regiao') == 'Norte') & (F.col('estado') == 'AM')).show()
+
+df2.where((F.col('regiao') == 'Sul') & (F.col('estado') ==  'RS')).show(10)
 ##############################################################################
 
                            
@@ -404,6 +416,10 @@ df2.select('regiao', 'estado', 'data', 'casosNovos').show()
 
 
 df2.select(F.col('regiao'), F.col('estado'),F.col('data'), F.col('casosNovos')).show(20)
+
+#CRIANDO UMA LISTA DINÂMICA COM VÁRIAS COLUNAS PARA SE UTILIZAR DENTRO DO COMANDO SELECT
+lista_coluna = ['regiao', 'estado', 'casosNovos', 'obitosNovos', 'obitosAcumulados']
+df2.select(lista_coluna).show(20)
 
 ############################################################################## 
 
