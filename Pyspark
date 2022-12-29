@@ -545,6 +545,6 @@ _____________________________________________________________________________
 #####query com tratamento, treatment, divisão, divison#######################
 
 # Achar a maior tempo de voo de SEA para outras cidades 
-df.filter(df.origin == "SEA").groupBy().max("nome_coluna").show()
+df.filter(df.nome_coluna == "SEA").groupBy().max("nome_coluna").show()
 
  ##############################################################################
