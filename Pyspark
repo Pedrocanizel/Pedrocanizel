@@ -365,4 +365,21 @@ df_fato = df_fato.withColumn('_merge', when(df_fato._merge == 'both','aprovado')
                    .when(df_fato._merge =='left_only','reprovado'))\
                    .withColumnRenamed('_merge','status_aluno')\
                    .withColumnRenamed('age','idade')
-##############################################################################                            
+##############################################################################    
+
+
+_____________________________________________________________________________
+#####Criando Dataframe####################################################################
+
+
+dados = [
+      ('João da Silva', 'São Paulo', 'SP', 1100.00),
+      ('Maria dos Santos', 'São Paulo', 'SP', 2100.00),
+      ('Carlos Vítor', 'Rio de Janeiro', 'RJ', 2100.00),
+      ('Phylyp Cavalcante', 'Fortaleza', 'CE', 3600.00)
+]
+schema = ['nome', 'cidade', 'estado', 'salario']
+df = spark.createDataFrame(data=dados, schema=schema)
+
+
+############################################################################## 
