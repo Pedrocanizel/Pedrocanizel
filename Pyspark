@@ -389,5 +389,7 @@ _____________________________________________________________________________
 
 df2.select('regiao', 'estado', 'data', 'casosNovos').show()
 
+
+df2.select(F.col('regiao'), F.col('estado'),F.col('data'), F.col('casosNovos')).show(20)
+
 ############################################################################## 
-df2.select('regiao', 'estado', 'data', 'casosNovos').show()
