@@ -171,6 +171,9 @@ df2.filter("regiao = 'Norte' and estado = 'AM'").show(10)
 df2.filter((F.col('regiao') == 'Norte') & (F.col('estado') == 'AM')).show()
 
 df2.where((F.col('regiao') == 'Sul') & (F.col('estado') ==  'RS')).show(10)
+
+#utilizando o ,like para consultar substrings especificas dentrode uma coluna
+df2.where((F.col('regiao') == 'Norte')).filter('estado like "R%"').show(10)
 ##############################################################################
 
                            
@@ -426,6 +429,15 @@ df2.select(lista_coluna).show(20)
 _____________________________________________________________________________
 #####count####################################################################
 print((df2.count(), len(df2.columns)))
+
+
+##############################################################################
+
+_____________________________________________________________________________
+#####like####################################################################
+
+#utilizando o ,like para consultar substrings especificas dentrode uma coluna
+df2.where((F.col('regiao') == 'Norte')).filter('estado like "R%"').show(10)
 
 
 ##############################################################################
