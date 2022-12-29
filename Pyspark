@@ -343,3 +343,18 @@ df_selecionados.head(1)
 
 
 ##############################################################################
+
+
+_____________________________________________________________________________
+#####merge####################################################################
+
+df_fato = (df_stage_bootcamp.withColumn('left', F.lit(True))
+                            .join(df_selecionados.withColumn('right', F.lit(True)),
+                            on=['cpf'],
+                            how='left')
+                            .withColumn("_merge", F.when(F.col('left').isNull(), "right_only")
+                            .when(F.col('right').isNull(),"left_only").otherwise("both"))
+                            .dropDuplicates())
+                            
+                            
+##############################################################################                            
