@@ -533,3 +533,10 @@ variavel = spark.sql(query)
 #####pandas dataframe to spark dataframe######################################
 
 novo_df_spark = df_pandas.createDataFrame()
+
+_____________________________________________________________________________
+#####query com tratamento, treatment, divisão, divison#######################
+
+df.select(flights.air_time/60).show()
+
+ ##############################################################################
