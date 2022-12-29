@@ -547,4 +547,10 @@ _____________________________________________________________________________
 # Achar a maior tempo de voo de SEA para outras cidades 
 df.filter(df.nome_coluna == "SEA").groupBy().max("nome_coluna").show()
 
+
+# Achar a menor distancia do voo de PDX para outras cidades 
+df.filter(df.nome_coluna == "PDX").groupBy().min("distance").show()
+
+
+
  ##############################################################################
