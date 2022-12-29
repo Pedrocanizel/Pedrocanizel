@@ -119,6 +119,14 @@ df1 = df1.withColumn('casosNovos', df1.casosNovos.cast('integer'))
 
 #criando um cast para converter os valores interger em string, expressão que aceita comando SQL
 df3 = df1.selectExpr('cast(obitosNovos as string)')
+
+
+df5 = (
+    df1.withColumn('ano', F.substring('data', 1, 4).cast('integer'))
+    .withColumn('mes', F.substring('data', 6, 2).cast('integer'))
+    .withColumn('dia', F.substring('data', 9, 2).cast('integer'))
+    )
+     
 ##############################################################################
 
 
