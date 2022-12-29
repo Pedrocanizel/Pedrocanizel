@@ -154,7 +154,11 @@ df2.select(F.col("regiao"),
            .filter("regiao = 'Sudeste'")\
            .show(10)
            
-df2.select(F.col('regiao'), F.col('estado'), F.col('casosNovos')).filter(df2.regiao == 'Nordeste').show()           
+df2.select(F.col('regiao'), F.col('estado'), F.col('casosNovos')).filter(df2.regiao == 'Nordeste').show()     
+
+
+filtro = F.col('regiao') == 'Sul'
+df2.select(F.col('regiao'), F.col('estado'), F.col('casosNovos')).filter(filtro).show(15)
 ##############################################################################
 
                            
