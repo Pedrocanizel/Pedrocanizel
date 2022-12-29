@@ -262,7 +262,15 @@ df_stage_bootcamp = df_stage_bootcamp.withColumn('residentes', \
        when(F.col('residentes')=='' ,'2') \
           .otherwise(F.col('residentes')))    
                               
-               
+ 
+ df2 = (df1.withColumn('status', F.when(F.col('casosNovos')>0, 'Tem casos novos')
+.otherwise('Nao tem casos novos')))
+
+
+df3 = (df1.withColumn("status", 
+          F.when(F.col("casosNovos") > 0, F.concat(df1.casosNovos,F.lit(" casos novos")))
+          .otherwise("Não tem casos novos")))
+     
 ##############################################################################
               
                                            
@@ -575,4 +583,12 @@ df.withColumn("duration_hrs", df.air_time/60).groupBy().sum("duration_hrs").show
  
  
   ##############################################################################
+  
+ _____________________________________________________________________________
+#####concat################################################################### 
+df3 = (df1.withColumn("status", 
+          F.when(F.col("casosNovos") > 0, F.concat(df1.casosNovos,F.lit(" casos novos")))
+          .otherwise("Não tem casos novos")))
+     
+  
   ##############################################################################
