@@ -273,3 +273,10 @@ df1 = df1.withColumn("Ship Date", F.to_date(F.col("Ship Date"), 'dd/MM/yyyy'))
 
 
 ############################################################################## 
+
+_____________________________________________________________________________
+#####initcap, capitalizado, letra maiúscula##################################
+df_stage_bootcamp = df_stage_bootcamp.withColumn('endereco', initcap(col('endereco')))\
+  .withColumn('complemento', initcap(col('complemento')))\
+  .withColumn('cidade', initcap(col('cidade')))\
+  .withColumn('como_conheceu', initcap(col('como_conheceu')))
