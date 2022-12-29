@@ -547,12 +547,6 @@ df.write.mode('overwrite') \
     .saveAsTable("nome_da_tabela")
 
 
-##############################################################################
-
-
-_____________________________________________________________________________
-#####salvar como tabela############################################
-
 df.createOrReplaceTempView("nome da view")
 
 df.createGlobalTempView("nome da view")
@@ -577,10 +571,7 @@ _____________________________________________________________________________
 
 df.select(df.coluna/60).show()
 
- ##############################################################################
-
-_____________________________________________________________________________
-#####query com tratamento, treatment, divisão, divison#######################
+ 
 
 # Achar a maior tempo de voo de SEA para outras cidades 
 df.filter(df.nome_coluna == "SEA").groupBy().max("nome_coluna").show()
@@ -628,6 +619,16 @@ df3 = (df1.withColumn("status",
 #####substringt###################################################################
 df4 = df1.withColumn('ano', F.substring('data', 1, 4)).withColumn('mes', F.substring('data', 6, 2)).withColumn('dia', F.substring('data', 9, 2))
 
+
+
+  ##############################################################################
+  
+ 
+ _____________________________________________________________________________
+#####substringt################################################################### 
+
+#4) Calcular a média de idade das pessoas
+media = df.select(F.mean('idade')).collect()[0][0]
 
 
   ##############################################################################
