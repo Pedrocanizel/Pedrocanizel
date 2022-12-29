@@ -237,6 +237,11 @@ mudar_virgula_para_ponto("Total Cost")
 mudar_virgula_para_ponto("Total Profit")
 
 df1.withColumnRenamed("Sales Channel","Sales_Chanel")    
+
+
+
+df_selecionados = df_selecionados.withColumn('nascimento',F.regexp_replace(F.col('nascimento'),'  ',' ').alias('nascimento'))\
+.withColumn('nascimento',F.to_date(F.col('nascimento'),'MMM d yyyy h:ma'))
     
 _____________________________________________________________________________
 #####Distinct################################################################
@@ -279,6 +284,10 @@ _____________________________________________________________________________
 #####to_date, data, mudar data### ###########################################
 df1 = df1.withColumn("Order Date", F.to_date(F.col("Order Date"), 'dd/MM/yyyy'))
 df1 = df1.withColumn("Ship Date", F.to_date(F.col("Ship Date"), 'dd/MM/yyyy'))
+
+
+df_selecionados = df_selecionados.withColumn('nascimento',F.regexp_replace(F.col('nascimento'),'  ',' ').alias('nascimento'))\
+.withColumn('nascimento',F.to_date(F.col('nascimento'),'MMM d yyyy h:ma'))
 
 
 ############################################################################## 
