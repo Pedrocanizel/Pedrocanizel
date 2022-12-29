@@ -191,7 +191,12 @@ df_museus = df_museus.withColumn("endereco_completo",
     .when(df_museus.id_museu == ("25288") , RR(df_museus.endereco_completo, "Sem Endereco", "R. Venâncio Aires, 50, São João do Oeste - 89897-000, SC"))
     .when(df_museus.id_museu == ("25323") , RR(df_museus.endereco_completo, "Sem Endereco", "União, Imperatriz - 65900-490, MA"))
     .when(df_museus.id_museu == ("25344") , RR(df_museus.endereco_completo, "Sem Endereco", "R. São Pedro, 400 - Jardim Luciana, Santa Gertrudes - SP, 13510-000"))
-    .otherwise(df_museus.endereco_completo))               
+    .otherwise(df_museus.endereco_completo))     
+    
+    
+df_stage_bootcamp = df_stage_bootcamp.withColumn('residentes', \
+       when(F.col('residentes')=='' ,'2') \
+          .otherwise(F.col('residentes')))    
                               
                
 ##############################################################################
