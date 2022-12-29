@@ -468,4 +468,14 @@ df2.where((F.col('regiao') == 'Norte')).filter('estado like "%A"').show(10)
 
 #utilizando o ,like para consultar substrings especificas dentrode uma coluna,inicio e final
 df2.where((F.col('regiao') == 'Norte')).filter('estado like "%A%"').show(200)
+
+
+##############################################################################
+
+_____________________________________________________________________________
+#####creating criando columns colunas####################################################################
+
+valor = 25
+df1 = df.withColumn('novo_valor', F.lit(valor))
+
 ##############################################################################
