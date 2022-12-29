@@ -202,7 +202,10 @@ _____________________________________________________________________________
 df_eventos = spark.read \
 .option("delimiter", ",") \
 .option("header", "true") \
-.json("dbfs:/mnt/pedro-canizela/link2")   
+.json("dbfs:/mnt/pedro-canizela/link2") 
+
+
+df1 = spark.read.format("csv").option("header", True).option("inferSchema", True).options(delimiter=';').load(local_arquivo)
 
 
 ##############################################################################
