@@ -117,7 +117,7 @@ df1 = df1.withColumn('data', df1.data.cast('timestamp'))
 df1 = df1.withColumn('casosNovos', df1.casosNovos.cast('integer'))
 
 
-#criando um cast para converter os valores interger em string
+#criando um cast para converter os valores interger em string, expressão que aceita comando SQL
 df3 = df1.selectExpr('cast(obitosNovos as string)')
 ##############################################################################
 
