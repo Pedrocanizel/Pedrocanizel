@@ -640,5 +640,8 @@ df.groupBy().mean('idade').show()
 
 df.select(F.col('nome'), F.col('idade')).orderBy(F.col('nome').desc()).show()
 
+#6) Mostrar um ranking de pessoas por idade (Do mais novo para o mais velho)
+df.select(F.col('nome'), F.col('idade')).orderBy(F.col('idade').asc()).show()
+
 
   ##############################################################################
