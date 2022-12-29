@@ -280,3 +280,16 @@ df_stage_bootcamp = df_stage_bootcamp.withColumn('endereco', initcap(col('endere
   .withColumn('complemento', initcap(col('complemento')))\
   .withColumn('cidade', initcap(col('cidade')))\
   .withColumn('como_conheceu', initcap(col('como_conheceu')))
+
+
+############################################################################## 
+
+
+_____________________________________________________________________________
+#####len, tamamho##################################
+
+len(df_selecionados.columns)
+
+
+
+############################################################################## 
