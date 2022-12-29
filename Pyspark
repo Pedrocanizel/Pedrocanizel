@@ -537,6 +537,6 @@ novo_df_spark = df_pandas.createDataFrame()
 _____________________________________________________________________________
 #####query com tratamento, treatment, divisão, divison#######################
 
-df.select(flights.air_time/60).show()
+df.select(df.coluna/60).show()
 
  ##############################################################################
