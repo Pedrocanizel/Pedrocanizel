@@ -10,3 +10,8 @@ spark.conf.set(
 )
 
 _________________________________________________________________________________
+
+df_stage_bootcamp = spark.read.jdbc(conecctionstring,'b_camp.stage_preselecao')
+df_stage_bootcamp.display()
+
+_________________________________________________________________________________
