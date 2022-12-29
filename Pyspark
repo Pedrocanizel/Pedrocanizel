@@ -356,5 +356,11 @@ df_fato = (df_stage_bootcamp.withColumn('left', F.lit(True))
                             .when(F.col('right').isNull(),"left_only").otherwise("both"))
                             .dropDuplicates())
                             
-                            
+
+
+
+df_fato = df_fato.withColumn('_merge', when(df_fato._merge == 'both','aprovado')
+                   .when(df_fato._merge =='left_only','reprovado'))\
+                   .withColumnRenamed('_merge','status_aluno')\
+                   .withColumnRenamed('age','idade')
 ##############################################################################                            
