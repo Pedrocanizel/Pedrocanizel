@@ -106,6 +106,11 @@ df_museus = df_museus.withColumn("latitude", col("latitude").cast("float"))
 df_museus = df_museus.withColumn("longitude",col("longitude").cast("float"))
 df_museus.printSchema() #printSchema ou ações no final não salvam
 
+df2_cast = df2.select(F.col('novo_valor').cast('string'))
+
+#criar um cast na nova coluna dentro do proprio dataframe df1
+df1 = df1.withColumn('novo_valor', F.lit('valor').cast('string'))
+
 
 ##############################################################################
 
