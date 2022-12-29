@@ -117,6 +117,8 @@ df1 = df1.withColumn('data', df1.data.cast('timestamp'))
 df1 = df1.withColumn('casosNovos', df1.casosNovos.cast('integer'))
 
 
+#criando um cast para converter os valores interger em string
+df3 = df1.selectExpr('cast(obitosNovos as string)')
 ##############################################################################
 
 
@@ -487,6 +489,9 @@ _____________________________________________________________________________
 
 valor = 25
 df1 = df.withColumn('novo_valor', F.lit(valor))
+
+#criando mais colunas d euma unica vez
+df1 = df1.withColumn('coluna1', F.lit('Conteudo 1')).withColumn('Coluna2', F.lit("Conteudo 2"))
 
 ##############################################################################
 
