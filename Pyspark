@@ -106,6 +106,14 @@ df_museus = df_museus.withColumn("latitude", col("latitude").cast("float"))
 df_museus = df_museus.withColumn("longitude",col("longitude").cast("float"))
 df_museus.printSchema() #printSchema ou ações no final não salvam
 
+event = event.withColumn("id_evento", F.col("id_evento").cast("int"))\
+               .withColumn("nome_evento", F.col("nome_evento").cast("string"))\
+               .withColumn("descricao_evento", F.col("descricao_evento").cast("string"))\
+               .withColumn("data_aleatoria", F.col("data_aleatoria").cast("date"))\
+               .withColumn("frequencia_evento", F.col("frequencia_evento").cast("string"))\
+               .withColumn("data_inicio", F.col("data_inicio").cast("date"))\
+               .withColumn("data_final", F.col("data_final").cast("date"))
+
 df2_cast = df2.select(F.col('novo_valor').cast('string'))
 
 #criar um cast na nova coluna dentro do proprio dataframe df1
