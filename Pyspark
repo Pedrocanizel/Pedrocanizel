@@ -219,6 +219,19 @@ df_museus = df_museus.withColumn("endereco_completo",
     .when(df_museus.id_museu == ("25344") , RR(df_museus.endereco_completo, "Sem Endereco", "R. São Pedro, 400 - Jardim Luciana, Santa Gertrudes - SP, 13510-000"))
     .otherwise(df_museus.endereco_completo))
     
+    
+def mudar_virgula_para_ponto(coluna):
+    global df1
+    df1 = df1.withColumn(f"{coluna}", RR(f"{coluna}",",","."))
+
+mudar_virgula_para_ponto("Unit Price")
+mudar_virgula_para_ponto("Unit Cost")
+mudar_virgula_para_ponto("Total Revenue")
+mudar_virgula_para_ponto("Total Cost")
+mudar_virgula_para_ponto("Total Profit")
+
+df1.withColumnRenamed("Sales Channel","Sales_Chanel")    
+    
 _____________________________________________________________________________
 #####Distinct################################################################
 df_museus.select("estado").distinct().display()
@@ -230,3 +243,16 @@ df_museus.select('esfera').distinct().display()
 ############################################################################## 
 
 
+_____________________________________________________________________________
+#####renomear, rename, withcolumn ###########################################
+def mudar_virgula_para_ponto(coluna):
+    global df1
+    df1 = df1.withColumn(f"{coluna}", RR(f"{coluna}",",","."))
+
+mudar_virgula_para_ponto("Unit Price")
+mudar_virgula_para_ponto("Unit Cost")
+mudar_virgula_para_ponto("Total Revenue")
+mudar_virgula_para_ponto("Total Cost")
+mudar_virgula_para_ponto("Total Profit")
+
+df1.withColumnRenamed("Sales Channel","Sales_Chanel")
