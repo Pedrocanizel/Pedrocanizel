@@ -111,6 +111,11 @@ df2_cast = df2.select(F.col('novo_valor').cast('string'))
 #criar um cast na nova coluna dentro do proprio dataframe df1
 df1 = df1.withColumn('novo_valor', F.lit('valor').cast('string'))
 
+df1 = df1.withColumn('data', df1.data.cast('timestamp'))
+
+
+df1 = df1.withColumn('casosNovos', df1.casosNovos.cast('integer'))
+
 
 ##############################################################################
 
@@ -478,9 +483,16 @@ df2.where((F.col('regiao') == 'Norte')).filter('estado like "%A%"').show(200)
 ##############################################################################
 
 _____________________________________________________________________________
-#####creating criando columns colunas####################################################################
+#####creating criando columns colunas########################################
 
 valor = 25
 df1 = df.withColumn('novo_valor', F.lit(valor))
+
+##############################################################################
+
+_____________________________________________________________________________
+#####somando colunas, sum columns############################################
+#somando colunas
+df1 = df1.withColumn('soma_obitos_novos_acumulados', F.col('obitosNovos')+ F.col('obitosAcumulados'))
 
 ##############################################################################
