@@ -125,5 +125,23 @@ INNER JOIN COUNTRY
 ON CITY.CountryCode = COUNTRY.Code
 WHERE COUNTRY.CONTINENT = 'Africa'
 
+SELECT COUNTRY.CONTINENT, ROUND(AVG(CITY.POPULATION), 0, 1)
+FROM country
+INNER JOIN city
+ON CITY.CountryCode = COUNTRY.Code
+GROUP BY COUNTRY.CONTINENT
 
 ###################################################################
+
+
+___________________________________________________________________
+gtoup by###########################################################
+
+SELECT COUNTRY.CONTINENT, ROUND(AVG(CITY.POPULATION), 0, 1)
+FROM country
+INNER JOIN city
+ON CITY.CountryCode = COUNTRY.Code
+GROUP BY COUNTRY.CONTINENT
+
+###################################################################
+
