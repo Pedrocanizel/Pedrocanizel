@@ -8,6 +8,7 @@ SELECT CITY, STATE FROM STATION; #Select more than one columns, select many colu
 
 SELECT DISTINCT CITY FROM STATION WHERE (ID % 2) = 0; #City=column, station=table, pair number, número par
 
+select distinct city from station where left(city,1) in ('a','i','u','e','o');
 
 ###################################################################
 
@@ -22,6 +23,7 @@ SELECT NAME FROM CITY WHERE COUNTRYCODE = 'USA' AND POPULATION > 120000; #Name= 
 
 SELECT DISTINCT CITY FROM STATION WHERE (ID % 2) = 0; #City=column, station=table, pair number, número par
 
+select distinct city from station where left(city,1) in ('a','i','u','e','o');
 ###################################################################
 
 
@@ -40,6 +42,16 @@ Len################################################################
 SELECT TOP(1) CITY,LEN(CITY) FROM STATION ORDER BY LEN(CITY), CITY; #city=column, station=table, len=número de caracteres, number of characters 
 SELECT TOP(1) CITY,LEN(CITY) FROM STATION ORDER BY LEN(CITY) DESC, CITY ;
 
+
+
+###################################################################
+
+
+
+___________________________________________________________________
+Left################################################################
+
+select distinct city from station where left(city,1) in ('a','i','u','e','o');
 
 
 ###################################################################
