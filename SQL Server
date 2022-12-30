@@ -53,6 +53,8 @@ Order by############################################################
 
 SELECT Name FROM Students WHERE Marks > 75 ORDER BY RIGHT(Name, 3), ID; #name=column, Marks=column, ordenado pelas últimas letras, last letters
 
+SELECT Name FROM Employee ORDER BY Name;
+
 ___________________________________________________________________
 Len################################################################
 
