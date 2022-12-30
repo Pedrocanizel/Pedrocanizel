@@ -37,6 +37,9 @@ SELECT DISTINCT CITY FROM STATION WHERE LEFT(CITY,1) NOT IN ('a', 'e', 'i', 'o',
 
 SELECT Name FROM Employee WHERE salary > 2000 AND months < 10 ORDER BY employee_id; 
 
+SELECT MAX(salary*months),COUNT(employee_id) 
+FROM employee 
+WHERE (salary*months)=(SELECT MAX(salary*months) FROM employee);
 
 ###################################################################
 
@@ -45,6 +48,10 @@ ___________________________________________________________________
 Count##############################################################
 
 SELECT COUNT(CITY) - COUNT(DISTINCT CITY) FROM STATION #city=column, station=table
+
+SELECT MAX(salary*months),COUNT(employee_id) 
+FROM employee 
+WHERE (salary*months)=(SELECT MAX(salary*months) FROM employee);
 
 
 ###################################################################
@@ -226,3 +233,8 @@ select cast(ceiling(avg(cast(salary as float))
 from EMPLOYEES ;
 
 ###################################################################
+
+
+SELECT MAX(salary*months),COUNT(employee_id) 
+FROM employee 
+WHERE (salary*months)=(SELECT MAX(salary*months) FROM employee);
