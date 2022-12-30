@@ -23,3 +23,23 @@ SELECT NAME FROM CITY WHERE COUNTRYCODE = 'USA' AND POPULATION > 120000; #Name= 
 SELECT DISTINCT CITY FROM STATION WHERE (ID % 2) = 0; #City=column, station=table, pair number, número par
 
 ###################################################################
+
+
+___________________________________________________________________
+Count##############################################################
+
+SELECT COUNT(CITY) - COUNT(DISTINCT CITY) FROM STATION #city=column, station=table
+
+
+###################################################################
+
+
+___________________________________________________________________
+Len################################################################
+
+SELECT TOP(1) CITY,LEN(CITY) FROM STATION ORDER BY LEN(CITY), CITY; #city=column, station=table, len=número de caracteres, number of characters 
+SELECT TOP(1) CITY,LEN(CITY) FROM STATION ORDER BY LEN(CITY) DESC, CITY ;
+
+
+
+###################################################################
