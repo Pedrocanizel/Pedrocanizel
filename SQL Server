@@ -35,6 +35,8 @@ SELECT DISTINCT CITY FROM STATION WHERE RIGHT(CITY, 1) NOT IN ('a', 'e', 'i', 'o
 
 SELECT DISTINCT CITY FROM STATION WHERE LEFT(CITY,1) NOT IN ('a', 'e', 'i', 'o', 'u') OR RIGHT(CITY, 1) NOT IN ('a', 'e', 'i', 'o', 'u');  #Não contenha
 
+SELECT Name FROM Employee WHERE salary > 2000 AND months < 10 ORDER BY employee_id; 
+
 
 ###################################################################
 
@@ -55,6 +57,7 @@ SELECT Name FROM Students WHERE Marks > 75 ORDER BY RIGHT(Name, 3), ID; #name=co
 
 SELECT Name FROM Employee ORDER BY Name;
 
+SELECT Name FROM Employee WHERE salary > 2000 AND months < 10 ORDER BY employee_id;
 ___________________________________________________________________
 Len################################################################
 
