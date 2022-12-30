@@ -691,3 +691,21 @@ df.select(F.col('nome'), F.col('idade')).orderBy(F.col('idade').asc()).show()
  _____________________________________________________________________________
 #####group by###################################################################   
   empDF.groupBy("dept_id").count().show()
+
+
+ _____________________________________________________________________________
+#####drop rows, excluir linhas#################################################
+
+dataframe.where(dataframe.college != 'vrs').show()
+
+
+# drop rows with college vrs
+dataframe.where(dataframe.college != 'vrs').show()
+
+# drop missing values
+dataframe = dataframe.dropna() #Drop null values, excluir valores nulos
+
+# removing null values in ID column, Drop null values, excluir valores nulos
+dataframe.where(dataframe.ID.isNotNull()).show()
+
+  ##############################################################################
