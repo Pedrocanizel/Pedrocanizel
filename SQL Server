@@ -28,6 +28,8 @@ select distinct city from station where left(city,1) in ('a','i','u','e','o'); #
 SELECT DISTINCT CITY FROM STATION WHERE RIGHT(CITY,1) IN ('a', 'e', 'i', 'o', 'u'); #city=column, station=table, right(city, 1)=última letra da direita, last letter
 
 SELECT DISTINCT CITY FROM STATION WHERE LEFT(CITY, 1) IN ('a', 'e', 'i', 'o', 'u') AND RIGHT(CITY, 1) IN ('a', 'e', 'i', 'o', 'u');
+
+SELECT DISTINCT CITY FROM STATION WHERE LEFT(CITY, 1) NOT IN ('a', 'e', 'i', 'o','u'); #Não contenha
 ###################################################################
 
 
@@ -60,4 +62,6 @@ select distinct city from station where left(city,1) in ('a','i','u','e','o'); #
 SELECT DISTINCT CITY FROM STATION WHERE RIGHT(CITY,1) IN ('a', 'e', 'i', 'o', 'u'); #city=column, station=table, right(city, 1)=última letra da direita, last letter
 
 SELECT DISTINCT CITY FROM STATION WHERE LEFT(CITY, 1) IN ('a', 'e', 'i', 'o', 'u') AND RIGHT(CITY, 1) IN ('a', 'e', 'i', 'o', 'u'); 
+
+SELECT DISTINCT CITY FROM STATION WHERE LEFT(CITY, 1) NOT IN ('a', 'e', 'i', 'o','u'); #Não contenha
 ###################################################################
