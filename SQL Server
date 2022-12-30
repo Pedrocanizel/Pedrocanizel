@@ -68,6 +68,18 @@ WHERE s.score = d.score
 GROUP BY s.hacker_id, h.name
 HAVING COUNT(s.hacker_id) > 1
 ORDER BY COUNT(s.hacker_id) DESC, s.hacker_id ASC
+
+SELECT W.id, WP.age, W.coins_needed, W.power
+FROM Wands AS W
+JOIN Wands_Property AS WP
+USING(code)
+WHERE WP.is_evil = 0 AND 
+W.coins_needed = (SELECT MIN(coins_needed) 
+                    FROM Wands AS W2
+                    JOIN Wands_Property AS WP2 
+                    USING(code)
+                    WHERE W2.power = W.power AND WP2.age = WP.age) 
+ORDER BY W.power DESC, WP.age DESC;
 ___________________________________________________________________
 Len################################################################
 
@@ -154,6 +166,18 @@ WHERE s.score = d.score
 GROUP BY s.hacker_id, h.name
 HAVING COUNT(s.hacker_id) > 1
 ORDER BY COUNT(s.hacker_id) DESC, s.hacker_id ASC
+
+SELECT W.id, WP.age, W.coins_needed, W.power
+FROM Wands AS W
+JOIN Wands_Property AS WP
+USING(code)
+WHERE WP.is_evil = 0 AND 
+W.coins_needed = (SELECT MIN(coins_needed) 
+                    FROM Wands AS W2
+                    JOIN Wands_Property AS WP2 
+                    USING(code)
+                    WHERE W2.power = W.power AND WP2.age = WP.age) 
+ORDER BY W.power DESC, WP.age DESC;
 ###################################################################
 
 
@@ -176,5 +200,18 @@ WHERE s.score = d.score
 GROUP BY s.hacker_id, h.name
 HAVING COUNT(s.hacker_id) > 1
 ORDER BY COUNT(s.hacker_id) DESC, s.hacker_id ASC
+
+
+SELECT W.id, WP.age, W.coins_needed, W.power
+FROM Wands AS W
+JOIN Wands_Property AS WP
+USING(code)
+WHERE WP.is_evil = 0 AND 
+W.coins_needed = (SELECT MIN(coins_needed) 
+                    FROM Wands AS W2
+                    JOIN Wands_Property AS WP2 
+                    USING(code)
+                    WHERE W2.power = W.power AND WP2.age = WP.age) 
+ORDER BY W.power DESC, WP.age DESC;
 ###################################################################
 
