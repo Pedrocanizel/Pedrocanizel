@@ -708,4 +708,8 @@ dataframe = dataframe.dropna() #Drop null values, excluir valores nulos
 # removing null values in ID column, Drop null values, excluir valores nulos
 dataframe.where(dataframe.ID.isNotNull()).show()
 
+
+# remove the duplicates by column, remover duplicado por coluna
+dataframe.dropDuplicates(['Employee NAME']).show()
+
   ##############################################################################
