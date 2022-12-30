@@ -4,6 +4,8 @@ Select##############################################################
 
 SELECT * FROM CITY; #City=table
 
+SELECT CITY, STATE FROM STATION; #Select more than one columns, select many columns
+
 
 ###################################################################
 
