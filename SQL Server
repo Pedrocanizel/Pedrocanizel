@@ -58,6 +58,16 @@ SELECT Name FROM Students WHERE Marks > 75 ORDER BY RIGHT(Name, 3), ID; #name=co
 SELECT Name FROM Employee ORDER BY Name;
 
 SELECT Name FROM Employee WHERE salary > 2000 AND months < 10 ORDER BY employee_id;
+
+SELECT s.hacker_id, h.name
+FROM hackers h
+JOIN submissions s USING (hacker_id)
+JOIN challenges c USING (challenge_id)
+JOIN difficulty d USING (difficulty_level)
+WHERE s.score = d.score
+GROUP BY s.hacker_id, h.name
+HAVING COUNT(s.hacker_id) > 1
+ORDER BY COUNT(s.hacker_id) DESC, s.hacker_id ASC
 ___________________________________________________________________
 Len################################################################
 
@@ -106,6 +116,9 @@ SELECT CASE
        END AS TY
 FROM TRIANGLES    
 
+Select case when Marks > 70 then Name else 'NULL' end,
+case when Marks = 100 then 10 else Marks/10 +1 end as Grade, Marks From Students Order by Grade desc, Name
+
 
 ###################################################################
 
@@ -131,11 +144,21 @@ INNER JOIN city
 ON CITY.CountryCode = COUNTRY.Code
 GROUP BY COUNTRY.CONTINENT
 
+
+SELECT s.hacker_id, h.name
+FROM hackers h
+JOIN submissions s USING (hacker_id)
+JOIN challenges c USING (challenge_id)
+JOIN difficulty d USING (difficulty_level)
+WHERE s.score = d.score
+GROUP BY s.hacker_id, h.name
+HAVING COUNT(s.hacker_id) > 1
+ORDER BY COUNT(s.hacker_id) DESC, s.hacker_id ASC
 ###################################################################
 
 
 ___________________________________________________________________
-gtoup by###########################################################
+group by###########################################################
 
 SELECT COUNTRY.CONTINENT, ROUND(AVG(CITY.POPULATION), 0, 1)
 FROM country
@@ -143,5 +166,15 @@ INNER JOIN city
 ON CITY.CountryCode = COUNTRY.Code
 GROUP BY COUNTRY.CONTINENT
 
+
+SELECT s.hacker_id, h.name
+FROM hackers h
+JOIN submissions s USING (hacker_id)
+JOIN challenges c USING (challenge_id)
+JOIN difficulty d USING (difficulty_level)
+WHERE s.score = d.score
+GROUP BY s.hacker_id, h.name
+HAVING COUNT(s.hacker_id) > 1
+ORDER BY COUNT(s.hacker_id) DESC, s.hacker_id ASC
 ###################################################################
 
