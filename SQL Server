@@ -4,4 +4,6 @@ Where##############################################################
 
 SELECT * FROM CITY WHERE COUNTRYCODE = 'USA' AND POPULATION > 100000; #City = table, countrycode = column, population = column
 
+SELECT NAME FROM CITY WHERE COUNTRYCODE = 'USA' AND POPULATION > 120000; #Name= column, city=table, countrycode=columns
+
 ###################################################################
