@@ -712,4 +712,7 @@ dataframe.where(dataframe.ID.isNotNull()).show()
 # remove the duplicates by column, remover duplicado por coluna
 dataframe.dropDuplicates(['Employee NAME']).show()
 
+
+df.na.drop(subset=["population","type"]) \
+   .show(truncate=False)
   ##############################################################################
