@@ -215,3 +215,8 @@ W.coins_needed = (SELECT MIN(coins_needed)
 ORDER BY W.power DESC, WP.age DESC;
 ###################################################################
 
+
+___________________________________________________________________
+ceil, avg###########################################################
+
+SELECT CEIL(AVG(SALARY)-AVG(REPLACE(SALARY,"0",""))) FROM EMPLOYEES ; #Diferença arredondada
