@@ -105,3 +105,18 @@ SELECT CASE
        ELSE  'Not A Triangle' 
        END AS TY
 FROM TRIANGLES    
+
+
+###################################################################
+
+___________________________________________________________________
+joins##############################################################
+
+SELECT SUM(CITY.POPULATION) #city=table, population=column,
+FROM CITY
+RIGHT JOIN COUNTRY
+ON CITY.CountryCode = COUNTRY.Code
+WHERE CONTINENT = 'Asia'
+
+
+###################################################################
