@@ -49,6 +49,11 @@ SELECT COUNT(CITY) - COUNT(DISTINCT CITY) FROM STATION #city=column, station=tab
 
 
 ___________________________________________________________________
+Order by############################################################
+
+SELECT Name FROM Students WHERE Marks > 75 ORDER BY RIGHT(Name, 3), ID; #name=column, Marks=column, ordenado pelas últimas letras, last letters
+
+___________________________________________________________________
 Len################################################################
 
 SELECT TOP(1) CITY,LEN(CITY) FROM STATION ORDER BY LEN(CITY), CITY; #city=column, station=table, len=número de caracteres, number of characters 
@@ -74,6 +79,10 @@ SELECT DISTINCT CITY FROM STATION WHERE LEFT(CITY, 1) NOT IN ('a', 'e', 'i', 'o'
 SELECT DISTINCT CITY FROM STATION WHERE RIGHT(CITY, 1) NOT IN ('a', 'e', 'i', 'o', 'u'); #Não contenha
 
 SELECT DISTINCT CITY FROM STATION WHERE LEFT(CITY,1) NOT IN ('a', 'e', 'i', 'o', 'u') OR RIGHT(CITY, 1) NOT IN ('a', 'e', 'i', 'o', 'u'); #Não contenha
+
+SELECT Name FROM Students WHERE Marks > 75 ORDER BY RIGHT(Name, 3), ID;
+
+SELECT Name FROM Students WHERE Marks > 75 ORDER BY RIGHT(Name, 3), ID; #name=column, Marks=column, ordenado pelas últimas letras, last letters
 
 
 ###################################################################
