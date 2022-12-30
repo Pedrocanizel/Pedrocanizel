@@ -119,4 +119,11 @@ ON CITY.CountryCode = COUNTRY.Code
 WHERE CONTINENT = 'Asia'
 
 
+SELECT CITY.Name #city=table, name=column
+FROM CITY
+INNER JOIN COUNTRY
+ON CITY.CountryCode = COUNTRY.Code
+WHERE COUNTRY.CONTINENT = 'Africa'
+
+
 ###################################################################
