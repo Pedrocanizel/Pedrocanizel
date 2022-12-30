@@ -49,9 +49,11 @@ SELECT TOP(1) CITY,LEN(CITY) FROM STATION ORDER BY LEN(CITY) DESC, CITY ;
 
 
 ___________________________________________________________________
-Left################################################################
+Left, right#########################################################
 
-select distinct city from station where left(city,1) in ('a','i','u','e','o');
+select distinct city from station where left(city,1) in ('a','i','u','e','o'); #city=column, station=table, left(city, 1)=primeira letra da esquerda, first letter
+
+SELECT DISTINCT CITY FROM STATION WHERE RIGHT(CITY,1) IN ('a', 'e', 'i', 'o', 'u'); #city=column, station=table, right(city, 1)=última letra da direita, last letter
 
 
 ###################################################################
