@@ -6,6 +6,8 @@ SELECT * FROM CITY; #City=table
 
 SELECT CITY, STATE FROM STATION; #Select more than one columns, select many columns
 
+SELECT DISTINCT CITY FROM STATION WHERE (ID % 2) = 0; #City=column, station=table, pair number, número par
+
 
 ###################################################################
 
@@ -17,5 +19,7 @@ Where##############################################################
 SELECT * FROM CITY WHERE COUNTRYCODE = 'USA' AND POPULATION > 100000; #City = table, countrycode = column, population = column
 
 SELECT NAME FROM CITY WHERE COUNTRYCODE = 'USA' AND POPULATION > 120000; #Name= column, city=table, countrycode=columns
+
+SELECT DISTINCT CITY FROM STATION WHERE (ID % 2) = 0; #City=column, station=table, pair number, número par
 
 ###################################################################
