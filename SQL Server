@@ -243,7 +243,7 @@ FROM employee
 WHERE (salary*months)=(SELECT MAX(salary*months) FROM employee);
 
 ___________________________________________________________________
-SUM, MAX###########################################################
+SUM, MAX, min###########################################################
 
 select cast(sum(LAT_N) as decimal(8, 2)), 
 cast(sum(LONG_W) as decimal(8, 2)) 
@@ -256,6 +256,10 @@ from station;
 SELECT CAST(MAX(LAT_N) AS DECIMAL(10,4))
 FROM STATION
 WHERE LAT_N < 137.2345
+
+
+SELECT CAST(SQRT( SQUARE(MAX(LAT_N)-MIN(LAT_N))+ SQUARE(MAX(LONG_W)-MIN(LONG_W))) AS DECIMAL (15,4))
+FROM STATION
 ###################################################################
 
 ___________________________________________________________________
@@ -279,6 +283,10 @@ SELECT CAST(LONG_W AS DECIMAL(10,4)) # DECIMAL PLATES
 FROM STATION
 WHERE LAT_N = (SELECT MAX(LAT_N) FROM STATION WHERE LAT_N < 137.2345)
 
+
+SELECT CAST(SQRT( SQUARE(MAX(LAT_N)-MIN(LAT_N))+ SQUARE(MAX(LONG_W)-MIN(LONG_W))) AS DECIMAL (15,4))
+FROM STATION
+
 ###################################################################
 
 
@@ -288,3 +296,12 @@ SUBQUERY###########################################################
 SELECT CAST(LONG_W AS DECIMAL(10,4))
 FROM STATION
 WHERE LAT_N = (SELECT MAX(LAT_N) FROM STATION WHERE LAT_N < 137.2345) #Subquery
+
+###################################################################
+
+___________________________________________________________________
+square, sqrt###########################################################
+SELECT CAST(SQRT( SQUARE(MAX(LAT_N)-MIN(LAT_N))+ SQUARE(MAX(LONG_W)-MIN(LONG_W))) AS DECIMAL (15,4))
+FROM STATION
+
+###################################################################
