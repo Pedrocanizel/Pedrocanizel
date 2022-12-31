@@ -332,3 +332,17 @@ SELECT CAST(SQRT( SQUARE(MAX(LAT_N)-MIN(LAT_N))+ SQUARE(MAX(LONG_W)-MIN(LONG_W))
 FROM STATION
 
 ###################################################################
+
+___________________________________________________________________
+concat###########################################################
+
+SELECT CONCAT(Name,'(',substring(occupation,1,1),')') 
+FROM OCCUPATIONS
+ORDER BY  NAME asc;
+SELECT CONCAT('There are a total of',' ',COUNT(occupation),' ',LOWER(occupation), 's.') 
+FROM OCCUPATIONS
+GROUP BY occupation
+ORDER BY COUNT(OCCUPATION) asc,OCCUPATION asc;
+
+
+###################################################################
