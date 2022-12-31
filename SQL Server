@@ -54,6 +54,15 @@ FROM employee
 WHERE (salary*months)=(SELECT MAX(salary*months) FROM employee);
 
 
+SELECT CONCAT(Name,'(',substring(occupation,1,1),')') 
+FROM OCCUPATIONS
+ORDER BY  NAME asc;
+SELECT CONCAT('There are a total of',' ',COUNT(occupation),' ',LOWER(occupation), 's.') 
+FROM OCCUPATIONS
+GROUP BY occupation
+ORDER BY COUNT(OCCUPATION) asc,OCCUPATION asc;
+
+
 ###################################################################
 
 
@@ -87,6 +96,14 @@ W.coins_needed = (SELECT MIN(coins_needed)
                     USING(code)
                     WHERE W2.power = W.power AND WP2.age = WP.age) 
 ORDER BY W.power DESC, WP.age DESC;
+
+SELECT CONCAT(Name,'(',substring(occupation,1,1),')') 
+FROM OCCUPATIONS
+ORDER BY  NAME asc;
+SELECT CONCAT('There are a total of',' ',COUNT(occupation),' ',LOWER(occupation), 's.') 
+FROM OCCUPATIONS
+GROUP BY occupation
+ORDER BY COUNT(OCCUPATION) asc,OCCUPATION asc;
 ___________________________________________________________________
 Len################################################################
 
@@ -221,7 +238,13 @@ W.coins_needed = (SELECT MIN(coins_needed)
                     WHERE W2.power = W.power AND WP2.age = WP.age) 
 ORDER BY W.power DESC, WP.age DESC;
 
-
+SELECT CONCAT(Name,'(',substring(occupation,1,1),')') 
+FROM OCCUPATIONS
+ORDER BY  NAME asc;
+SELECT CONCAT('There are a total of',' ',COUNT(occupation),' ',LOWER(occupation), 's.') 
+FROM OCCUPATIONS
+GROUP BY occupation
+ORDER BY COUNT(OCCUPATION) asc,OCCUPATION asc;
 
 ###################################################################
 
