@@ -249,6 +249,9 @@ select cast(sum(LAT_N) as decimal(8, 2)),
 cast(sum(LONG_W) as decimal(8, 2)) 
 from station;
 
+ select cast(sum(LAT_N)as decimal(10,4))
+ from station
+ where LAT_N BETWEEN 38.7800 and  137.2345;
 
 ###################################################################
 
@@ -261,7 +264,9 @@ cast(sum(LONG_W) as decimal(8, 2))
 from station;
 
 
-
+ select cast(sum(LAT_N)as decimal(10,4))
+ from station
+ where LAT_N BETWEEN 38.7800 and  137.2345;
 
 
 
