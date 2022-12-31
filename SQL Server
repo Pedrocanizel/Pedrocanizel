@@ -356,4 +356,10 @@ set City = 'Oslo'
 where Country = 'Norway';
 
 
+update Customers
+set City = 'Oslo',
+Country = 'Norway'
+WHERE CustomerID = 32;
+
+
 ###################################################################
