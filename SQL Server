@@ -243,7 +243,7 @@ FROM employee
 WHERE (salary*months)=(SELECT MAX(salary*months) FROM employee);
 
 ___________________________________________________________________
-SUM###########################################################
+SUM, MAX###########################################################
 
 select cast(sum(LAT_N) as decimal(8, 2)), 
 cast(sum(LONG_W) as decimal(8, 2)) 
@@ -253,6 +253,9 @@ from station;
  from station
  where LAT_N BETWEEN 38.7800 and  137.2345;
 
+SELECT CAST(MAX(LAT_N) AS DECIMAL(10,4))
+FROM STATION
+WHERE LAT_N < 137.2345
 ###################################################################
 
 ___________________________________________________________________
@@ -268,6 +271,8 @@ from station;
  from station
  where LAT_N BETWEEN 38.7800 and  137.2345;
 
-
+SELECT CAST(MAX(LAT_N) AS DECIMAL(10,4))
+FROM STATION
+WHERE LAT_N < 137.2345
 
 ###################################################################
