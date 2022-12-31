@@ -301,6 +301,10 @@ WHERE LAT_N = (SELECT MAX(LAT_N) FROM STATION WHERE LAT_N < 137.2345) #Subquery
 
 ___________________________________________________________________
 square, sqrt###########################################################
+
+square = quadrado do número
+sqrt = raíz quadrada
+
 SELECT CAST(SQRT( SQUARE(MAX(LAT_N)-MIN(LAT_N))+ SQUARE(MAX(LONG_W)-MIN(LONG_W))) AS DECIMAL (15,4))
 FROM STATION
 
