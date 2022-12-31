@@ -220,6 +220,9 @@ W.coins_needed = (SELECT MIN(coins_needed)
                     USING(code)
                     WHERE W2.power = W.power AND WP2.age = WP.age) 
 ORDER BY W.power DESC, WP.age DESC;
+
+
+
 ###################################################################
 
 
@@ -238,3 +241,28 @@ from EMPLOYEES ;
 SELECT MAX(salary*months),COUNT(employee_id) 
 FROM employee 
 WHERE (salary*months)=(SELECT MAX(salary*months) FROM employee);
+
+___________________________________________________________________
+SUM###########################################################
+
+select cast(sum(LAT_N) as decimal(8, 2)), 
+cast(sum(LONG_W) as decimal(8, 2)) 
+from station;
+
+
+###################################################################
+
+___________________________________________________________________
+cast###########################################################
+
+
+select cast(sum(LAT_N) as decimal(8, 2)), 
+cast(sum(LONG_W) as decimal(8, 2)) 
+from station;
+
+
+
+
+
+
+###################################################################
