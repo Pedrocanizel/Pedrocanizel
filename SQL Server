@@ -63,6 +63,9 @@ WHERE City LIKE '_a%'; #Segunda letra, second letter
 
 SELECT * FROM Customers
 WHERE City LIKE '[acs]%'; #First letter contains, primeira letra contem ou a ou c ou s
+
+SELECT * FROM Customers
+WHERE City LIKE '[a-f]%'; #primeira letra contém qq coisa entre a e f, first letter contains range of letters
 ###################################################################
 
 
