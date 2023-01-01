@@ -567,3 +567,21 @@ _	Represents a single character	h_t finds hot, hat, and hit
 []	Represents any single character within the brackets	h[oa]t finds hot and hat, but not hit
 ^	Represents any character not in the brackets	h[^oa]t finds hit, but not hot and hat
 -	Represents any single character within the specified range	c[a-b]t finds cat and cbt
+
+
+
+ ###################################################################
+  ___________________________________________________________________
+union################################################################
+
+The UNION operator selects only distinct values by default. To allow duplicate values, use UNION ALL
+
+SELECT column_name(s) FROM table1
+UNION
+SELECT column_name(s) FROM table2;
+
+
+SELECT column_name(s) FROM table1
+UNION ALL
+SELECT column_name(s) FROM table2;
+ ###################################################################
