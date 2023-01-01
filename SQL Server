@@ -66,6 +66,9 @@ WHERE City LIKE '[acs]%'; #First letter contains, primeira letra contem ou a ou 
 
 SELECT * FROM Customers
 WHERE City LIKE '[a-f]%'; #primeira letra contém qq coisa entre a e f, first letter contains range of letters
+
+SELECT * FROM Customers
+WHERE City LIKE '[!acf]%'; #primeira letra não contém  a, c, f, first letter not contains a, c, f
 ###################################################################
 
 
