@@ -568,6 +568,25 @@ insert###########################################################
 INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) #Posso inserir todas, nenhuma ou apenas as colunas que desejo inserir
 VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
 
+# The INSERT INTO SELECT statement copies data from one table and inserts it into another table.
+The INSERT INTO SELECT statement requires that the data types in source and target tables match.
+Note: The existing records in the target table are unaffected.
+
+INSERT INTO table2
+SELECT * FROM table1
+WHERE condition;
+
+INSERT INTO table2 (column1, column2, column3, ...)
+SELECT column1, column2, column3, ...
+FROM table1
+WHERE condition;
+
+INSERT INTO Customers (CustomerName, City, Country)
+SELECT SupplierName, City, Country FROM Suppliers;
+
+INSERT INTO Customers (CustomerName, City, Country)
+SELECT SupplierName, City, Country FROM Suppliers
+WHERE Country='Germany';
   ___________________________________________________________________
 wildcards, simbols, símbolos#########################################
 
