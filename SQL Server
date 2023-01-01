@@ -305,6 +305,13 @@ FROM OCCUPATIONS
 GROUP BY occupation
 ORDER BY COUNT(OCCUPATION) asc,OCCUPATION asc;
 
+
+SELECT 
+count(CustomerID),
+Country
+FROM Customers
+group by Country;
+
 ###################################################################
 
 
