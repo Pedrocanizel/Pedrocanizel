@@ -108,6 +108,10 @@ WHERE City LIKE '_ondon'; #selects all customers with a City starting with any c
 
 SELECT * FROM Customers
 WHERE City LIKE 'L_n_on'; #selects all customers with a City starting with "L", followed by any character, followed by "n", followed by any character, followed by "on"
+
+SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (SELECT STATEMENT); #Where com subquery
 ##################################################################
 
 
@@ -420,6 +424,10 @@ SUBQUERY###########################################################
 SELECT CAST(LONG_W AS DECIMAL(10,4))
 FROM STATION
 WHERE LAT_N = (SELECT MAX(LAT_N) FROM STATION WHERE LAT_N < 137.2345) #Subquery
+
+SELECT column_name(s)
+FROM table_name
+WHERE column_name IN (SELECT STATEMENT);
 
 ###################################################################
 
