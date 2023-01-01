@@ -82,6 +82,8 @@ WHERE Price between 10 and 20; #Where between
 SELECT * FROM Products
 WHERE Price not between 10 and 20;
 
+SELECT * FROM Products
+WHERE ProductName between 'Geitost' and 'Pavlova'; #Where between alphabetcally, between alfabético
 ##################################################################
 
 
