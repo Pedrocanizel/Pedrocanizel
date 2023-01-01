@@ -72,6 +72,9 @@ WHERE City LIKE '[!acf]%'; #primeira letra não contém  a, c, f, first letter n
 
 SELECT * FROM Customers
 where Country in('Norway', 'France'); #Where in
+
+SELECT * FROM Customers
+where Country not in ('Norway', 'France'); #Where not in
 ###################################################################
 
 
