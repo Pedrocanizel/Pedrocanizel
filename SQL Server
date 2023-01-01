@@ -112,6 +112,10 @@ WHERE City LIKE 'L_n_on'; #selects all customers with a City starting with "L", 
 SELECT column_name(s)
 FROM table_name
 WHERE column_name IN (SELECT STATEMENT); #Where com subquery
+
+SELECT * FROM Products
+WHERE Price BETWEEN 10 AND 20
+AND CategoryID NOT IN (1,2,3); #Between com in
 ##################################################################
 
 
