@@ -56,6 +56,9 @@ WHERE City LIKE 'a%b';
 
 SELECT * FROM Customers
 where not City like 'a%';
+
+SELECT * FROM Customers
+WHERE City LIKE '_a%'; #Segunda letra, second letter
 ###################################################################
 
 
