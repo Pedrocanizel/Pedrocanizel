@@ -10,6 +10,9 @@ SELECT DISTINCT CITY FROM STATION WHERE (ID % 2) = 0; #City=column, station=tabl
 
 select distinct city from station where left(city,1) in ('a','i','u','e','o');
 
+SELECT TOP number|percent column_name(s)
+FROM table_name WHERE condition;
+
 ###################################################################
 
 
