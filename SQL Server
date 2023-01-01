@@ -315,6 +315,10 @@ SELECT Customers.CustomerName, Orders.OrderID
 FROM Customers
 FULL OUTER JOIN Orders ON Customers.CustomerID=Orders.CustomerID
 ORDER BY Customers.CustomerName;
+
+SELECT Shippers.ShipperName, COUNT(Orders.OrderID) AS NumberOfOrders FROM Orders #Join com group by, join with group by
+LEFT JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID
+GROUP BY ShipperName;
 ###################################################################
 
 
