@@ -147,6 +147,12 @@ SELECT CONCAT('There are a total of',' ',COUNT(occupation),' ',LOWER(occupation)
 FROM OCCUPATIONS
 GROUP BY occupation
 ORDER BY COUNT(OCCUPATION) asc,OCCUPATION asc;
+
+SELECT count(CustomerID),
+Country
+FROM Customers
+group by Country
+ORDER BY count(CustomerID) Desc;
 ___________________________________________________________________
 Len################################################################
 
@@ -312,6 +318,11 @@ Country
 FROM Customers
 group by Country;
 
+SELECT count(CustomerID),
+Country
+FROM Customers
+group by Country
+ORDER BY count(CustomerID) Desc;
 ###################################################################
 
 
