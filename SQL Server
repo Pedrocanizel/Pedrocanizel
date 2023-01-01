@@ -42,8 +42,11 @@ FROM employee
 WHERE (salary*months)=(SELECT MAX(salary*months) FROM employee);
 
 SELECT * FROM Customers #where like
-where City like 'a%'
-;
+where City like 'a%';
+
+
+SELECT * FROM Customers
+where City like '%a';
 ###################################################################
 
 
