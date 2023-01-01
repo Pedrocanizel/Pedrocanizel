@@ -15,6 +15,10 @@ FROM table_name WHERE condition;
 
 SELECT CustomerName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country AS Address
 FROM Customers; #Select with concat, combine columns, juntar colunas
+
+SELECT o.OrderID, o.OrderDate, c.CustomerName
+FROM Customers AS c, Orders AS o
+WHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID; #Select wit alias, select com as
 ###################################################################
 
 
