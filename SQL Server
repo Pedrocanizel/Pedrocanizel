@@ -497,3 +497,9 @@ alter table Persons #Deletar coluna
 drop column Birthday;
 
  ###################################################################
+ 
+  ___________________________________________________________________
+insert###########################################################
+ 
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) #Posso inserir todas, nenhuma ou apenas as colunas que desejo inserir
+VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
