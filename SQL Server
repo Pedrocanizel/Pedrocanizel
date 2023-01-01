@@ -87,6 +87,14 @@ WHERE ProductName between 'Geitost' and 'Pavlova'; #Where between alphabetcally,
 
 SELECT * FROM Customers
 WHERE Country='Germany' AND (City='Berlin' OR City='München'); #Combinning and e or, combinando and e or 
+
+SELECT column_names
+FROM table_name
+WHERE column_name IS NULL;
+
+SELECT column_names
+FROM table_name
+WHERE column_name IS NOT NULL;
 ##################################################################
 
 
