@@ -305,6 +305,11 @@ SELECT *
 FROM Orders
 right join Customers
 ON Orders.CustomerID=Customers.CustomerID;
+
+SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName #Mais de um join, more than one join, multiple joins, multiplos joins
+FROM ((Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)
+INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);
 ###################################################################
 
 
