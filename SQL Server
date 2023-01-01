@@ -79,6 +79,9 @@ where Country not in ('Norway', 'France'); #Where not in
 SELECT * FROM Products
 WHERE Price between 10 and 20; #Where between
 
+SELECT * FROM Products
+WHERE Price not between 10 and 20;
+
 ##################################################################
 
 
