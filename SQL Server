@@ -458,6 +458,10 @@ drop table Persons; deletar tabela, delete table
 
 
 truncate table Persons; #Delete data, all the data
+
+
+alter table Persons
+drop column Birthday; #Deletar coluna
  ###################################################################
  
  
@@ -484,5 +488,9 @@ alter ###########################################################
  
 alter table Persons #add column, adicionar coluna
 add Birthday DATE;
+
+
+alter table Persons #Deletar coluna
+drop column Birthday;
 
  ###################################################################
