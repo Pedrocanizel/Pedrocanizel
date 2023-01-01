@@ -449,6 +449,9 @@ where Country = 'Norway';
  
  
 delete from Customers; #Delete all
+
+
+drop database testDB; #delete database, drop satabase, deletar banco
  ###################################################################
  
  
