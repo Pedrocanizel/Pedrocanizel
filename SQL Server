@@ -98,6 +98,10 @@ WHERE column_name IS NULL;
 SELECT column_names
 FROM table_name
 WHERE column_name IS NOT NULL;
+
+WHERE CustomerName LIKE 'a_%'	Finds any values that start with "a" and are at least 2 characters in length, 2 caracteres
+
+WHERE CustomerName LIKE 'a__%'	Finds any values that start with "a" and are at least 3 characters in length, 3 caracteres
 ##################################################################
 
 
