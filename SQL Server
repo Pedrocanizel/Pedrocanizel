@@ -254,7 +254,12 @@ on orders.CustomerID=Customers.CustomerID;
 SELECT *
 FROM Orders
 inner join Customers
+ON Orders.CustomerID=Customers.CustomerID;
 
+
+SELECT *
+FROM Orders
+right join Customers
 ON Orders.CustomerID=Customers.CustomerID;
 ###################################################################
 
