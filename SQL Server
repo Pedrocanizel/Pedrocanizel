@@ -13,6 +13,8 @@ select distinct city from station where left(city,1) in ('a','i','u','e','o');
 SELECT TOP number|percent column_name(s)
 FROM table_name WHERE condition;
 
+SELECT CustomerName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country AS Address
+FROM Customers; #Select with concat, combine columns, juntar colunas
 ###################################################################
 
 
