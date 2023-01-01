@@ -245,6 +245,11 @@ W.coins_needed = (SELECT MIN(coins_needed)
                     USING(code)
                     WHERE W2.power = W.power AND WP2.age = WP.age) 
 ORDER BY W.power DESC, WP.age DESC;
+
+SELECT *
+FROM Orders
+LEFT JOIN Customers
+on orders.CustomerID=Customers.CustomerID;
 ###################################################################
 
 
