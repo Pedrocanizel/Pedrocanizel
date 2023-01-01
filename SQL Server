@@ -47,6 +47,9 @@ where City like 'a%';
 
 SELECT * FROM Customers
 where City like '%a';
+
+SELECT * FROM Customers
+where City like '%a%';
 ###################################################################
 
 
