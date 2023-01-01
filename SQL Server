@@ -20,12 +20,16 @@ SELECT o.OrderID, o.OrderDate, c.CustomerName
 FROM Customers AS c, Orders AS o
 WHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID; #Select wit alias, select com as
 
-SELECT column_name(s)
-FROM table_name
-WHERE column_name operator ANY
-  (SELECT column_name
-  FROM table_name
-  WHERE condition);
+
+SELECT * #Select into #Copia valores para uma nova tabela, copies data from one table into a new table.
+INTO newtable [IN externaldb]
+FROM oldtable
+WHERE condition;
+
+SELECT Customers.CustomerName, Orders.OrderID #Select into copiando de mais de uma tabela, copying from more than one table
+INTO CustomersOrderBackup2017
+FROM Customers
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
 ###################################################################
 
 
