@@ -84,6 +84,9 @@ WHERE Price not between 10 and 20;
 
 SELECT * FROM Products
 WHERE ProductName between 'Geitost' and 'Pavlova'; #Where between alphabetcally, between alfabético
+
+SELECT * FROM Customers
+WHERE Country='Germany' AND (City='Berlin' OR City='München'); #Combinning and e or, combinando and e or 
 ##################################################################
 
 
