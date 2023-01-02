@@ -744,3 +744,15 @@ WHERE ProductID = ANY
   WHERE Quantity > 1000);
   
  ###################################################################
+
+
+  ___________________________________________________________________
+isnull, coalesce######################################################
+
+SELECT ProductName, UnitPrice * (UnitsInStock + ISNULL(UnitsOnOrder, 0)) #0 after the name of the column is the value that returns if the col is null
+FROM Products;
+
+SELECT ProductName, UnitPrice * (UnitsInStock + COALESCE(UnitsOnOrder, 0)) #Coalesce is like isnull
+FROM Products;
+
+ ###################################################################
