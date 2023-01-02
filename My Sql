@@ -42,3 +42,17 @@ end as STATUS_CLIENTE
 from clientes as c
 group by c.cliente_id
 order by c.nome;
+
+select
+c.cliente_id as CLIENTE_ID,
+date_format(c.data_cadastro, "%d/%m/%Y %H:%i:%s") as DATA_CADASTRO,
+c.nome as NOME, ucase(t.descricao) as DESENHO,
+abs(datediff(date_format(t.data_inicio, '%Y-%m-%d'), date_format(t.data_fim, '%Y-%m-%d'))) as QUANT_DIAS,
+count( distinct(m.material_id)) as QUANT_MATERIAL,
+ucase (m.nome) as MATERIAL
+from clientes as c
+join tatuagem  as t on c.cliente_id = t.cliente_id 
+join tatuagem_materiais as tm on tm.tatuagem_id = t.tatuagem_id
+join materiais as m on tm.material_id = m.material_id
+group by c.cliente_id,m.material_id
+order by c.nome;
