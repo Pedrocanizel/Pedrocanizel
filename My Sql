@@ -29,3 +29,16 @@ select ROUND((ABS(min(lat_n) - max(lat_n))+ ABS(min(long_w) - max(long_w))), 4) 
 
 
 ###############################################################################
+
+
+
+select
+date_format(c.data_cadastro, "%d/%m/%Y %H:%i:%s") as DATA_CADASTRO, c.nome,
+concat("(21)",c.telefone) as DDD_NUMERO,
+CASE
+when c.ativo = 'S' then 'CLIENTE ATIVO'
+when c.ATIVO = 'N' then 'CLIENTE INATIVO'
+end as STATUS_CLIENTE
+from clientes as c
+group by c.cliente_id
+order by c.nome;
