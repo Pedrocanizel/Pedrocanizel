@@ -259,6 +259,9 @@ env
 
 ###enviorment variables, show the enviroment variables im looking for, procura as variáveis de ambiente dessa sessão
 env|grep value
+
+###creating envirment variable
+export variable_name=value
 #####################################################################################################################################
 _____________________________________________________________________________________________________________________________________
                                               SISTEMS COMMANDS
