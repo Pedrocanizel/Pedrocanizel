@@ -267,7 +267,7 @@ export variable_name=value
 which comand_name
 
 ###updating PATH, this way you can run from te path from anywhere, rodar comandos de qualquer lugar
-export PATH=$PATH:/home/dgadiraju/home
+export PATH=$PATH:/home/dgadiraju/home #In this place you paste all the content from path plus the path you want add
 #####################################################################################################################################
 _____________________________________________________________________________________________________________________________________
                                               SISTEMS COMMANDS
