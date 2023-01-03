@@ -235,10 +235,10 @@ tar -tf filename.tar
 ###listing the contents of the tarball uncompressed
 tar -tzf filename.tar
 
-###diffrences between files
+###diffrences between files, comparing files, comparando arquivos
 diff path/filename path/filename
 
-###diffrences ignoring case sensitive
+###diffrences ignoring case sensitive 
 diff -i path/filename path/filename
 
 #####################################################################################################################################
