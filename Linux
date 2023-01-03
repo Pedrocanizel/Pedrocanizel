@@ -238,8 +238,11 @@ tar -tzf filename.tar
 ###diffrences between files, comparing files, comparando arquivos
 diff path/filename path/filename
 
-###diffrences ignoring case sensitive 
+###diffrences ignoring case sensitive comparing files, comparando arquivos
 diff -i path/filename path/filename
+
+###diffrences side by side comparing files, comparando arquivos
+diff -u path/filename path/filename
 
 #####################################################################################################################################
 _____________________________________________________________________________________________________________________________________
