@@ -238,6 +238,9 @@ tar -tzf filename.tar
 ###diffrences between files
 diff path/filename path/filename
 
+###diffrences ignoring case sensitive
+diff -i path/filename path/filename
+
 #####################################################################################################################################
 _____________________________________________________________________________________________________________________________________
                                               SISTEMS COMMANDS
