@@ -253,6 +253,9 @@ diff -r folder path/filename
 ###creating a variable in linux, criando variáveis
 #Strins não precisam estar entre aspas
 variable_name=value
+
+###enviorment variables, show the enviroment variables, mostra as variáveis de ambiente dessa sessão
+env
 #####################################################################################################################################
 _____________________________________________________________________________________________________________________________________
                                               SISTEMS COMMANDS
