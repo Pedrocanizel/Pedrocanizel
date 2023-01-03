@@ -20,6 +20,9 @@ echo
 ###comand like ls###
 echo*
 
+###printing a variable, imprimindo uma variável
+echo $variable_name
+
 ###comand help###
 help
 
