@@ -244,6 +244,12 @@ diff -i path/filename path/filename
 ###diffrences side by side comparing files, comparando arquivos
 diff -u path/filename path/filename
 
+###diffrences between folderse comparing folders, comparando pastas
+diff -r folder path/filename
+
+###creating a variable in linux, criando variáveis
+#Strins não precisam estar entre aspas
+variable_name=value
 #####################################################################################################################################
 _____________________________________________________________________________________________________________________________________
                                               SISTEMS COMMANDS
