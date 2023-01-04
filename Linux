@@ -325,3 +325,5 @@ source enviorment_name/bin/activate #activate, começa, start ambiente virtual
 deactivate #desativa um ambiente virtual linux
 
 rm -rf enviorment_name/ #remove the folder
+
+sudo apt python-venv #Install the package, pacote venv
