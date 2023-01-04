@@ -329,3 +329,5 @@ rm -rf enviorment_name/ #remove the folder
 sudo apt python-venv #Install the package, pacote venv
 
 pyhton3 -m pip install configparser
+
+sudo apt install python3-pip #Installing pip
