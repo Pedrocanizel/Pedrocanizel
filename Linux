@@ -332,4 +332,6 @@ pyhton3 -m pip install configparser
 
 sudo apt install python3-pip #Installing pip
 
-getpass #Python lib used to get some informations about system
+getpass #Python lib used to get some informations about enviroment
+
+os #Python lib used to get some informations about system
