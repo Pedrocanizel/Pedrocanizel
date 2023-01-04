@@ -321,3 +321,5 @@ exit() #exit from python using
 python3 -m venv enviorment_name #Create a folder with the name you insert
 
 source enviorment_name/bin/activate #activate, começa, start ambiente virtual
+
+deactivate #desativa um ambiente virtual linux
