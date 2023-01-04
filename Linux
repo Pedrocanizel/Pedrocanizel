@@ -275,7 +275,7 @@ ssh -i path/gsdemo.pem >>>paste here the ipv4 dns public
 ###Copy files between multiple sistems, copiar arquivo através de múltiplos sistemas
 scp --help cópia segura
 
-scp -i ~/path/file.pem file_i_want_to_cppy username@remotehost:/path/i/want/to/copy
+scp -i ~/path/file.pem file_i_want_to_cppy username@ipv4_public_adress:/path/i/want/to/copy
 
 
 #####################################################################################################################################
