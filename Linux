@@ -272,6 +272,9 @@ export PATH=$PATH:/home/dgadiraju/home #In this place you paste all the content 
 ###add ssh file.pem and conecting to vm, ubuntu command
 ssh -i path/gsdemo.pem >>>paste here the ipv4 dns public
 
+###Copy files between multiple sistems, copiar arquivo através de múltiplos sistemas
+scp --help cópia segura
+
 #####################################################################################################################################
 _____________________________________________________________________________________________________________________________________
                                               SISTEMS COMMANDS
