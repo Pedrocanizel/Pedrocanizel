@@ -9,6 +9,8 @@ docker run -d name_of_image #Roda em modo detached, em background, ou seja, não
 
 docker run -d -p 80:80 nginx #Expondo porta 80, utilizando a porta 80 do meu computador. Juntando comandos -d com -p
 
+docker run -v /path/que será salvo os arquivos #Criando volume anônimo
+
 docker ps #Vê quais imagens estão rodando, see what images are running
 
 docker container ls #Funciona igual o docker ps
