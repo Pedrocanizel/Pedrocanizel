@@ -58,6 +58,9 @@ docker top nome_do_container #verifica as execuções do container
 docker inspect nome_do_container #mostra como o container foi configurado, info, set up
 
 docker stats #Vê o processamento dos containers
+
+docker volume ls 
+vê todos os volumes do meu ambiente
 #######################
 
 Executando uma imagem
