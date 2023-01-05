@@ -2,3 +2,5 @@
 
 
 docker run ubuntu #downloading the oficial ubuntu image
+
+docker run -it ubuntu #downloading the oficial ubuntu image e continue running
