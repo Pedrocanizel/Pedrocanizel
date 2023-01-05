@@ -33,6 +33,8 @@ docker rm name_of_container/id -f #Removing, reomver um container, se o containe
 docker image ls #lista todas as imagens que tenho instalada
 
 docker pull nome_da_imagem #Download, baixa a imagem que fica pronta para uso
+
+docker tag id novo_nome #Renaming, renomeando uma imagem
 #######################
 
 Executando uma imagem
