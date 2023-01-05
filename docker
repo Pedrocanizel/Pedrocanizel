@@ -13,6 +13,8 @@ docker run -v /path/que será salvo os arquivos #Criando volume anônimo
 
 docker run -v nome_do_volume:/path/que será salvo os arquivos #Criando volume nomeado
 
+docker run /dir/data:/data  #Criando volume bind mount, /dir/data é o diretório do nosso computador, será o volume do container
+
 docker ps #Vê quais imagens estão rodando, see what images are running
 
 docker container ls #Funciona igual o docker ps
