@@ -11,3 +11,5 @@ docker container ls #Funciona igual o docker ps
 docker container ls -a #Funciona igual o docker ps -a
 
 docker ps -a #Mostra um histórico de todos os containers que ja rodaram na máquina, show a historic of all runned containers
+
+docker stop name #Stop a container by name
