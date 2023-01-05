@@ -78,3 +78,14 @@ expose #porta da aplicação
 copy #quais arquivos precisam ser copiados
 
 ########################
+
+#######################
+
+Enviando uma imagem para o hub
+
+docker login #Q vc criou no site
+username
+senha
+
+docker logout
+#######################
