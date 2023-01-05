@@ -31,6 +31,8 @@ docker rm name_of_container/id #Removing, reomver um container, se o container e
 docker rm name_of_container/id -f #Removing, reomver um container, se o container estiver rodando vc pode usar o -f para forçar parar.
 
 docker image ls #lista todas as imagens que tenho instalada
+
+docker pull nome_da_imagem #Download, baixa a imagem que fica pronta para uso
 #######################
 
 Executando uma imagem
