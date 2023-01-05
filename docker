@@ -89,5 +89,7 @@ senha
 
 docker push nome_da_imagem
 
+docker pull nome_da_imagem #Puxa a imagem
+
 docker logout
 #######################
