@@ -11,6 +11,8 @@ docker run -d -p 80:80 nginx #Expondo porta 80, utilizando a porta 80 do meu com
 
 docker run -v /path/que será salvo os arquivos #Criando volume anônimo
 
+docker run -v nome_do_volume:/path/que será salvo os arquivos #Criando volume nomeado
+
 docker ps #Vê quais imagens estão rodando, see what images are running
 
 docker container ls #Funciona igual o docker ps
@@ -59,8 +61,7 @@ docker inspect nome_do_container #mostra como o container foi configurado, info,
 
 docker stats #Vê o processamento dos containers
 
-docker volume ls 
-vê todos os volumes do meu ambiente
+docker volume ls  #vê todos os volumes do meu ambiente
 #######################
 
 Executando uma imagem
