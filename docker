@@ -87,5 +87,7 @@ docker login #Q vc criou no site
 username
 senha
 
+docker push nome_da_imagem
+
 docker logout
 #######################
