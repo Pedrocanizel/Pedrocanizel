@@ -29,3 +29,16 @@ docker logs name_of_container #Ajuda debugar erros, ver os últimos eventos, err
 docker rm name_of_container/id #Removing, reomver um container, se o container estiver rodando vc pode usar o -f para forçar parar.
 
 docker rm name_of_container/id -f #Removing, reomver um container, se o container estiver rodando vc pode usar o -f para forçar parar.
+
+#######################
+Criando uma imagem, creating Dockerfile
+
+from #imagem base
+
+workdir #diretório da aplicação
+ 
+expose #porta da aplicação
+
+copy #quais arquivos precisam ser copiados
+
+########################
