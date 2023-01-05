@@ -54,6 +54,8 @@ docker cp nome_container:/path/relativo/file.py ./path/que_quero_copiar #Copia a
 docker top nome_do_container #verifica as execuções do container
 
 docker inspect nome_do_container #mostra como o container foi configurado, info, set up
+
+docker stats #Vê o processamento dos containers
 #######################
 
 Executando uma imagem
