@@ -31,6 +31,16 @@ docker rm name_of_container/id #Removing, reomver um container, se o container e
 docker rm name_of_container/id -f #Removing, reomver um container, se o container estiver rodando vc pode usar o -f para forçar parar.
 
 #######################
+
+Executando uma imagem
+
+docker build diretorio_da_imagem
+
+docker run nome_imagem
+
+#######################
+
+#######################
 Criando uma imagem, creating Dockerfile
 
 from #imagem base
