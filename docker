@@ -70,6 +70,8 @@ docker volume create nome_do_volume #Criando volumes manualmente
 docker volume inspect nome_do_volume #Inspeciona o volume
 
 docker volume rm nome_do_volume #Removendo um volume
+
+docker volume prune #Remove volumes em massa
 #######################
 
 Executando uma imagem
