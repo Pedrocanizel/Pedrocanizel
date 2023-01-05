@@ -5,6 +5,8 @@ docker run ubuntu #run the oficial ubuntu image
 
 docker run -it ubuntu #run the oficial ubuntu image e continue running, deixa o terminal do contâiner disponível
 
+docker run -d name_of_image #Roda em modo detached, em background, ou seja, não fica exposto na CLI
+
 docker ps #Vê quais imagens estão rodando, see what images are running
 
 docker container ls #Funciona igual o docker ps
