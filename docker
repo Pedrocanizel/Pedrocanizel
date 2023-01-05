@@ -35,6 +35,8 @@ docker image ls #lista todas as imagens que tenho instalada
 docker pull nome_da_imagem #Download, baixa a imagem que fica pronta para uso
 
 docker tag id novo_nome:nova_tag #Renaming, renomeando uma imagem
+
+docker build -t nome:tag local
 #######################
 
 Executando uma imagem
