@@ -66,6 +66,8 @@ docker stats #Vê o processamento dos containers
 docker volume ls  #vê todos os volumes do meu ambiente
 
 docker volume create nome_do_volume #Criando volumes manualmente
+
+docker volume inspect nome_do_volume #Inspeciona o volume
 #######################
 
 Executando uma imagem
