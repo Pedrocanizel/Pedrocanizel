@@ -1,9 +1,9 @@
 #hub.docker.com #repositório oficial do docker
 
 
-docker run ubuntu #downloading the oficial ubuntu image
+docker run ubuntu #run the oficial ubuntu image
 
-docker run -it ubuntu #downloading the oficial ubuntu image e continue running
+docker run -it ubuntu #run the oficial ubuntu image e continue running, deixa o terminal do contâiner disponível
 
 docker ps #Vê quais imagens estão rodando, see what images are running
 
