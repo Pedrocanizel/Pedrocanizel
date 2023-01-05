@@ -19,3 +19,5 @@ docker ps -a #Mostra um histórico de todos os containers que ja rodaram na máq
 docker stop name #Stop a container by name
 
 docker stop id #id do container
+
+docker start id ou nome #Inicia um container pelo id ou pelo nome
