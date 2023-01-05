@@ -23,3 +23,5 @@ docker stop id #id do container
 docker start id ou nome #Inicia um container pelo id ou pelo nome
 
 docker run -d -p 80:80 --name name_of_container nginx #Criando/creating a container and giving a name, nomeando
+
+docker logs name_of_container #Ajuda debugar erros, ver os últimos eventos, error
