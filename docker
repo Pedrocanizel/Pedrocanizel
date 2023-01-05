@@ -8,5 +8,6 @@ docker run -it ubuntu #downloading the oficial ubuntu image e continue running
 docker ps #Vê quais imagens estão rodando, see what images are running
 
 docker container ls #Funciona igual o docker ps
+docker container ls -a #Funciona igual o docker ps -a
 
 docker ps -a #Mostra um histórico de todos os containers que ja rodaram na máquina, show a historic of all runned containers
