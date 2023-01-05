@@ -6,3 +6,5 @@ docker run ubuntu #downloading the oficial ubuntu image
 docker run -it ubuntu #downloading the oficial ubuntu image e continue running
 
 docker ps #Vê quais imagens estão rodando, see what images are running
+
+docker container ls #Funciona igual o docker ps
