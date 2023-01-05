@@ -1,1 +1,4 @@
 #hub.docker.com #repositório oficial do docker
+
+
+docker run ubuntu #downloading the oficial ubuntu image
