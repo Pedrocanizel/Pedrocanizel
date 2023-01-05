@@ -49,7 +49,7 @@ docker system prune #Remove dados não utilzados, limpa, clear, remove imagens, 
 
 docker run --rm id ou nome #Remove automaticamente o container depois q ele é parado, bom para ambiente de testes
 
-docker cp #Copia arquivo de um diretório para um container ou vice versa, copy file
+docker cp nome_container:/path/relativo/file.py ./path/que_quero_copiar #Copia arquivo de um diretório para um container ou vice versa, copy file
 #######################
 
 Executando uma imagem
