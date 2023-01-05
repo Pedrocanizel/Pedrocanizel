@@ -1,7 +1,7 @@
 #hub.docker.com #repositório oficial do docker
 
 
-docker run ubuntu #run the oficial ubuntu image
+docker run ubuntu #run the oficial ubuntu image, o comando run cria um novo container
 
 docker run -it ubuntu #run the oficial ubuntu image e continue running, deixa o terminal do contâiner disponível
 
