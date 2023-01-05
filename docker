@@ -46,6 +46,8 @@ docker rmi nome_da_imagem #Remover uma imagem, posso adicionar o -f para forçar
 docker rmi -f nome_da_imagem #Remover uma imagem, posso adicionar o -f para forçar
 
 docker system prune #Remove dados não utilzados, limpa, clear, remove imagens, containers, redes
+
+docker run --rm id ou nome #Remove automaticamente o container depois q ele é parado, bom para ambiente de testes
 #######################
 
 Executando uma imagem
