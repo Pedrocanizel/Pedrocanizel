@@ -64,6 +64,8 @@ docker inspect nome_do_container #mostra como o container foi configurado, info,
 docker stats #Vê o processamento dos containers
 
 docker volume ls  #vê todos os volumes do meu ambiente
+
+docker volume create nome_do_volume #Criando volumes manualmente
 #######################
 
 Executando uma imagem
