@@ -39,6 +39,8 @@ docker pull nome_da_imagem #Download, baixa a imagem que fica pronta para uso
 docker tag id novo_nome:nova_tag #Renaming, renomeando uma imagem
 
 docker build -t nome:tag local
+
+docker rmi nome_da_imagem #Remover uma imagem, posso adicionar o -f para forçar
 #######################
 
 Executando uma imagem
