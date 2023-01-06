@@ -76,6 +76,8 @@ docker volume rm nome_do_volume #Removendo um volume
 docker volume prune #Remove volumes em massa
 
 docker network ls #Lista as redes que ue possuo, lists
+
+docker network create nome_da_rede #Cria uma rede, create
 #######################
 
 Executando uma imagem
