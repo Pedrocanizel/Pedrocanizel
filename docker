@@ -78,6 +78,8 @@ docker volume prune #Remove volumes em massa
 docker network ls #Lista as redes que ue possuo, lists
 
 docker network create nome_da_rede #Cria uma rede, create, por padrão o tipo da rede é bridge
+
+docker network rm nome_da_rede #Removendo uma rede
 #######################
 
 Executando uma imagem
