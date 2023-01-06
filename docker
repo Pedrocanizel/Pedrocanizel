@@ -85,7 +85,7 @@ docker network prune #Remove todas as redes não utilizadas
 
 docker network connect nome_rede id_container #Conectando um container a uma rede
 
-cdocker network disconnect nome_rede id_container #Desconectando um container a uma rede
+docker network disconnect nome_rede id_container #Desconectando um container a uma rede
 
 docker network inpect noma_da_rede #Inspecionando uma rede
 #######################
