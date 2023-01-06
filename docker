@@ -87,7 +87,7 @@ docker network connect nome_rede id_container #Conectando um container a uma red
 
 docker network disconnect nome_rede id_container #Desconectando um container a uma rede
 
-docker network inpect noma_da_rede #Inspecionando uma rede
+docker network inspect noma_da_rede #Inspecionando uma rede
 #######################
 
 Executando uma imagem
