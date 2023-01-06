@@ -82,6 +82,8 @@ docker network create nome_da_rede #Cria uma rede, create, por padrão o tipo da
 docker network rm nome_da_rede #Removendo uma rede
 
 docker network prune #Remove todas as redes não utilizadas
+
+docker network conect nome_rede nome_container #Conectando um container a uma rede
 #######################
 
 Executando uma imagem
