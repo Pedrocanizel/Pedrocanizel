@@ -74,6 +74,8 @@ docker volume inspect nome_do_volume #Inspeciona o volume
 docker volume rm nome_do_volume #Removendo um volume
 
 docker volume prune #Remove volumes em massa
+
+docker network ls #Lista as redes que ue possuo, lists
 #######################
 
 Executando uma imagem
