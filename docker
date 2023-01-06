@@ -83,7 +83,9 @@ docker network rm nome_da_rede #Removendo uma rede
 
 docker network prune #Remove todas as redes não utilizadas
 
-docker network connect nome_rede nome_container #Conectando um container a uma rede
+docker network connect nome_rede id_container #Conectando um container a uma rede
+
+cdocker network disconnect nome_rede id_container #Desconectando um container a uma rede
 #######################
 
 Executando uma imagem
