@@ -101,7 +101,7 @@ docker run nome_imagem
 #######################
 Criando uma imagem, creating Dockerfile
 
-from #imagem base
+from #especifica uma imagem que servirá de base para a nossa
 
 workdir #diretório da aplicação
  
