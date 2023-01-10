@@ -107,6 +107,9 @@ workdir #diretório da aplicação
  
 expose #porta da aplicação
 
+run # Executa um comando dentro do container
+run mkdir /aula #Exemplo de run que cria um diretório /aula dentro de um container
+
 add #Faz algo mto parecido com o copy, pode baixar uma url, pode descompactar um arquivo tar
 add aula.tar.gz /path/aula/ #Exemplo de add que descompactar o arquivo aula dentro do path que passei
 
