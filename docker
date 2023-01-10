@@ -109,7 +109,8 @@ workdir /path #Exemplo
 env #Cria uma variével de ambiente dentro do meu container
 env minha_variável=app.jar  
  
-expose #porta da aplicação
+expose #porta da aplicação que vou expor para poder acessar o container de fora
+expose 8080 #Exemplo
 
 entrypoint #Funciona parecido com o cmd. Quando o entrypoint e o cmd estão declarados, o cmd entra como parâmetro do entrypoint
 entrypoint {"Executable"}
