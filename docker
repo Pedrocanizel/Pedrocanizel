@@ -107,7 +107,7 @@ workdir #diretório da aplicação
  
 expose #porta da aplicação
 
-copy #quais arquivos precisam ser copiados
+copy #quais arquivos precisam ser copiados, ele busca dentro do drietório que se encontra o docker file
 
 ########################
 
