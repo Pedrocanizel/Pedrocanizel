@@ -103,7 +103,10 @@ Criando uma imagem, creating Dockerfile
 
 from #especifica uma imagem que servirá de base para a nossa
 
-workdir #diretório da aplicação
+workdir #diretório que eu passar aqui será o diretório que meu container vai estar, ele será o raiz do container, se vc entrar no terminal do container você cairá diretamente no diretório que foi passado
+workdir /path #Exemplo 
+
+
  
 expose #porta da aplicação
 
