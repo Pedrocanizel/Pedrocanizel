@@ -107,6 +107,9 @@ workdir #diretório da aplicação
  
 expose #porta da aplicação
 
+entrypoint #Funciona parecido com o cmd. Quando o entrypoint e o cmd estão declarados, o cmd entra como parâmetro do entrypoint
+entrypoint {"Executable"}
+
 cmd  #Comando que executa uma ação depois que o container é criado
 cmd ["ls"] #Exemplo de comando que executa uma listagem no direório dentro do container depois q ele é inicializado
 
