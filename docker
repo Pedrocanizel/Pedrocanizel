@@ -107,6 +107,9 @@ workdir #diretório da aplicação
  
 expose #porta da aplicação
 
+cmd  #Comando que executa uma ação depois que o container é criado
+cmd ["ls"] #Exemplo de comando que executa uma listagem no direório dentro do container depois q ele é inicializado
+
 run # Executa um comando dentro do container
 run mkdir /aula #Exemplo de run que cria um diretório /aula dentro de um container
 
