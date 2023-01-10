@@ -107,6 +107,9 @@ workdir #diretório da aplicação
  
 expose #porta da aplicação
 
+add #Faz algo mto parecido com o copy, pode baixar uma url, pode descompactar um arquivo tar
+add aula.tar.gz /path/aula/ #Exemplo de add que descompactar o arquivo aula dentro do path que passei
+
 copy #quais arquivos precisam ser copiados, ele busca dentro do drietório que se encontra o docker file
 copy aula.txt /path/aula.txt #Exemplo de copy que pega o arquivo aula.txt e copia para dentro da imagem que estou criando no diretório que passei
 
