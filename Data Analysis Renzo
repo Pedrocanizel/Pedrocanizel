@@ -25,6 +25,6 @@ etapa 3- visualização
 
 pca: técnica pra entender dados multidimensionais
 
-k means: Algoritmos para análise de clusters
+k means: Algoritmos para análise de clusters, agrupa os dados no centro de cada grupo
 
 clusters: agrupamento de dados
