@@ -56,7 +56,7 @@ novo_df['createTimestamp'] = [i['date'].split(' ')[0] for i in novo_df.createTim
 df.sort_index(by='column_name', ascending=True) #Sorting columns
 
 drop_cols = ['columns', 'collumns2']
-df.drop(drop_cols, axis=1, inplace=True)#  is used to remove a row or a column from a dataframe which has a NaN or no values in it.
+df.drop(drop_cols, axis=1, inplace=True)#  is used to remove a row or a column from a dataframe which has a NaN or no values in it, o valor 1 representa que deseja excluir coluna
 
 novo_df = dataframe.drop('c') #Apagar a linha que contém o índice 'c', delete row by index
 
