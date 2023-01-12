@@ -94,3 +94,7 @@ del dataframe['column name'] #Delete, apaga a coluna
 As chaves de um dicionário serão transformadas no nome de uma coluna ao cria um data frame
 
 na_values='o que eu quiser' #argumento na leitura de um arquivo que especifica o que eu quero que substitua os valores nulos, read, null values
+
+df.sum() #Por padrão o sum no pandas faz a soma das linhas
+
+df.sum(axis='nome_col') #Somando os valores de uma coluna, values
