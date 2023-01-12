@@ -106,3 +106,20 @@ df.mean(axis='nome_col', skipna=False) #Calculando a média dos valores de uma c
 novo_df = df.dropna() #Remover dados null, delete null values
 
 novo_df = df[df.notnull()] #Remover dados null, delete null values
+
+df_novo - df.fillna('x') #Replace/substituir/preencher dados faltantes/nulos/null por x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
