@@ -98,3 +98,9 @@ na_values='o que eu quiser' #argumento na leitura de um arquivo que especifica o
 df.sum() #Por padrão o sum no pandas faz a soma das linhas
 
 df.sum(axis='nome_col') #Somando os valores de uma coluna, values
+
+df.mean() #Por padrão o mean no pandas faz a média das linhas
+
+df.mean(axis='nome_col', skipna=False) #Calculando a média dos valores de uma coluna, o skipna por padrão faz pular os dados faltantes
+
+
