@@ -21,3 +21,7 @@ arr_floar = num_str.astype(float)
 arr_int = num_str.astype(np.int32)
 
 print(data.shape) #mostra forma ou dimensões do array
+
+print(array1 * 10) #Mulyiplica todos os elementos do array por 10
+
+print(array1 + array1) #Soma, sum o array com ele mesmo, pode ser também outro array
