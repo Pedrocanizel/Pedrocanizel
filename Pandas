@@ -39,6 +39,8 @@ df.isna.any() #Isna function returns a dataframe filled with boolean values with
 index=np.where(novo_df2.acessibilidade.isnull())
 novo_df2.loc[index] ###looking for nuls in a column
 
+dataframe = df.loc['valor_linha'], ['nome_col', 'nome_col2']] #Pesquisa, procura, filtra por linhas e colunas
+
 df.isnull.sum() #You can calculate the number of missing values in each column by
 
 df.memory_usage() #returns how much memory each column uses in bytes.
