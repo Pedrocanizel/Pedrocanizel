@@ -109,9 +109,11 @@ novo_df = df[df.notnull()] #Remover dados null, delete null values
 
 df_novo = df.fillna('x') #Replace/substituir/preencher dados faltantes/nulos/null por x
 
+df1.join(df2, how='outer/left/right') #Por padrão o pandas faz o join pelo index
 
+df.pivot() #Pivota o df para melhor entende-lo
 
-
+df.melt() #Desfaz o pivot
 
 
 
