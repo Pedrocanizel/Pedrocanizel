@@ -103,4 +103,6 @@ df.mean() #Por padrão o mean no pandas faz a média das linhas
 
 df.mean(axis='nome_col', skipna=False) #Calculando a média dos valores de uma coluna, o skipna por padrão faz pular os dados faltantes
 
+novo_df = df.dropna() #Remover dados null, delete null values
 
+novo_df = df[df.notnull()] #Remover dados null, delete null values
