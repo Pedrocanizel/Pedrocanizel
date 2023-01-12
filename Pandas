@@ -80,3 +80,5 @@ for name, tipo in zip(novo_df2.name, novo_df2.tipo_museu):
 novo_df2['nova_col_2'] = [name+" "+tipo for name, tipo in zip(novo_df2.name, novo_df2.tipo_museu)] #Creating new column concate columns
 
 del dataframe['column name'] #Delete, apaga a coluna
+
+As chaves de um dicionário serão transformadas no nome de uma coluna ao cria um data frame
