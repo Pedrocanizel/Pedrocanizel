@@ -78,3 +78,5 @@ for name, tipo in zip(novo_df2.name, novo_df2.tipo_museu):
      print(name, tipo) ###For loop in columns, iterating columns
 
 novo_df2['nova_col_2'] = [name+" "+tipo for name, tipo in zip(novo_df2.name, novo_df2.tipo_museu)] #Creating new column concate columns
+
+del dataframe['column name'] #Delete, apaga a coluna
