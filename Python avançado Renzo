@@ -1,4 +1,6 @@
-print(globals) #Imprime pra você todas as variáveis globais presente dentro do seu ambiente de desenvolvimento, se limita ao módulo que você está desenvolvendo
+print(globals()) #Imprime pra você todas as variáveis globais presente dentro do seu ambiente de desenvolvimento, se limita ao módulo que você está desenvolvendo
+
+print(locals()) #Imprime as variáveis locais para você, interno a uma função por exemplo
 
 
 
