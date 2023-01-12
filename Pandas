@@ -10,6 +10,8 @@ df = pd.read_json('http://museus.cultura.gov.br/api/event/find?@select=*')
 
 eventos.columns.values #return the names of the columns
 
+dataframe.values #Retorna os valores do data frame em forma de array caso queira fazer operações com numpy
+
 ###creating a new df
 selec = ['id', 'name', 'shortDescription', 'longDescription'] #list of name of the columns
 novo_df = df.filter(items=selec)
