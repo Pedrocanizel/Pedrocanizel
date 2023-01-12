@@ -1,0 +1,17 @@
+Criar array
+
+lista1 = [1, 2, 3, 4, 5]
+
+array1 = np.array(lista1)
+
+np.zeros(5) #Criar, create um array de zeros
+
+np.arange(10) #Criar, create array de números sequenciais, sequential numbers, começa no zero e termina no 9 no exemplo aqui.
+
+np.ones(2, 3) #Cria um array de 2 linhas e 3 colunas apenas com números 1.
+
+print(array1.dtype) #mostra os tipos de dados do array, data type
+
+print(array1.ndim) #Mostra o número de dimensões
+
+num_str = np.array(['1.25', '-9.6', '42'], dtype=np.string_) #Criando um array do tipo string
