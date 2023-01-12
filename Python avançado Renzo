@@ -2,6 +2,11 @@ print(globals()) #Imprime pra você todas as variáveis globais presente dentro 
 
 print(locals()) #Imprime as variáveis locais para você, interno a uma função, classe por exemplo
 
+função de alta ordem é um função que recebe outra como argumento, exemplo abaixo:
+def executar(f, n=1): #f no caso é uma função que entrará como argumento, 1 é o valor base, que poderá mudar
+    for _ in range(n): #Dessa forma eu faço com que o valor passado no n seja a quantidade de vezes que o python executa a função f()
+        f()
+
 
 
 
