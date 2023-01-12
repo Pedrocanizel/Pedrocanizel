@@ -15,3 +15,9 @@ print(array1.dtype) #mostra os tipos de dados do array, data type
 print(array1.ndim) #Mostra o número de dimensões
 
 num_str = np.array(['1.25', '-9.6', '42'], dtype=np.string_) #Criando um array do tipo string
+
+arr_floar = num_str.astype(float)
+
+arr_int = num_str.astype(np.int32)
+
+print(data.shape) #mostra forma ou dimensões do array
