@@ -1,0 +1,10 @@
+
+
+sudo su #Entrar como user root
+yum update -y #Atualizando os pacotes
+yum install httpd #Instalando pacote apche web
+systemctl start httpd #iniciando pacote apache web 
+systemctl enable httpd #Dando prmissão para o pacote apache funconar 
+echo "Hello World" > /var/www/html/index.html #Inserindo um arquivo html na pasta raíz para ser exibido 
+
+###########            NÃO ESQUECER DE DAR PERMISSÃO NO NETWORK SECURITY GROUP       ######################
