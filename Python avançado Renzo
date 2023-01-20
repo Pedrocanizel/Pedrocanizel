@@ -1,3 +1,5 @@
+#################################################################
+
 print(globals()) #Imprime pra você todas as variáveis globais presente dentro do seu ambiente de desenvolvimento, se limita ao módulo que você está desenvolvendo
 
 print(locals()) #Imprime as variáveis locais para você, interno a uma função, classe por exemplo
@@ -7,10 +9,10 @@ def executar(f, n=1): #f no caso é uma função que entrará como argumento, 1 
     for _ in range(n): #Dessa forma eu faço com que o valor passado no n seja a quantidade de vezes que o python executa a função f()
         f()
 
-
+#################################################################
 import operator
 
-
+#################################################################
 pure/impure function
 
 var_a = 20
@@ -27,7 +29,7 @@ def impure_func(w):
 
 print(impure_func(4))
 
-
+#################################################################
 contador/count caracter
 
 def is_unique(string: str) -> bool:
@@ -39,6 +41,26 @@ def is_unique(string: str) -> bool:
         caracter_seen[caracter] = True
 
     return True
+
+#################################################################
+
+list = {'x':1, 'y':2, 'z':3}
+
+print(list.__getitem__('x'))
+
+#################################################################
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
