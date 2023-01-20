@@ -11,7 +11,21 @@ def executar(f, n=1): #f no caso é uma função que entrará como argumento, 1 
 import operator
 
 
-pure function
+pure/impure function
+
+var_a = 20
+
+def pure_func(x, y):
+    z = x * y
+    return z
+
+print(pure_func(4, 5))
+
+def impure_func(w):
+    q = w * var_a
+    return q
+
+print(impure_func(4))
 
 
 
