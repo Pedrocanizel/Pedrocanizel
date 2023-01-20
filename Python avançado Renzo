@@ -11,6 +11,8 @@ def executar(f, n=1): #f no caso é uma função que entrará como argumento, 1 
 import operator
 
 
+pure function
+
 
 
 
