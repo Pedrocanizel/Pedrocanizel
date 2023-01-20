@@ -28,6 +28,17 @@ def impure_func(w):
 print(impure_func(4))
 
 
+contador/count caracter
+
+def is_unique(string: str) -> bool:
+    caracter_seen = {}
+
+    for caracter in string:
+        if caracter_seen.get(caracter):
+            return false
+        caracter_seen[caracter] = True
+
+    return True
 
 
 
