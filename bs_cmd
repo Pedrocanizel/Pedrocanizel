@@ -69,3 +69,5 @@ dentro da pasta loja, no arquivo urls: á frente de url_patterns, depois de fech
 
 dentro do arquivo settings.py, em templates, em dirs, add dentro dos colchetes:
 os.path.join(BASE_DIR, 'templates')
+
+dentro da pasta raíz do projeto, no caso bitsaas_version1, criar uma pasta com nome 'templates' e dentro dela criar uma pasta chamada 'static'
