@@ -15,3 +15,7 @@ python manage.py startapp pedido
 python manage.py startapp perfil
 
 python manage.py check
+
+python manage.py migrate
+
+python manage.py create superuser
