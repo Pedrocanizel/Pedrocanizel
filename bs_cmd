@@ -19,3 +19,7 @@ python manage.py check
 python manage.py migrate
 
 python manage.py create superuser
+
+pedro
+pedrocanizela@gmail.com
+123
