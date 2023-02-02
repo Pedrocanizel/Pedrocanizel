@@ -4,3 +4,6 @@ pip install django
 
 pip install django-crispy-forms
 
+pip install pillow
+
+django-admin startproject bsaas_1 .
