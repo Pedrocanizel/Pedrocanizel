@@ -66,3 +66,6 @@ dentro da pasta loja, no arquivo urls: from django.conf import settings
 dentro da pasta loja, no arquivo urls: from django.conf.urls.static import static
 dentro da pasta loja, no arquivo urls: á frente de url_patterns, depois de fechar os colchetes, inserir: 
 + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+dentro do arquivo settings.py, em templates, em dirs, add dentro dos colchetes:
+os.path.join(BASE_DIR, 'templates')
