@@ -1,1 +1,6 @@
 comandos e ações em sequência
+
+pip install django
+
+pip install django-crispy-forms
+
