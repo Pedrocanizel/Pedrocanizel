@@ -29,3 +29,5 @@ python manage.py runserver
 entrar no admin: depois de clicar no link para entrar na pagina do servidor, ao final da url adicionar /admin
 
 logar para testar
+
+pip install pylint
