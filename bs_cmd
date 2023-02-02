@@ -33,3 +33,12 @@ logar para testar
 pip install pylint
 
 Em settings.py podemos mudar a linguagem caso quisermos, e arrumar o fuso horário para 'America/Sao_Paulo'
+
+ainda em settings.py, abaixo de STATIC_URL adicionar:
+STATIC_ROOT = os.path.join(BASE_DIR, 'templates/static')
+STATICFILES_DIRS = [
+    os.path.join('static')
+]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
