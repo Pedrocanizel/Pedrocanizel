@@ -7,3 +7,9 @@ pip install django-crispy-forms
 pip install pillow
 
 django-admin startproject bsaas_1 .
+
+python manage.py startapp loja
+
+python manage.py startapp pedido
+
+python manage.py startapp perfil
