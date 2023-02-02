@@ -58,4 +58,5 @@ SESSION_SAVE_EVERY_REQUEST = False
 # SESSION_ENGINE = "django.contrib.sessions.backends.file"
 # SESSION_FILE_PATH = '/home/luizotavio/Desktop/temp'
 
-pip install django-debug-toolbar
+Seguir o passo a passo da documentação do debug toolbar para adicionar o debug toolbar:
+https://django-debug-toolbar.readthedocs.io/en/latest/installation.html
