@@ -64,3 +64,5 @@ https://django-debug-toolbar.readthedocs.io/en/latest/installation.html
 dentro da pasta loja, no arquivo urls, após o path, importar o include
 dentro da pasta loja, no arquivo urls: from django.conf import settings
 dentro da pasta loja, no arquivo urls: from django.conf.urls.static import static
+dentro da pasta loja, no arquivo urls: á frente de url_patterns, depois de fechar os colchetes, inserir: 
++ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
