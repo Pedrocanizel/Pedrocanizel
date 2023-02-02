@@ -31,3 +31,5 @@ entrar no admin: depois de clicar no link para entrar na pagina do servidor, ao 
 logar para testar
 
 pip install pylint
+
+Em settings.py podemos mudar a linguagem caso quisermos, e arrumar o fuso horário para 'America/Sao_Paulo'
