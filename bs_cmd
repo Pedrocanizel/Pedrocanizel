@@ -13,3 +13,5 @@ python manage.py startapp loja
 python manage.py startapp pedido
 
 python manage.py startapp perfil
+
+python manage.py check
