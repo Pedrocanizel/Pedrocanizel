@@ -99,3 +99,7 @@ dentro de settings.py adicionar a app produto dentro de installed_apps
 
 python manage.py makemigrations #para criar o banco de dados
 python manage.py migrate 
+
+dentro da aplicação produto, no arquivo admin.py:
+from . import models
+admin.site.register(models.Produto) #Para registrar o Produto que está dentro de models
