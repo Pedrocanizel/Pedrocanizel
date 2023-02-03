@@ -88,7 +88,7 @@ class Produto(models.Model):
     preco = models.FloatField()
     tipo = models.CharField(
         default='V',
-        max_lenght=1,
+        max_lenght=100,
         choices=(
             ('V', 'Variação'),
             ('S', 'Simples'),
