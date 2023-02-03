@@ -103,3 +103,7 @@ python manage.py migrate
 dentro da aplicação produto, no arquivo admin.py:
 from . import models
 admin.site.register(models.Produto) #Para registrar o Produto que está dentro de models
+
+dentro do app produto, em models.py, adicionar:
+def __str__(self):
+    return self.nome #Fazendo isso, na pagina admin, na aba de produtos, veremos o nome do produto cadastrado
