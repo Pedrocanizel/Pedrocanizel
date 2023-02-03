@@ -73,3 +73,24 @@ os.path.join(BASE_DIR, 'templates')
 dentro da pasta raíz do projeto, no caso bitsaas_version1, criar uma pasta com nome 'templates' e dentro dela criar uma pasta chamada 'static'
 
 python manage.py startapp produto
+
+dentro da pasta rais, bitsaas, criar o seguinte path para salvar as imagens
+'produto_imagens/ano/mes'
+
+Dentro da app Produto, dentro de models.py, criar um modelo de produto:
+class Produto(models.Model):
+    nome = models.CharField(max_length=255)
+    descricao_curta = models.TextField(max_length=255)
+    descricao_longa = models.TextField()
+    imagem = models.ImageField(
+        upload_to='produto_imagens/ano/mes', blank=True, null=True)
+    slug = models.SlugField(unique=True)
+    preco = models.FloatField()
+    tipo = models.CharField(
+        default='V',
+        max_lenght=1,
+        choices=(
+            ('V', 'Variação'),
+            ('S', 'Simples'),
+        )
+    )
