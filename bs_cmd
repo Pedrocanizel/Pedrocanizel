@@ -94,3 +94,7 @@ class Produto(models.Model):
             ('S', 'Simples'),
         )
     )
+
+dentro de settings.py adicionar a app produto dentro de installed_apps
+
+python manage.py makemigrations #para criar o banco de dados
