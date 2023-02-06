@@ -238,3 +238,8 @@ class Perfil(models.Model):
  ir em settings.py e registrar a app perfil
  
 ir em admin.py dentro de perfil e registar o model
+from . import models
+admin.site.register(models.Perfil)
+
+python manage.py makemigration
+python manage.py migrate
