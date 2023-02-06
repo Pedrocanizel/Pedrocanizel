@@ -386,7 +386,9 @@ from django.urls import path #Para esse arquivo importar a função path do arqu
 from . import views
 
 
-
+dentro da app produto, no arquivo viwes.py:
+from django.views.generic.list import ListView
+from django.views import View
 
 
 
