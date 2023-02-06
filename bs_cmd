@@ -107,3 +107,14 @@ admin.site.register(models.Produto) #Para registrar o Produto que está dentro d
 dentro do app produto, em models.py, adicionar:
 def __str__(self):
     return self.nome #Fazendo isso, na pagina admin, na aba de produtos, veremos o nome do produto cadastrado
+    
+  Dentro do arquivo admin.py em produtos, criar a classe que herda de admin.ModelAdmin para formatar o admin da forma como quero.
+  
+  class Formatacao_produtos(admin.ModelAdmin):
+    list_display = ('nome', 'descricao_curta')
+    list_per_page = 10
+
+admin.site.register(models.Produto, Formatacao_produtos)
+
+Criando os models da aplicação pedido:
+from django.contrib.auth.models import User
