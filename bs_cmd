@@ -390,6 +390,9 @@ dentro da app produto, no arquivo viwes.py:
 from django.views.generic.list import ListView
 from django.views import View
 
+class ListaProdutos(ListView):
+    pass
+
 
 
 
