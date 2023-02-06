@@ -247,3 +247,10 @@ python manage.py migrate
 Como criar avisos sobre erros:
 a nível do models, vá até o model que desej adicionar um erro
 from django.forms import ValidationError
+dentro da classe que está criando o models, deve exister a segunte função:
+
+def clean(self):
+    raise ValidationError({
+    'idade' : 'blablabla'
+    })
+     ####Dentro do raise você passa jum dicioário com o campo que deseja, e qual mensagem você deseja que apareça, no caso aqui, o campo é idade e a mensagem é blablabla
