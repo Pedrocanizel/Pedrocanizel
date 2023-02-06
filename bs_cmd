@@ -158,3 +158,8 @@ class ItemPedido(models.Model):
         verbose_name_plural = 'Itens do pedido'
 
 ir em settings.py e registar a app pedido em apps.
+ir em admin.py da app pedido e registrar os models
+
+from . import models
+admin.site.register(models.Pedido)
+admin.site.register(models.ItemPedido)
