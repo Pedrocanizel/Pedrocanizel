@@ -254,3 +254,13 @@ def clean(self):
     'idade' : 'blablabla'
     })
      ####Dentro do raise você passa jum dicioário com o campo que deseja, e qual mensagem você deseja que apareça, no caso aqui, o campo é idade e a mensagem é blablabla
+
+adicionar o validador de cpf dentro do código,
+copiar o script para dentro da pasta utils
+dentro do models.py na app perfil
+import re
+from utils.validacpf import valida_cpf
+
+
+
+
