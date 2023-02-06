@@ -392,6 +392,16 @@ Dentro da app perfil, criar um aquivo urls.py
 dentro de urls.py inserir
 from django.urls import path #Para esse arquivo importar a função path do arquivo de url do projeto
 from . import views
+urlpatterns = [
+    path('', views.Criar.as_view(), name='criar'),
+    path('atualizar/', views.Atualizar.as_view(), name='atualizar'),
+    path('login', views.Login.as_view(), name='login'),
+    path('logout', views.Logout.as_view(), name='logout'),
+
+]
+
+
+
 
 Dentro da app pedido, criar um aquivo urls.py
 dentro de urls.py inserir
