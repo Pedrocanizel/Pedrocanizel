@@ -365,3 +365,43 @@ Dentro de urls.py da pasta do projeto, que no caso aqui é bsaas, adidionar os p
 path('', include('produto.urls')),
 path('perfil/', include('perfil.urls')),
 path('pedido/', include('pedido.urls')),
+
+Dentro da app produtos, criar um aquivo urls.py
+dentro de urls.py inserir
+from django.urls import path #Para esse arquivo importar a função path do arquivo de url do projeto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
