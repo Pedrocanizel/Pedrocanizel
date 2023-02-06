@@ -243,3 +243,7 @@ admin.site.register(models.Perfil)
 
 python manage.py makemigration
 python manage.py migrate
+
+Como criar avisos sobre erros:
+a nível do models, vá até o model que desej adicionar um erro
+from django.forms import ValidationError
