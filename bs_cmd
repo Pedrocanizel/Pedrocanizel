@@ -369,14 +369,17 @@ path('pedido/', include('pedido.urls')),
 Dentro da app produtos, criar um aquivo urls.py
 dentro de urls.py inserir
 from django.urls import path #Para esse arquivo importar a função path do arquivo de url do projeto
+from . import views
 
 Dentro da app perfil, criar um aquivo urls.py
 dentro de urls.py inserir
 from django.urls import path #Para esse arquivo importar a função path do arquivo de url do projeto
+from . import views
 
 Dentro da app pedido, criar um aquivo urls.py
 dentro de urls.py inserir
 from django.urls import path #Para esse arquivo importar a função path do arquivo de url do projeto
+from . import views
 
 
 
