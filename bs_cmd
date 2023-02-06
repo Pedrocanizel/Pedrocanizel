@@ -372,6 +372,19 @@ from django.urls import path #Para esse arquivo importar a função path do arqu
 from . import views
 criar uma variável chamada app_name,
 app_name = 'produto'
+urlpatterns = [
+    path('', views.ListaProdutos.as_view(), name="lista"),
+    path('<slug>', views.DatelheProduto.as_view(), name="detalhe"),
+    path('adicionaraocarrinho/', views.AdicionarAoCarrinho.as_view(),
+         name="adcionaraocarrinho"),
+    path('removerdocarrinho/', views.RemoverDoCarrinho.as_view(),
+         name="removerdocarrinho"),
+    path('carrinho/', views.Carrinho.as_view(),
+         name="carrinho"),
+    path('finalizar/', views.Finalizar.as_view(),
+         name="finalizar"),
+
+]
 
 
 
