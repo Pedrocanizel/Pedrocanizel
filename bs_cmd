@@ -261,6 +261,12 @@ dentro do models.py na app perfil
 import re
 from utils.validacpf import valida_cpf
 
-
+dentro da classe do models que possui o cpf que desejo validar
+adiciono:
+def clean(self):
+    error_messages = {}
+    
+    if not valida_cpf(self.cpf):
+    error_messages['cpf'] = 'Digite um CPF válido'
 
 
