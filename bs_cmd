@@ -439,6 +439,7 @@ dentro da app perfil, criar uma pasta template que ainda não tinha sido criada
 criar dentro da app perfil um arquivo forms.py
 dentro de forms.py inserir
 from django import forms
+from . import models
 
 
 
