@@ -435,12 +435,12 @@ dentro do arquivo _head.html, na primeira linha inserir {% load static %} para c
 Ver os html para saber como ficaram...
 
 Iniciando a parte de cadastro de usuários.
-dentro da app perfil, criar uma pasta template que ainda não tinha sido criada
+dentro da app perfil, criar uma pasta template que ainda não tinha sido criada, dentro de template uma pasta perfil, dentro de perfil im arquivo criar.html
 criar dentro da app perfil um arquivo forms.py
 dentro de forms.py inserir
 from django import forms
 from . import models
-
+from django.contrib.auth.models import User
 
 
 
