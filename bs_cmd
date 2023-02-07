@@ -428,6 +428,7 @@ class ListaProdutos(ListView):
 dentro de cada aplicação, criar uma pasta chamada templates, e dentro dessa pasta outra pasta com o nome da aplicação.
 
 dentro da pasta templates que está dentro da pasta bsaas, criar um arquivo base.html e copiar nela o index.html
+dentro da pasta templates criar uma pasta chamada parciais
 
 
 
