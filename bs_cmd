@@ -425,6 +425,7 @@ from django.views import View
 class ListaProdutos(ListView):
     pass
 
+dentro de cada aplicação, criar uma pasta chamada templates, e dentro dessa pasta outra pasta com o nome da aplicação.
 
 
 
