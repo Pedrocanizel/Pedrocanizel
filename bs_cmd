@@ -430,6 +430,7 @@ dentro de cada aplicação, criar uma pasta chamada templates, e dentro dessa pa
 dentro da pasta templates que está dentro da pasta bsaas, criar um arquivo base.html e copiar nela o index.html
 dentro da pasta templates criar uma pasta chamada parciais, dentro da pasta parciais criar o arquivo _head.html
 copiar dentro do arquivo head.html e copiar dentro dele a parte do head do arquivo base.html #VER COMO FICOU O ARQUIVO FINAL
+dentro do arquivo _head.html, na primeira linha inserir {% load static %} para carregar os arquivos estáticos
 
 
 
