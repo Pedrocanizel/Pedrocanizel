@@ -432,6 +432,14 @@ dentro da pasta templates criar uma pasta chamada parciais, dentro da pasta parc
 copiar dentro do arquivo head.html e copiar dentro dele a parte do head do arquivo base.html #VER COMO FICOU O ARQUIVO FINAL
 dentro do arquivo _head.html, na primeira linha inserir {% load static %} para carregar os arquivos estáticos
 
+Ver os html para saber como ficaram...
+
+Iniciando a parte de cadastro de usuários.
+dentro da app perfil, criar uma pasta template que ainda não tinha sido criada
+criar dentro da app perfil um arquivo forms.py
+dentro de forms.py inserir
+from django import forms
+
 
 
 
