@@ -445,6 +445,28 @@ from django.contrib.auth.models import User
 dentro de settings.py em middleware, adicionar 'crispy_forms'
 
 
+#############################################
+CRIANDO TESTE COM POSTGREE
+
+criei o projeto no pycharm chamado ambiente_postgree
+django-admin startproject env_postgree .
+python manage.py startapp core
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##############################################
+
 
 
 
