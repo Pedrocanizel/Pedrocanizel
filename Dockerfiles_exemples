@@ -1,0 +1,10 @@
+FROM ubuntu:20.04
+RUN apt-get update -y
+RUN apt-get install python3-pip -y
+RUN pip install djangoWORKDIR /app
+RUN mkdir /app/bitsaas
+COPY /bitsaas/* /app/bitsaas/
+COPY /manage.py /app
+COPY /db.sqlite3 /app
+EXPOSE 8000
+CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
