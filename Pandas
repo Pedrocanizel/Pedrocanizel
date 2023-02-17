@@ -20,6 +20,8 @@ df.info() #getting detailed info about df
 
 df.dtypes #show the data type pf each column
 
+pd.DataFrame(dados.dtypes) #Cria um dataframe com o dtypes
+
 df.shape #return the numbers of lines and columns
 
 df.size #returns the numbers of lines mmultiplied by the numbers of columns
