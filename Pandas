@@ -129,6 +129,8 @@ df.pivot() #Pivota o df para melhor entende-lo
 
 df.melt() #Desfaz o pivot
 
+df.drop_duplicates() #Elimina os valores duplicados de um determinado df
+
 
 
 
