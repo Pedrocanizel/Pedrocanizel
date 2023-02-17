@@ -26,6 +26,10 @@ pd.DataFrame(dados.dtypes, columns = ['Tipos de dados']) #Cria um dataframe com 
 
 df.shape #return the numbers of lines and columns
 
+dados.shape[0] ### Checando quantidade de linhas
+
+dados.shape[1] # ## Checando quantidade de colunas
+
 df.size #returns the numbers of lines mmultiplied by the numbers of columns
 
 df.describe() # method will do a quick statistical summary for every numerical column
