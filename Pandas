@@ -6,6 +6,12 @@ eventos.tail()
 
 help(pd.read_csv)
 
+df.read_html('path') #Ler html
+
+len(html) #retorna um valor, que é a quantidade de tabelas que possui na página html
+ 
+html[0] #Pega o primeiro html da pagina
+
 df = pd.read_json('http://museus.cultura.gov.br/api/event/find?@select=*')
 
 eventos.columns.values #return the names of the columns
