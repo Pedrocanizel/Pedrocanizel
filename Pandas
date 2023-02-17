@@ -22,6 +22,8 @@ df.dtypes #show the data type pf each column
 
 pd.DataFrame(dados.dtypes) #Cria um dataframe com o dtypes
 
+pd.DataFrame(dados.dtypes, columns = ['Tipos de dados']) #Cria um dataframe com os tipos de dados e dá um nome para a coluna.
+
 df.shape #return the numbers of lines and columns
 
 df.size #returns the numbers of lines mmultiplied by the numbers of columns
