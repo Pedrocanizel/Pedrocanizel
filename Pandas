@@ -147,3 +147,16 @@ tipos_de_imoveis.columns.name = 'ID' # Renomeando a coluna do índice
 data = [1, 2, 3, 4, 5] ###Criando uma series
 s = pd.Series(data)
 s
+
+s = pd.Series(data = data, index = range(len(data))) # Criando um series e dando um índice pra ele
+
+
+
+
+
+
+
+
+
+
+
