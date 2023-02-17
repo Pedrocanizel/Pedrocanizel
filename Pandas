@@ -42,7 +42,7 @@ df.describe() # method will do a quick statistical summary for every numerical c
 
 df.sample(n=8) #Sample method allows you to select values randomly from a Series or DataFrame. It is useful when we want to select a random sample from a distribution.
 
-df['column name'] #acess the column
+df['column name'] #acess the column, select the column, selecionar a coluna
 
 df['createTimestamp'][0] #Createtimestamp is the name of the column, 0 is the index of the line
 
