@@ -152,6 +152,7 @@ s = pd.Series(data = data, index = range(len(data))) # Criando um series e dando
 
 index = ['linha' + ' ' + str(i) for i in range(5)] # Outra forma de criar um índice
 
+novo_df = pd.concat([df1, df2, df3]) # Concatena vários dfs, coloca um embaixo do outro
 
 
 
