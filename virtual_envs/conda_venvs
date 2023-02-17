@@ -1,0 +1,5 @@
+!conda info --envs #quais ambientes virtuais eu possuo
+
+!activate notebook #notebook é o nome do ambiente virtual que estou criando
+
+deactivate #desativa ambiente virtual
