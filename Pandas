@@ -140,7 +140,7 @@ df.index #Checa quais os índices do meu dataframe
 for i in range(tipos_de_imoveis.shape[0]):
     print(i) ### Criando um índice para meu df
 
-
+tipos_de_imoveis.index = range(tipos_de_imoveis.shape[0]) # Aplicando a mudanã de index
 
 
 
