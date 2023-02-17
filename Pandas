@@ -133,6 +133,7 @@ df.drop_duplicates() #Elimina os valores duplicados de um determinado df
 
 tipos_de_imoveis.drop_duplicates(inplace = True) #Elimina os valores duplicados de um determinado df e salva o tratamento
 
+tipos_de_imoveis = pd.DataFrame(tipos_de_imoveis) #Cria um data frame com os tipos de imóveis
 
 
 
