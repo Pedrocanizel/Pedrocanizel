@@ -142,6 +142,6 @@ for i in range(tipos_de_imoveis.shape[0]):
 
 tipos_de_imoveis.index = range(tipos_de_imoveis.shape[0]) # Aplicando a mudanã de index
 
-
+tipos_de_imoveis.columns.name = 'ID' # Renomeando a coluna do índice
 
 
