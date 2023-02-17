@@ -150,6 +150,7 @@ s
 
 s = pd.Series(data = data, index = range(len(data))) # Criando um series e dando um índice pra ele
 
+index = ['linha' + ' ' + str(i) for i in range(5)] # Outra forma de criar um índice
 
 
 
