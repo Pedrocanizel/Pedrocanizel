@@ -74,6 +74,8 @@ axis = 1 diz que é para ordenar também por nome das colunas
 
 df.sort_values(by = 'X', inplace = True) # Ordenando meu dataframe pela coluna 'X'
 
+df.sort_values(by = ['X', 'Y'], inplace = True) # Ordenando meu dataframe por colunas, mais de uma coluna
+
 df.sort_values(by = '3', axis = 1, inplace = True) # Ordenando meu dataframe pelo índice 3
 
 drop_cols = ['columns', 'collumns2']
