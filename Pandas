@@ -177,6 +177,9 @@ dados_residencial = novo_dado[selecao] # Crio o novo dataframe fazendo uma sele�
 dados_residencial.to_csv('dados/novocsv.csv', sep = ';', index = False) # Exportando, exporting a dafatrame to csv, o index = False é para não duplicar 
 o índice ao salvar
 
+selecao_ap = dado3['Tipo'] == 'Apartamento' # Uma outra forma de selecioar apenas os dados que eu quero de uma coluna, primeiro eu faço a seleção do que eu quero ver
+dado3[selecao_ap] # Depois aplico a seleção ao dataframe
+dado3[selecao_ap].shape[0] # Contar, contagem quantidades de apartamentos que possuo
 
 
 
