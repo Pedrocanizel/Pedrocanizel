@@ -74,6 +74,8 @@ axis = 1 diz que é para ordenar também por nome das colunas
 
 df.sort_values(by = 'X', inplace = True) # Ordenando meu dataframe pela coluna 'X'
 
+df.sort_values(by = '3', axis = 1, inplace = True) # Ordenando meu dataframe pelo índice 3
+
 drop_cols = ['columns', 'collumns2']
 df.drop(drop_cols, axis=1, inplace=True)#  is used to remove a row or a column from a dataframe which has a NaN or no values in it, o valor 1 representa que deseja excluir coluna
 
