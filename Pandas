@@ -156,6 +156,9 @@ novo_df = pd.concat([df1, df2, df3]) # Concatena vários dfs, coloca um embaixo 
 
 novo_df = pd.concat([df1, df2, df3], axis = 1) # Concatena vários dfs, coloca ao lado do outro
 
+list(dados['Tipo'].drop_duplicates()) # Obtendo uma lista dos valores de uma coluna sem os duplicados, distinct, valores diferentes, 
+nesse exemplo dados é o nome do dataframe, 'Tipo' é a coluna
+
 
 
 
