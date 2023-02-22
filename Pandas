@@ -161,6 +161,9 @@ nesse exemplo dados é o nome do dataframe, 'Tipo' é a coluna
 
 novo_dado['Tipo'].isin(residencial) # Checando se a coluna 'Tipo' possui os valores contidos na lista residencial, para cada valor contido Retorna True
 
+Para eu criar um novo dataframe contendo apenas os dados que eu desejo selecionar de determinada coluna, primeiro eu crio uma variável com os dados
+selecao = novo_dado['Tipo'].isin(residencial) # No caso residencial é uma lista com os valores que desejo selecionar, depois:
+dados_residencial = novo_dado[selecao] # Crio o novo dataframe fazendo uma seleção nele com os dados exatos que desejo
 
 
 
