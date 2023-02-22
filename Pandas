@@ -72,6 +72,8 @@ novo_df['createTimestamp'] = [i['date'].split(' ')[0] for i in novo_df.createTim
 df.sort_index(by='column_name', ascending=True, inplace = True, axis = 1) #Sorting columns, o argumento by no caso aqui seleciona ordenar por colunas,
 axis = 1 diz que é para ordenar também por nome das colunas
 
+df.sort_values(by = 'X', inplace = True) # Ordenando meu dataframe pela coluna 'X'
+
 drop_cols = ['columns', 'collumns2']
 df.drop(drop_cols, axis=1, inplace=True)#  is used to remove a row or a column from a dataframe which has a NaN or no values in it, o valor 1 representa que deseja excluir coluna
 
