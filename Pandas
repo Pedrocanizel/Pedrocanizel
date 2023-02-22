@@ -159,6 +159,7 @@ novo_df = pd.concat([df1, df2, df3], axis = 1) # Concatena vários dfs, coloca a
 list(dados['Tipo'].drop_duplicates()) # Obtendo uma lista dos valores de uma coluna sem os duplicados, distinct, valores diferentes, 
 nesse exemplo dados é o nome do dataframe, 'Tipo' é a coluna
 
+novo_dado['Tipo'].isin(residencial) # Checando se a coluna 'Tipo' possui os valores contidos na lista residencial, para cada valor contido Retorna True
 
 
 
