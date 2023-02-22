@@ -69,7 +69,7 @@ df[['columns', 'i_want', 'to_see']].groupby(['columns_name', 'column_2']).mean()
 
 novo_df['createTimestamp'] = [i['date'].split(' ')[0] for i in novo_df.createTimestamp] #getting the only date
 
-df.sort_index(by='column_name', ascending=True) #Sorting columns
+df.sort_index(by='column_name', ascending=True, inplace=True) #Sorting columns, o argumento by no caso aqui seleciona ordenar por colunas
 
 drop_cols = ['columns', 'collumns2']
 df.drop(drop_cols, axis=1, inplace=True)#  is used to remove a row or a column from a dataframe which has a NaN or no values in it, o valor 1 representa que deseja excluir coluna
