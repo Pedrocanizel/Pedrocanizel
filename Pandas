@@ -48,7 +48,9 @@ df['createTimestamp'][0] #Createtimestamp is the name of the column, 0 is the in
 
 df.isnull() #Identifying Missing Values Isnull
 
-df['Coluna'].isnull() # Retorna apenas onde os valores da coluna pedida for nulo
+df['Coluna'].isnull() # Retorna True apenas onde os valores da coluna pedida for nulo
+
+df[df['Coluna'].isnull()] # Retorna um df apenas apenas onde os valores da coluna pedida for nulo
 
 df.isna.any() #Isna function returns a dataframe filled with boolean values with true indicating missing values.
 
