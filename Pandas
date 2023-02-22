@@ -148,7 +148,9 @@ data = [1, 2, 3, 4, 5] ###Criando uma series
 s = pd.Series(data)
 s
 
-s = pd.Series(data = data, index = range(len(data))) # Criando um series e dando um índice pra ele
+s = pd.Series(data = data, index = range(len(data))) # Criando um series e dando um índice, index pra ele
+
+dados_residencial.index = range(dados_residencial.shape[0]) #criando um índice, index para o df
 
 index = ['linha' + ' ' + str(i) for i in range(5)] # Outra forma de criar um índice
 
