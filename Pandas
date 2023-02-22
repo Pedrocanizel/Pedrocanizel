@@ -186,6 +186,7 @@ selecao_3 = (dado3['Tipo'] == 'Casa') | (dado3['Tipo'] == 'Casa de Condomínio')
 de uma coluna por vez, primeiro faço assim, depois:
 n3 = dados3[selecao_3] # Aplico a selecao a uma variavel
 
+n4[n4['Area'] < 60] # Validando se os valores foram tratados corretamente, n4 é o nome do df, o que está dentro do colchetes é a condição
 
 
 
