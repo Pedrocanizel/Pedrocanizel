@@ -167,7 +167,7 @@ Para eu criar um novo dataframe contendo apenas os dados que eu desejo seleciona
 selecao = novo_dado['Tipo'].isin(residencial) # No caso residencial é uma lista com os valores que desejo selecionar, depois:
 dados_residencial = novo_dado[selecao] # Crio o novo dataframe fazendo uma seleção nele com os dados exatos que desejo
 
-dados_residencial.to_csv('dados/novocsv.csv') # Exportando, exporting a dafatrame to csv
+dados_residencial.to_csv('dados/novocsv.csv', sep = ';') # Exportando, exporting a dafatrame to csv
 
 
 
