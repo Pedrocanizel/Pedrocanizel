@@ -194,6 +194,7 @@ n4[n4['Area'] < 60] # Validando se os valores foram tratados corretamente, n4 é
 
 n4[(n4['Area'] < 60) & (n4['Area'] > 100)].sum() # Validando se os valores foram tratados corretamente, n4 é o nome do df, o que está dentro do colchetes é a condição
 
+df.dropna(subset = ['Coluna'], inplace = True) # Dropa todos os nulos da coluna pedida.
 
 
 
