@@ -182,6 +182,30 @@ dado3[selecao_ap] # Depois aplico a seleção ao dataframe
 dado3[selecao_ap].shape[0] # Contar, contagem quantidades de apartamentos que possuo
 
 
+selecao_3 = (dado3['Tipo'] == 'Casa') | (dado3['Tipo'] == 'Casa de Condomínio') | (dado3['Tipo'] == 'Casa de Vila') # Quando quero selecionar vários dados 
+de uma coluna por vez, primeiro faço assim, depois:
+n3 = dados3[selecao_3] # Aplico a selecao a uma variavel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
