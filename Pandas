@@ -216,3 +216,19 @@ dados.drop(['coluna1', 'coluna2'], axis = 1, inplace = True) # axis 1 = coluna, 
 series.value_counts() # Conta quantos de cada valor possui na series
 
 df['coluna'].value_counts() # Conta quando de cada possui
+
+
+ll = n4['Tipo'].unique() # Contando quantos tipos tem em uma coluna
+
+
+
+
+
+
+
+
+
+
+
+
+
