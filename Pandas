@@ -205,7 +205,7 @@ novo_df['coluna'] = novo_df['coluna'].round(2) # Arredondando para apenas 2 casa
 dado['tipo agregado'] = dado['tipo'].apply(lambda x: 'Casa' if x in lista else 'Apartamento')
 
 
-
+dados_aux = pd.DataFrame(dados[['coluna1', 'coluna2', 'coluna3']]) # Crinado um novo dataframe com base nas colunas que quero do df antigo
 
 
 
