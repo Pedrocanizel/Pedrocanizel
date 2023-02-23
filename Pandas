@@ -200,7 +200,7 @@ df.dropna(subset = ['Coluna'], inplace = True) # Dropa todos os nulos da coluna 
 dado4[dado4['Condominio'].isnull()].shape[0] #Contando valores nulos da coluna condimínio.
 
 
-
+novo_df['coluna'] = novo_df['coluna'].round(2) # Arredondando para apenas 2 casas decimais.
 
 
 
