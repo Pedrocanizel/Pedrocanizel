@@ -213,6 +213,6 @@ dados.drop(['coluna1', 'coluna2']) # Dropando 2 colunas de uma vez, mais de uma
 
 dados.drop(['coluna1', 'coluna2'], axis = 1, inplace = True) # axis 1 = coluna, axis 0 = linha 
 
-
+series.value_counts() # Conta quantos de cada valor possui na series
 
 
