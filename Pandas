@@ -209,9 +209,9 @@ dados_aux = pd.DataFrame(dados[['coluna1', 'coluna2', 'coluna3']]) # Crinado um 
 
 dados_aux.pop('coluna x') Deletando, dropando uma coluna.
 
+dados.drop(['coluna1', 'coluna2']) # Dropando 2 colunas de uma vez, mais de uma
 
-
-
+dados.drop(['coluna1', 'coluna2'], axis = 1, inplace = True) # axis 1 = coluna, axis 0 = linha 
 
 
 
