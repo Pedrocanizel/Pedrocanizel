@@ -224,7 +224,7 @@ n4['Tipo'].count() # Contando os não nulos do dataframe n4
 
 df3.rename(columns={0: "nova"}, inplace=True) # Renomeando colunas, renaming columns
 
-
+df['coluna_com_numeros'].aggregate(['min', 'max', 'sum']) # Trás algumas informações estatísticas que eu apontar
 
 
 
