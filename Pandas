@@ -239,7 +239,7 @@ dados['Idade'].max() # Busca o valor máximo da coluna idade
 
 dados['Sexo'].value_counts(normalize=True) # Calculando a porcentagem
 
-
+dados['Sexo'].value_counts(normalize=True) * 100 # Calculando a porcentagem já com a multiplicação por 100 para não ter numero com virgula
 
 
 
