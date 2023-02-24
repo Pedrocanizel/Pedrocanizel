@@ -220,7 +220,7 @@ df['coluna'].value_counts() # Conta quando de cada possui
 
 ll = n4['Tipo'].unique() # Contando quantos tipos tem em uma coluna
 
-
+n4['Tipo'].count() # Contando os não nulos do dataframe n4
 
 
 
