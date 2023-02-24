@@ -237,3 +237,16 @@ dados['Idade'].min() # Busca o valor mínimo da coluna idade
 
 dados['Idade'].max() # Busca o valor máximo da coluna idade
 
+dados['Sexo'].value_counts(normalize=True) # Calculando a porcentagem
+
+
+
+
+
+
+
+
+
+
+
+
