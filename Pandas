@@ -222,7 +222,7 @@ ll = n4['Tipo'].unique() # Contando quantos tipos tem em uma coluna
 
 n4['Tipo'].count() # Contando os não nulos do dataframe n4
 
-
+df3.rename(columns={0: "nova"}, inplace=True) # Renomeando colunas, renaming columns
 
 
 
