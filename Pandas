@@ -235,4 +235,5 @@ sorted(dados['Anos de Estudo'].unique()) # Ordenar uma lista de dados através d
 
 dados['Idade'].min() # Busca o valor mínimo da coluna idade
 
+dados['Idade'].max() # Busca o valor máximo da coluna idade
 
