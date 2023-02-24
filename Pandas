@@ -233,5 +233,6 @@ labels é o nome que você dá para a faixa.
 
 sorted(dados['Anos de Estudo'].unique()) # Ordenar uma lista de dados através do sorted
 
+dados['Idade'].min() # Busca o valor mínimo da coluna idade
 
 
