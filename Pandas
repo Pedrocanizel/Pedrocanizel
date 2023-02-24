@@ -231,7 +231,7 @@ labels = ['1 e 2 quartos', '3 e 4 quartos', '5 e 6 quartos', '7 quartos ou mais'
 quartos = pd.cut(dados['quartos'], classes, labels = labels) # Criando faixas de valor, cada valor que está na lista chamada clases, é o teto da faixa,
 labels é o nome que você dá para a faixa.
 
-
+sorted(dados['Anos de Estudo'].unique()) # Ordenar uma lista de dados através do sorted
 
 
 
