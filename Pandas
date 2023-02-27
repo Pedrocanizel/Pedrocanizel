@@ -278,6 +278,7 @@ df['coluna'].mean() # Calculando a média de uma coluna
 
 df.groupby(['Sexo'])['Renda'].mean() # Média com group by
 
+dataset.groupby('Sexo').mean().loc['H'] # Calculando a média de uma determinada linha
 
 
 
