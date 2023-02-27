@@ -9,7 +9,8 @@ probabilidade = binom.pmf(k, n, p) # k, n, p são valores obtidos através da f�
 print('%0.8f' % probabilidade) # casas depois da vírgula, configurando
 
 
-
+probabilidade = binom.pmf([5, 6, 7, 8, 9, 10], n, p).sum() # Calculando a probabilidade de um aluno acertar 5, 6, 7, 8, 9, 10 questões de 10 questões em uma prova
+com 3 alternativas no chute.
 
 
 
