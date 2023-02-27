@@ -245,7 +245,8 @@ df_quali.rename(index = {0: 'Masculino', 1: 'Feminino'}, inplace=True) # Renomea
 
 df_quali.rename_axis('Sexo', axis='columns', inplace=True) # Renomeando a coluna do índice
 
-
+sexo = {0: 'Masculino',
+        1: 'Feminino'}
 
 
 
