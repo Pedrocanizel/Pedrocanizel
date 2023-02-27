@@ -284,7 +284,7 @@ df = df.reset_index() # Ele pega a coluna que está sendo usada de índice, tran
 
 df.median() # Calculando a mediana
 
-
+df.mode() # Obtendo a moda do df
 
 
 
