@@ -292,3 +292,34 @@ df.renda.quantile([i/10 for i in range(1,10)]) # Calculando os decis
 
 df.renda.quantile([i/100 for i in range(1,100)]) # Calculando os percentis
 
+
+desvio_medio_absoluto = df['coluna'].mad() # Calcular desvio médio absuluto
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
