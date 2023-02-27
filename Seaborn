@@ -7,6 +7,13 @@ ax.set_ylabel('nome', fontsize=14)
 ax.set_xlabel('Metros', fontsize=14) # Criando o label do eixo X com fonte 14
 
 
+ax = sns.displot(dados.Altura,
+                 hist_kws = {'cumulative' : True},
+                 {kde_kws = {'cumuulative' : True}) # com hist kws e kde kws eu crio um gráfico cumulativo
+ax.figure.set_size_inches(12,6) # 12 é largura, 6 é altura
+ax.set_title('Distribuição de Frequências', fontsize=18) # Criando um título para o histograma de tamanho 18
+ax.set_ylabel('nome', fontsize=14)
+ax.set_xlabel('Metros', fontsize=14) # Criando o label do eixo X com fonte 14
 
 
 
