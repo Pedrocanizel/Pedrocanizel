@@ -5,6 +5,12 @@ from scipy.stats import binom
 combinacoes = comb(60, 6) # Exemplo de calculo de combinação da mega sena, combinação de 60 6 a 6.
 
 
+experimento binomial = n possibilidade de ensaios idênticos
+                       ensaios são independentes
+                       os resultados possíveis são apenas verdadeiro/falso, certo/errado, cara/coroa
+                       a probabilidade de sucesso é representada por p
+                       a possibilidade de fracasso(q) é representada pela fórmula q = 1 - p
+
 probabilidade = binom.pmf(k, n, p) # k, n, p são valores obtidos através da fórmula para distribuição binomial
 print('%0.8f' % probabilidade) # casas depois da vírgula, configurando
 
