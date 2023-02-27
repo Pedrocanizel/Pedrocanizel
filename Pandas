@@ -248,6 +248,25 @@ df_quali.rename_axis('Sexo', axis='columns', inplace=True) # Renomeando a coluna
 sexo = {0: 'Masculino',
         1: 'Feminino'}
 
+cor = {0: 'Branca',
+        1: 'Negra'}
+
+tabela_cruzada = pd.crosstab(dados.Sexo, dados.Cor) # Criar uma tabela cruzando dados que possuo
+tabela_cruzada.rename(index = sexo, inplace+True)
+tabela_cruzada.rename(columns = cor, inplace+True)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
