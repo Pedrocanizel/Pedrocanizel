@@ -262,7 +262,8 @@ tabela_cruzada = pd.crosstab(dados.Sexo, dados.Cor, normalize=True) * 100 # Cria
 
 tabela_cruzada = pd.crosstab(n4['Tipo'], n4['Bairro'], aggfunc = 'mean', values = n4['Valor']) Criando um crosstab e calculando a média de valor ao mesmo tempo.
 
-
+pd.cut(x = dados['quartos'], bins= classes, labels = labels, include_lowest=True) # Criando faixas de valor, cada valor que está na lista chamada clases, é o teto da faixa,
+labels é o nome que você dá para a faixa, o include lowest é para incluir o menor valor de cada faixa.
 
 
 
