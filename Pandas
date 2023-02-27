@@ -274,7 +274,7 @@ percentual = pd.value_counts(pd.cut(x = dados['quartos'], bins= classes, labels 
 pd.value_counts(pd.cut(x = dados['quartos'], bins= 15, labels = labels, include_lowest=True), sort=False) # Criando um cut com quantidade de classes definidas pela fórmula de 
 definição de classes feita com numpy. Caso eu queira ordenas pelas classes devo passar o sorte=False.
 
-
+df['coluna'].mean() # Calculando a média de uma coluna
 
 
 
