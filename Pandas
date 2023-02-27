@@ -286,7 +286,7 @@ df.median() # Calculando a mediana
 
 df.mode() # Obtendo a moda do df
 
-
+df.renda.quantile([0.25, 0.50, 0.75]) # Calculando os quartis, cada valor dentro da lista mostra onde quero dividir meus quartis.
 
 
 
