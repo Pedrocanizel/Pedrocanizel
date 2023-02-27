@@ -6,7 +6,7 @@ combinacoes = comb(60, 6) # Exemplo de calculo de combinação da mega sena, com
 
 
 probabilidade = binom.pmf(k, n, p) # k, n, p são valores obtidos através da fórmula para distribuição binomial
-
+print('%0.8f' % probabilidade) # casas depois da vírgula, configurando
 
 
 
