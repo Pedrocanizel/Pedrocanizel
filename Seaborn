@@ -3,6 +3,7 @@ import seaborn as sns
 ax = sns.displot(dados.Altura, kde = False) # displot eu crio um histograma, kde=False eu desativo o polígono que vem plotado por padrão, dados.Altura é a variável que quero ver.
 ax.figure.set_size_inches(12,6) # 12 é largura, 6 é altura
 ax.set_title('Distribuição de Frequências', fontsize=18) # Criando um título para o histograma de tamanho 18
+ax.set_ylabel('nome', fontsize=14)
 ax.set_xlabel('Metros', fontsize=14) # Criando o label do eixo X com fonte 14
 
 
