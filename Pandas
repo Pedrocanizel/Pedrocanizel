@@ -257,7 +257,7 @@ tabela_cruzada.rename(columns = cor, inplace+True)
 
 
 tabela_cruzada = pd.crosstab(dados.Sexo, dados.Cor, normalize=True) # Criar uma tabela cruzando dados que possuo, crosstab com porcentual
-
+tabela_cruzada = pd.crosstab(dados.Sexo, dados.Cor, normalize=True) * 100 # Criar uma tabela cruzando dados que possuo, crosstab com porcentual
 
 
 
