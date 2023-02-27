@@ -1,2 +1,30 @@
 from scipy.special import comb
 
+combinacoes = comb(60, 6) # Exemplo de calculo de combinação da mega sena, combinação de 60 6 a 6.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
