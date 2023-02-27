@@ -260,7 +260,7 @@ tabela_cruzada = pd.crosstab(dados.Sexo, dados.Cor, normalize=True) # Criar uma 
 tabela_cruzada = pd.crosstab(dados.Sexo, dados.Cor, normalize=True) * 100 # Criar uma tabela cruzando dados que possuo, crosstab com porcentual
 
 
-
+tabela_cruzada = pd.crosstab(n4['Tipo'], n4['Bairro'], aggfunc = 'mean', values = n4['Valor']) Criando um crosstab e calculando a média de valor ao mesmo tempo.
 
 
 
