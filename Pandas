@@ -276,7 +276,7 @@ definição de classes feita com numpy. Caso eu queira ordenas pelas classes dev
 
 df['coluna'].mean() # Calculando a média de uma coluna
 
-
+df.groupby(['Sexo'])['Renda'].mean() # Média com group by
 
 
 
