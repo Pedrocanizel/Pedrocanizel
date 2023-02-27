@@ -1,6 +1,7 @@
 from scipy.special import comb
 from scipy.stats import binom
 from scipy.stats import poisson
+from scipy.stats import norm
 
 
 combinacoes = comb(60, 6) # Exemplo de calculo de combinação da mega sena, combinação de 60 6 a 6.
@@ -31,7 +32,8 @@ probabilidade = ((e ** (-u)) * (u ** k)) / (np.math.factorial(k)) # Fórmula de 
 probabilidade = ((np.e ** (-media)) * (media ** k)) / (np.math.factorial(k)) 
 
 
-
+probabilidade = norm.cdf(z) # z é o valor encontrado pela fórmula da distribuição normal - > z = (x - media) / desvio_padrão # x é o valor que quero descobrir a
+probabilidade
 
 
 
