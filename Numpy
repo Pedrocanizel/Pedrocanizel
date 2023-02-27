@@ -34,7 +34,7 @@ print(array1[1][3] #printa o elemento que está na linha 1 coluna 3
 numero_classes = 1 + (10/3) * np.log10(n) # Para se calcular quanras classes devemos fazer caso não tenhamos as classes pré definidas, utilizamos essa fórmula,
 n aqui é a quantidade de linhas que possuímos na tabela, que pode ser obtido através de df.shape[0]
 
-
+np.srqt # raiz quadrada com numpy
 
 
 
