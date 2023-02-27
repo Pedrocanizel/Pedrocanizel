@@ -28,8 +28,11 @@ ax.figure.set_size_inches(12,6) # 12 é largura, 6 é altura
 ax.set_title('Distribuição de Frequências', fontsize=18) # Criando um título para o histograma de tamanho 18
 ax.set_xlabel('Metros', fontsize=14) # Criando o label do eixo X com fonte 14
 
-
-
+# Abaixo, criando um boxplot com query
+ax = sns.boxplot(x = 'Altura', data = dataframe_5.query('Altura < 1.55'), orient = 'h') # Criando um boxplot, x eu passo qual coluna quero ver, data eu passo qual dataframe está meus dados, orient 'h' é para fazer o boxplot na horizontal.
+ax.figure.set_size_inches(12,6) # 12 é largura, 6 é altura
+ax.set_title('Distribuição de Frequências', fontsize=18) # Criando um título para o histograma de tamanho 18
+ax.set_xlabel('Metros', fontsize=14) # Criando o label do eixo X com fonte 14
 
 
 
