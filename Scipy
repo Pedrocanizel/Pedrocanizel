@@ -25,7 +25,8 @@ e = numpy.e = uma contante, valor aproximado 2.718......
 u = número médio de ocorrências em um determinado intervalo de tempo
 k = numero de sucessos no intervalo desejado
 
-
+probabilidade = ((e ** (-u)) * (u ** k)) / (np.math.factorial(k)) # Fórmula de poisson 
+probabilidade = ((np.e ** (-media)) * (media ** k)) / (np.math.factorial(k)) 
 
 
 
