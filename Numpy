@@ -37,6 +37,7 @@ n aqui é a quantidade de linhas que possuímos na tabela, que pode ser obtido a
 np.srqt(o_que_eu_quero) # raiz quadrada com numpy, posso passar até uma coluna do df como argumento
 
 
+np.math.factorial(k) # Calcular fatorial 
 
 
 
