@@ -19,7 +19,11 @@ probabilidade = binom.pmf([5, 6, 7, 8, 9, 10], n, p).sum() # Calculando a probab
 com 3 alternativas no chute.
 
 
+Poisson
 
+e = numpy.e = uma contante, valor aproximado 2.718......
+u = número médio de ocorrências em um determinado intervalo de tempo
+k = numero de sucessos no intervalo desejado
 
 
 
