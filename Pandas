@@ -297,9 +297,9 @@ desvio_medio_absoluto = df['coluna'].mad() # Calcular desvio médio absuluto
 
 df['coluna'].pow(2) # elevar ao quadrado
 
-df['coluna'].var() # Calculando a variância.
+df['coluna'].var() # Calculando a variância amostral
 
-df['coluna'].std() # Calculando desvio padrão
+df['coluna'].std() # Calculando desvio padrão amostral
 
 
 
