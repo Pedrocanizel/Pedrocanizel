@@ -48,3 +48,5 @@ np.arange(10) # Cria um array de 10 valores de 0 a 9
 %time for _ in range(100): np_array *= 2 # Avaliando quanto tempo está levando meu comando.
 
 %time for _ in range(100): [x * 2 for x in py_list]
+
+Posso fazer cálculos com arrays numpy, por exemplo 1000 - lista, o resultado será uma variável com o resultado da subtração
