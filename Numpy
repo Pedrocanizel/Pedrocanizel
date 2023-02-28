@@ -58,7 +58,7 @@ dados.size # Retorna o nuemro de elementos do array
 
 ndarray.T # Transpõe o array, ou seja, transforma linha em coluna e vice versa
 
-
+dados.transpose() # é igual o ndarray.T
 
 
 
