@@ -302,7 +302,7 @@ df['coluna'].var() # Calculando a variância amostral
 df['coluna'].std() # Calculando desvio padrão amostral
 
 
-dados.Renda.sample(n = 100, random_state = 101) # Criando uma amostra de 100 dados, de forma totalmente aleatória(indicado pelo 101), seleção de amostra
+amostra = dados.Renda.sample(n = 100, random_state = 101) # Criando uma amostra de 100 dados, de forma totalmente aleatória(indicado pelo 101), seleção de amostra
 
 
 
