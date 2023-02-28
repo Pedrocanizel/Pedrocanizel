@@ -62,7 +62,7 @@ dados.transpose() # é igual o ndarray.T
 
 ndarray.tolist() # transforma um array numpy em lista do python
 
-
+lista.reshape((5, 2)) # Transforma uma lista em uma array com 5 linhas e 2 colunas
 
 
 
