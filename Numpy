@@ -41,7 +41,9 @@ np.math.factorial(k) # Calcular fatorial
 
 txt = np.loadtxt('path', dtype= int) # Lendo um arquivo txt e dizendo que o tipo do dado é int
 
+np.array([123, 456, 789]) # Criando um array numpy
 
+np.arange(10) # Cria um array de 10 valores de 0 a 9
 
 
 
