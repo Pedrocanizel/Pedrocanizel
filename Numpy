@@ -39,7 +39,7 @@ np.srqt(o_que_eu_quero) # raiz quadrada com numpy, posso passar até uma coluna 
 
 np.math.factorial(k) # Calcular fatorial 
 
-
+txt = np.loadtxt('path')
 
 
 
