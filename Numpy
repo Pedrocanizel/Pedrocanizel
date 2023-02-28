@@ -54,7 +54,7 @@ Posso fazer cálculos com arrays numpy, por exemplo 1000 - lista, o resultado se
 
 dados[:, dados[1] > 2000] # Fazendo slice em uma linha do array, onde o valor dos dados for maior q 2000
 
-
+dados.size # Retorna o nuemro de elementos do array
 
 
 
