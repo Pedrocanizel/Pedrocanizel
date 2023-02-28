@@ -56,7 +56,7 @@ dados[:, dados[1] > 2000] # Fazendo slice em uma linha do array, onde o valor do
 
 dados.size # Retorna o nuemro de elementos do array
 
-
+ndarray.T # Transpõe o array, ou seja, transforma linha em coluna e vice versa
 
 
 
