@@ -34,7 +34,8 @@ ax.figure.set_size_inches(12,6) # 12 é largura, 6 é altura
 ax.set_title('Distribuição de Frequências', fontsize=18) # Criando um título para o histograma de tamanho 18
 ax.set_xlabel('Metros', fontsize=14) # Criando o label do eixo X com fonte 14
 
-sns.displot(tmdb.vote_average) # Criando um histograma da média de votos
+sns.displot(tmdb.vote_average, norm_hist = False, kde= False) # Criando um histograma da média de votos, norm_hist e kde false são para eu ver os valores 
+e não as densidades
 
 
 
