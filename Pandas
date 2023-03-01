@@ -304,7 +304,7 @@ df['coluna'].std() # Calculando desvio padrão amostral
 
 amostra = dados.Renda.sample(n = 100, random_state = 101) # Criando uma amostra de 100 dados, de forma totalmente aleatória(indicado pelo 101), seleção de amostra
 
-
+notas.groupby('id_filme').mean()['notas'] # Fazendo um group by e tirando média de uma coluina ao mesmo tempo
 
 
 
