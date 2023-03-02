@@ -308,7 +308,7 @@ notas.groupby('id_filme').mean()['notas'] # Fazendo um group by e tirando média
 
 df['colunas']isnull().sum() # Contando quantos nulos possui
 
-
+df.query("coluna > 0").coluna.dropna())
 
 
 
