@@ -306,7 +306,7 @@ amostra = dados.Renda.sample(n = 100, random_state = 101) # Criando uma amostra 
 
 notas.groupby('id_filme').mean()['notas'] # Fazendo um group by e tirando média de uma coluina ao mesmo tempo
 
-
+df['colunas']isnull().sum() # Contando quantos nulos possui
 
 
 
