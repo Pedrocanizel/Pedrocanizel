@@ -310,7 +310,7 @@ df['colunas']isnull().sum() # Contando quantos nulos possui
 
 df.query("coluna > 0").coluna.dropna()
 
-df.query("coluna > 0").coluna.dropna().quantile(0.8) # Buscando os 20% maiores valores
+df.query("coluna > 0").coluna.dropna().quantile(0.8) # Buscando a separação dos 20% maiores valores
 
 
 
