@@ -147,3 +147,7 @@ docker logout
 #######################
 
 docker run --name pg14 -e POSTGRES_PASSWORD=postgres --detach --publish 5432:5432 postgres:14 
+
+docker run -it --entrypoint /bin/bash <container_name> # Acessando o container internamente
+
+docker run -it --entrypoint /bin/bash <container_name
