@@ -2,6 +2,7 @@ from scipy.special import comb
 from scipy.stats import binom
 from scipy.stats import poisson
 from scipy.stats import norm
+from scipy.stats import normaltest
 
 
 combinacoes = comb(60, 6) # Exemplo de calculo de combinação da mega sena, combinação de 60 6 a 6.
