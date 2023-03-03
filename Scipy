@@ -36,7 +36,8 @@ probabilidade = ((np.e ** (-media)) * (media ** k)) / (np.math.factorial(k))
 probabilidade = norm.cdf(z) # z é o valor encontrado pela fórmula da distribuição normal - > z = (x - media) / desvio_padrão # x é o valor que quero descobrir a
 probabilidade
 
-stat_teste, p_valor = normaltest(dataframe.coluna) # realizando o teste de normalidade na coluna "coluna"
+stat_teste, p_valor = normaltest(dataframe.coluna) # realizando o teste de normalidade na coluna "coluna".
+                                                   # Se o resultado do p for menos do que 0.05 a distribuição não é normal, ou seja, rejeita o h0
 
 
 
