@@ -1,0 +1,2 @@
+ALTER TABLE public.cadastro_usuario ADD cadastro_criado_em varchar NULL;
+
