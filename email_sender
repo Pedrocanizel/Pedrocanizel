@@ -1,0 +1,22 @@
+def send_email(url_workspace, users, admins, solicitante):     username = 'envio.info.databricks@gmail.com'
+    password = 'lhvivcxujxomsyqk'
+    mail_from = username
+    mail_to = solicitante
+    mail_subject = "Test Subject"
+    mail_body = f"""<h1> ACESSOS SANDBOX CERC </h1><p>Segue os acessos para o SANDBOX CERC <p><h3>URL DATABRICKS</h3><h4>{url_workspace} <h4><br><h4>Administrador(es)<h4>"""
+    for i in admins:
+        mail_body = mail_body + '<p>{0}<p>'.format(i)
+    mail_body = mail_body + """<br><h4>Usuarios<h4>
+        """
+    for i in users:
+        mail_body = mail_body + '<p>{0}<p>'.format(i)
+    mimemsg = MIMEMultipart()
+    mimemsg['From']=mail_from
+    mimemsg['To']=mail_to
+    mimemsg['Subject']=mail_subject
+    mimemsg.attach(MIMEText(mail_body, 'html'))
+    connection = smtplib.SMTP(host='smtp.gmail.com', port=587)
+    connection.starttls()
+    connection.login(username,password)
+    connection.send_message(mimemsg)
+    connection.quit()
