@@ -1,2 +1,5 @@
 ALTER TABLE public.cadastro_usuario ADD cadastro_criado_em varchar NULL;
 
+ALTER TABLE public.permissions_user ADD id_user integer NOT NULL GENERATED ALWAYS AS IDENTITY;
+ALTER TABLE public.permissions_user ADD email_user varchar NULL;
+ALTER TABLE public.permissions_user ADD permission_type varchar NULL;
