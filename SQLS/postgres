@@ -12,3 +12,5 @@ CREATE TABLE public.hash_cadastro (
 	chave_hash varchar NULL,
 	hash_criado_em varchar NULL
 );
+
+ALTER TABLE public.hash_login RENAME TO armazenador_hash;
