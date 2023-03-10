@@ -314,7 +314,7 @@ df.query("coluna > 0").coluna.dropna().quantile(0.8) # Buscando a separação do
 
 pa_pf["discount"] = pa_pf["discount"].str.replace(',','.').astype(float) # transformando, replace, substituindo string por float, virgula por ponto
 
-
+amostra[['coluna', 'coluna2', 'coluna3', 'coluna4']].cov() # Fazendo a covariância amostral no dataframe
 
 
 
