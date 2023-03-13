@@ -330,7 +330,7 @@ df - pd.DataFrame(np.arrange(10000).reshape(100, 100)) # criando um df a partir 
 
 pd.set_option("display.max_rows", 1000) # Configurando para poder visualizar 1000 colunas sem cortar
  
-
+pd.reset_option("display.max_rows") # Resetando para configuraçpão inicial
 
 
 
