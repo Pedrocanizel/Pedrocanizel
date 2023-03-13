@@ -317,7 +317,7 @@ pa_pf["discount"] = pa_pf["discount"].str.replace(',','.').astype(float) # trans
 amostra[['coluna', 'coluna2', 'coluna3', 'coluna4']].cov() # Fazendo a covariância amostral no dataframe
 
 
-
+dataset[['y', 'x']].corr() # Calculando a correlação entre x e y
 
 
 
