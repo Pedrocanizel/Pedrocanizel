@@ -334,7 +334,7 @@ pd.reset_option("display.max_rows") # Resetando para configuraçpão inicial
 
 pd.read_json(path_or_buf=data_json, orient='index') # Nos permite mudar qual chave é usada como índice ou qual usada como nome de coluna, por padrão o orient='columns'
 
-
+pd.read_excel(io = "arquivo.xlsx", sheet_name="nome_da_aba", usecols="C:E", header=2, index_col=[0, 1], name=['valor', 'tipo', 'bairro'])
 
 
 
