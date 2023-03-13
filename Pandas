@@ -332,7 +332,7 @@ pd.set_option("display.max_rows", 1000) # Configurando para poder visualizar 100
  
 pd.reset_option("display.max_rows") # Resetando para configuraçpão inicial
 
-
+pd.read_json(orient='index') # Nos permite mudar qual chave é usada como índice ou qual usada como nome de coluna, por padrão o orient='columns'
 
 
 
