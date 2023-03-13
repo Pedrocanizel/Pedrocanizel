@@ -336,7 +336,7 @@ pd.read_json(path_or_buf=data_json, orient='index') # Nos permite mudar qual cha
 
 pd.read_excel(io = "arquivo.xlsx", sheet_name="nome_da_aba", usecols="C:E", header=2, index_col=[0, 1], names=['valor', 'tipo', 'bairro'])
 
-
+pd.json_normalize() # ver doc
 
 
 
