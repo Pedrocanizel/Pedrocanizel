@@ -326,7 +326,7 @@ tamanho do display
 
 pd.describe_option() # Mostras as opções que posso configurar.
 
-
+df - pd.DataFrame(np.arrange(10000).reshape(100, 100)) # criando um df a partir do numpy
 
 
 
