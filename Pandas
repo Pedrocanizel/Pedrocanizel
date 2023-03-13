@@ -338,7 +338,9 @@ pd.read_excel(io = "arquivo.xlsx", sheet_name="nome_da_aba", usecols="C:E", head
 
 pd.json_normalize() # ver doc
 
-
+series.str() # Trabalhando sobre as series do pandas, ou sobre uma coluna
+series.str[1:-1] # Fazendo slice
+series.str[1:-1].str.replace("'", "").str.spli(", ") # Substiruindo aspas simples por nada e sepando por vírgula + espaço
 
 
 
