@@ -9,11 +9,11 @@ plt.title('Título que quero') # Adicionando titulo no gráfico
 
 fig = plt.figure(gigsize=(15,8)) # Criando uma variável para salvar o tamanho das figuras
 eixo = fig.add_axes([0, 0, 1, 1]) # Adicionando eixos na figura.
-eixo.plot(df['data'], df['temperatura]) # Plotando o gráfico com as configurações que eixo recebeu
-eixo.set_title('Título', fontsize=15)
-eixo.set_ylabel('Título do eixo y', fontsize=15)
-eixo.set_xlabel('Título do eixo x', fontsize=15)
-eixo.legend(['temperatura'], loc = 'lower right', fontsize=15)
+eixo.plot(df['data'], df['temperatura], color = 'green') # Plotando o gráfico com as configurações que eixo recebeu e colocando ele na cor verde
+eixo.set_title('Título', fontsize=15) # Criando um título com fonte 15
+eixo.set_ylabel('Título do eixo y', fontsize=15) # Criando título do eixo y
+eixo.set_xlabel('Título do eixo x', fontsize=15) # Criando título do eixo y
+eixo.legend(['temperatura'], loc = 'lower right', fontsize=15) # Criando legenda, colocando ela no canto inferior direito, e deixando fonte 15
 
 
 
