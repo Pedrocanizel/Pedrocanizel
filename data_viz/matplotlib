@@ -9,7 +9,7 @@ plt.title('Título que quero') # Adicionando titulo no gráfico
 
 fig = plt.figure(gigsize=(15,8)) # Criando uma variável para salvar o tamanho das figuras
 eixo = fig.add_axes([0, 0, 1, 1]) # Adicionando eixos na figura.
-
+eixo.plot(df['data'], df['temperatura]) # Plotando o gráfico com as configurações que eixo recebeu
 
 
 
