@@ -8,7 +8,7 @@ viés: se aplica a flexibilidad do modelo quando um modelo é mais flexível ou 
 
 variância: diz o quão generalista nosso modelo é, em relação ao dados de teste, quanto erro meu modelo produz, quanto mais erro meu modelo possui, maior a variância
 
-
+O melhor modelo de todos é o que possui pouco viés e pouca variância
 
 
 
