@@ -1,3 +1,5 @@
+glcoud auth login
+
 TAG CONTAINER--> docker tag IMAGE_ID LOCATION-docker.pkg.dev/PROJECT-ID/REPOSITORY/IMAGE
 
 --> docker push LOCATION-docker.pkg.dev/PROJECT-ID/REPOSITORY/IMAGE
