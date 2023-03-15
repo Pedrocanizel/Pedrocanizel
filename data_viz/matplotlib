@@ -5,7 +5,7 @@ plt.plot(df['data'], df['temperatura]) # Criando um gráfico de linha com data n
 
 plt.figure(figsize=(15,8)) # Definindo o tamanho da imagem
 plt.plot(df['data'], df['temperatura]) # Criando um gráfico de linha com data no eixo X e temperatura no eixo Y # Criando um gráfico de linha
-
+plt.title('Título que quero') # Adicionando titulo no gráfico
 
 
 
