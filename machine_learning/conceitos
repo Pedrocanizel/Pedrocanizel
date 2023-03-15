@@ -3,3 +3,17 @@ under fitted
 overfitted
 
 classificação ou regressão?
+
+viés: se aplica a flexibilidad do modelo quando um modelo é mais flexível ou seja, passa bem perto dos dados de treino, ele é considerado um modelo com baixo viés, 
+
+variância: diz o quão generalista nosso modelo é, em relação ao dados de teste, quanto erro meu modelo produz
+
+
+
+
+
+
+
+
+
+
