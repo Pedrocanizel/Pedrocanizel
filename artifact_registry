@@ -1,3 +1,7 @@
 TAG CONTAINER--> docker tag IMAGE_ID LOCATION-docker.pkg.dev/PROJECT-ID/REPOSITORY/IMAGE
 
 --> docker push LOCATION-docker.pkg.dev/PROJECT-ID/REPOSITORY/IMAGE
+
+docker tag fe36d7f45210 us-central1-docker.pkg.dev/bit-dev-376620/bit-gcp-repo/img_gerar_hash
+
+docker push us-central1-docker.pkg.dev/bit-dev-376620/bit-gcp-repo/img_gerar_hash
