@@ -17,7 +17,7 @@ eixo.set_xlim(datetime.datetime(2014,1,1), datetime.datetime(2015,1,1)) # Limita
 eixo.set_ylabel('Título do eixo y', fontsize=15) # Criando título do eixo y
 eixo.set_xlabel('Título do eixo x', fontsize=15) # Criando título do eixo y
 eixo.legend(['temperatura'], loc = 'lower right', fontsize=15) # Criando legenda, colocando ela no canto inferior direito, e deixando fonte 15
-
+eixo.grid(True) # Adicionando grade no meu gráfico
 
 fig = plt.figure(gigsize=(15,8)) # Criando uma variável para salvar o tamanho das figuras
 eixo = fig.add_axes([0, 0, 1, 1]) # Adicionando eixos na figura.
