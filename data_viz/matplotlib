@@ -14,6 +14,7 @@ eixo = fig.add_axes([0, 0, 1, 1]) # Adicionando eixos na figura.
 eixo.plot(df['data'], df['temperatura], color = 'green', lw=4) # Plotando o gráfico com as configurações que eixo recebeu e colocando ele na cor verde, alterando a espessura da linha do gráfico para 4
 eixo.set_title('Título', fontsize=15, pad=20) # Criando um título com fonte 15, pad espassa o título do gráfico
 eixo.set_xlim(datetime.datetime(2014,1,1), datetime.datetime(2015,1,1)) # Limitando minha visualização para apenas um range de tempo no gráfico, nao esquecer de import datetiime, o numero do meio é o mês
+eixo.set_ylim(270, 320) # Configurando os limites do eixo y
 eixo.set_ylabel('Título do eixo y', fontsize=15) # Criando título do eixo y
 eixo.set_xlabel('Título do eixo x', fontsize=15) # Criando título do eixo y
 eixo.legend(['temperatura'], loc = 'lower right', fontsize=15) # Criando legenda, colocando ela no canto inferior direito, e deixando fonte 15
