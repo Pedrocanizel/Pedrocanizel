@@ -32,8 +32,9 @@ eixo.legend(['temperatura'], loc = 'lower right', fontsize=15) # Criando legenda
 eixo.axhline(max(df['temperatura']), color='k', linestyle='--') # Adicionando uma barra horizontal maxima 
 eixo.axhline(min(df['temperatura']), color='k', linestyle='--')  # Adicionando uma barra horizontal minima
 
-
-
+x1 = df['data']df['temperatura'].idxmax()
+y1 = max(df['temperatura'])
+eixo.annotate("Máximo", xy= (x1, y1)), fontsize=20 # Criando uma anotação no gráfico com base nos locais indicados por x1 e y1
 
 
 
