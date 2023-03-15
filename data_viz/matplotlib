@@ -1,3 +1,4 @@
 import matplotlib.pyplot as plt
 %matplotlib inline # Fazer isso no jjupyter notebook para imprmir os gráficos automaticamente
 
+plt.plot(df['data'], df['temperatura]) # Criando um gráfico de linha com data no eixo X e temperatura no eixo Y
