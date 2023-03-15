@@ -1,3 +1,5 @@
+PANDAS PROFILING
+
 eventos = pd.read_csv('/content/df_event.csv', sep=';')
 
 eventos.head()
