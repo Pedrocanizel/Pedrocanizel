@@ -1,0 +1,3 @@
+import matplotlib.pyplot as plt
+%matplotlib inline # Fazer isso no jjupyter notebook para imprmir os gráficos automaticamente
+
