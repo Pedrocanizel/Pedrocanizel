@@ -13,7 +13,7 @@ eixo.plot(df['data'], df['temperatura]) # Plotando o gráfico com as configuraç
 eixo.set_title('Título', fontsize=15)
 eixo.set_ylabel('Título do eixo y', fontsize=15)
 eixo.set_xlabel('Título do eixo x', fontsize=15)
-
+eixo.legend(['temperatura'], loc = 'lower right', fontsize=15)
 
 
 
