@@ -3,3 +3,27 @@ From sklearn.datasets import make_regression # Esse métodoo nos permite criar u
 É basicamente tentar encontrar uma reta que melhor descreve o comportamento dos dados
 
 A distancia da minha reta com os meus dados é a minha taxa de erro.
+
+x, y = make_regression(n_samples=200, n_features=1, noise=30) # n_samples eu informoo quantos dados eu quero q a função gere pra mim, n_features=1 diz quantas 
+variáveis eu quero pegar no caso aqui, estou pegando apenas a variável x,  noise é o ruído, se eu informo zero, eu crio uma reta de regressão linear perfeita,
+quanto mais ruiso eu colocar mais diferente de uma reta será, dados mais espalhados.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
