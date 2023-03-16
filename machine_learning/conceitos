@@ -14,7 +14,7 @@ o Gradiente descendente tentar ajustar os valors de m e de b da equação de ret
 em uma regressão linear por exemplo
 
 coeficiente de detrminação r² : você calcula somando o quadrado dos erros do modelo, os erros do modelo são as distâncias entre a reta gerada pela regressão linear
-e os pontos do gráfico
+e os pontos do gráfico, é a mesma coisa q calcular a variância
 
 
 
