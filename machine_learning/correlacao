@@ -4,7 +4,7 @@ até mais 1 que é uma correlação perfeita positiva
 Nem sempre é interessante utilizar nos nossos modelos de machine learning 2 variáveis que possuem uma forte correlação, além dos dados reforçarem
 o aprendizado por utilizar 2 variaveis que representam praticamente a mesma coisa, ele da uma informação repetida.
 
-
+df.corr(method='pearson')
 
 
 
