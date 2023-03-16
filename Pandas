@@ -321,6 +321,8 @@ amostra[['coluna', 'coluna2', 'coluna3', 'coluna4']].cov() # Fazendo a covariân
 
 dataset[['y', 'x']].corr() # Calculando a correlação entre x e y
 
+df.corr(method='pearson') # Calculando a correlação de pearson
+
 pd.get_option("display.max_rows") # Visualizo a quantidade de linhas que meu dataframe está geando de visualização
 
 pd.get_option("display.max_columns") # Visualizo a quantidade de colunas que meu dataframe está geando de visualização, default=0 para ele mostrar confirme o 
