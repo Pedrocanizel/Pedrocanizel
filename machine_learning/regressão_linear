@@ -1,7 +1,11 @@
-From sklearn.datasets import make_regression # Esse métodoo nos permite criar uma linha de regressão linear com base em dados fictícios 
+from sklearn.datasets import make_regression # Esse métodoo nos permite criar uma linha de regressão linear com base em dados fictícios 
+
 from sklearn.linear_model import LinearRegression # O parâmetro fit_intercept calcula o coeficiente linear, o parâmetro normalize, normaliza nossos dados do eixo x antes de rodar, 
 o parâmetro copy_x por padrão vem True e isso que dizer que ele não vai sobrescrever nossos valores de X, se eu quiser que sobrescreva, colocar False, 
 o parâmetro n_jons vc configura quantos nucleos do processador você quer que sua maquina utilize pra rodar o modelo.
+
+from sklearn.model_selection import train_test_split
+
 É basicamente tentar encontrar uma reta que melhor descreve o comportamento dos dados
 
 A distancia da minha reta com os meus dados é a minha taxa de erro.
