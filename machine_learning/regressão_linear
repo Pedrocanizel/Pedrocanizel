@@ -38,7 +38,8 @@ que 30% dos meus dados serão dados de teste
 
 len(x_treino) # Caso eu queira saber o tamanho da minha amostra de treino ou teste posso fazer o len.
 
-modelo.fit(x_treino, y_treino) # Criando um modelo apenas com os valores de treino
+modelo.fit(x_treino, y_treino) # Criando um modelo apenas com os valores de treino, observe que normalmente se faz o fit com valores de treino para depois fazer o score
+com os dados de teste.
 
 resultado = modelo.score(x_teste, y_teste) # Após eu ter treinado meu modelo com os dados de treino(modelo.fit) eu posso calcular o score, ou seja, calcular o valor
 de determinação de r², quanto mais próximo de 1 melhor, quanto mais próximo de zero pior, por exemplo, um resultado de r² de 0.87 diz que ele é 87% melhor do que
