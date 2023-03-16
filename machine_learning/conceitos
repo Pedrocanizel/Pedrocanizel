@@ -10,7 +10,7 @@ variância: diz o quão generalista nosso modelo é, em relação ao dados de te
 
 O melhor modelo de todos é o que possui pouco viés e pouca variância
 
-o Gradiente descendente tentar ajustar os valors de m e de b da equação de reta y = mx * b para tentar achar de forma inteligente a reta que melhor representa os dados
+o Gradiente descendente tentar ajustar os valors de m e de b da equação de reta y = mx + b para tentar achar de forma inteligente a reta que melhor representa os dados
 em uma regressão linear por exemplo
 
 
