@@ -12,6 +12,9 @@ quanto mais ruiso eu colocar mais diferente de uma reta será, dados mais espalh
 plt.scatter(x, y)
 plt.show()
 
+modelo = LinearRegression() # Criando o modelo
+modelo.fit(x, y) # Meu modelo recebe os valores x e y que foram gerados neste exemplo acima pela função make_regression, mas x e y poderiam ser uma lista de valores
+
 
 
 
