@@ -17,7 +17,7 @@ modelo.fit(x, y) # Meu modelo recebe os valores x e y que foram gerados neste ex
 modelo.intercept_ # Acessando o coeficiente linear 
 modelo.coef_ # Acessando o valor do coeficiente angular da reta do modelo
 
-# Agora que eu possuo os dados da reta posso criar uma função que mostra essa reta pra mim
+# Agora que eu possuo os dados da reta posso criar uma função que mostra essa reta pra mim em um gráfico
 plt.scatter(x, y)
 xreg = np.arrange(-3, -3, 1) # Esses valores passados no arange dizem sobre a variação dos meus dados no eixo X, nesse caso meus dados vão de -3 a 3 variando de 1 em 1
 plt.plot(xreg, 65.86*xreg-0.85, color = 'red') # Gráfico de regressão, o 65.86 é o resultado do coeficiente angular(modelo.coef_), -0.85 é o valor do coeficiente
