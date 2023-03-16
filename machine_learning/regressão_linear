@@ -12,6 +12,7 @@ A distancia da minha reta com os meus dados é a minha taxa de erro.
 
 x = df['coluna'] # Uma forma simples de pegar um valor para servir de modelo para teste e treino é colocar uma coluna do dataframe em uma variável
 y = df['coluna'] # Uma forma simples de pegar um valor para servir de modelo para teste e treino é colocar uma coluna do dataframe em uma variável
+x = df.drop('coluna', axis=1) # Uma forma criar valor para servir de base para o eixo x, dropando apenas a coluna que está no eixo y
 
 x, y = make_regression(n_samples=200, n_features=1, noise=30) # n_samples eu informoo quantos dados eu quero q a função gere pra mim, n_features=1 diz quantas 
 variáveis eu quero pegar no caso aqui, estou pegando apenas a variável x,  noise é o ruído, se eu informo zero, eu crio uma reta de regressão linear perfeita,
