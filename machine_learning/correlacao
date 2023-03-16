@@ -6,7 +6,11 @@ o aprendizado por utilizar 2 variaveis que representam praticamente a mesma cois
 
 df.corr(method='pearson')
 
+# Abaixo criando um mapa de calor para ber a correlação dos dados
 
+plt.figure(figsize(10,10))
+sns.heatmap(dados.corr())
+plt.show() 
 
 
 
