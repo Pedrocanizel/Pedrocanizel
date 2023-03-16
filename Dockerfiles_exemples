@@ -8,3 +8,15 @@ COPY /manage.py /app
 COPY /db.sqlite3 /app
 EXPOSE 8000
 CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+
+
+
+
+
+# pull the official base imageFROM python:3.10.10-slim-buster
+# set work directoryWORKDIR /usr/src/app
+# install dependenciesRUN pip install --upgrade pip
+COPY ./requirements.txt /usr/src/app
+RUN pip install -r requirements.txt
+# copy projectCOPY . /usr/src/app
+EXPOSE 8007# run applicationCMD ["python", "manage.py", "runserver", "0.0.0.0:8007"]
