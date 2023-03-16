@@ -31,7 +31,7 @@ plt.show()
 x_treino, x_teste, y_treino, y_teste = train_test_split(x, y, test_size=0.3) # Dividindo meus dados em dados de treino e dados de teste, 0.30 no test_size significa 
 que 30% dos meus dados serão dados de teste
 
-
+len(x_treino) # Caso eu queira saber o tamanho da minha amostra de treino ou teste posso fazer o len.
 
 
 
