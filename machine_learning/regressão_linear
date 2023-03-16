@@ -35,7 +35,8 @@ len(x_treino) # Caso eu queira saber o tamanho da minha amostra de treino ou tes
 
 modelo.fit(x_treino, y_treino) # Criando um modelo apenas com os valores de treino
 
-resultado = modelo.score(x_teste, y_teste)
+resultado = modelo.score(x_teste, y_teste) # Após eu ter treinado meu modelo com os dados de treino(modelo.fit) eu posso calcular o score, ou seja, calcular o valor
+de determinação de r²
 
 
 
