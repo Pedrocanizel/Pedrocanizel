@@ -37,7 +37,7 @@ modelo.fit(x_treino, y_treino) # Criando um modelo apenas com os valores de trei
 
 resultado = modelo.score(x_teste, y_teste) # Após eu ter treinado meu modelo com os dados de treino(modelo.fit) eu posso calcular o score, ou seja, calcular o valor
 de determinação de r², quanto mais próximo de 1 melhor, quanto mais próximo de zero pior, por exemplo, um resultado de r² de 0.87 diz que ele é 87% melhor do que
-um modelo muito fraco.
+um modelo muito fraco, ou, posso dizer que meu modelo explica 87% da variância dos dados.
 
 
 
