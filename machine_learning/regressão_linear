@@ -14,7 +14,8 @@ plt.show()
 
 modelo = LinearRegression() # Criando o modelo
 modelo.fit(x, y) # Meu modelo recebe os valores x e y que foram gerados neste exemplo acima pela função make_regression, mas x e y poderiam ser uma lista de valores
-
+modelo.intercept_ # Acessando o coeficiente linear 
+modelo.coef_ # Acessando o valor do coeficiente angular da reta do modelo
 
 
 
