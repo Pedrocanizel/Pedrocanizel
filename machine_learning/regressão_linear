@@ -33,8 +33,9 @@ plt.plot(xreg, 65.86*xreg-0.85, color = 'red') # Gráfico de regressão, o 65.86
 linear(modelo.intercept_), xreg é o valor de x da equação de reta y = mx + b
 plt.show()
 
-x_treino, x_teste, y_treino, y_teste = train_test_split(x, y, test_size=0.3) # Dividindo meus dados em dados de treino e dados de teste, 0.30 no test_size significa 
-que 30% dos meus dados serão dados de teste
+x_treino, x_teste, y_treino, y_teste = train_test_split(x, y, test_size=0.3, random_state=n) # Dividindo meus dados em dados de treino e dados de teste, 0.30 no test_size significa 
+que 30% dos meus dados serão dados de teste, caso eu quiser fazer a minha divisão dos dados se manter sempre a mesma, eu incluo o argumento random_state, o valor que eu 
+passo nele pode ser qualquer um, sempre que eu puser o mesmo valor, o resultado será igual.
 
 len(x_treino) # Caso eu queira saber o tamanho da minha amostra de treino ou teste posso fazer o len.
 
