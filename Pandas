@@ -349,7 +349,7 @@ df['data'] = pd.to_datetime(pd['data'])
 
 df['coluna'] = df['coluna'].astype(object) # Tipo de dado para object, mudando tipo, 
 
-
+dados['coluna'] = dados['coluna'].fillna(dados['coluna'].median() # Preenchendo dados faltantes, nulos com a mediana
 
 
 
