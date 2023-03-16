@@ -351,6 +351,6 @@ df['coluna'] = df['coluna'].astype(object) # Tipo de dado para object, mudando t
 
 dados['coluna'] = dados['coluna'].fillna(dados['coluna'].median() # Preenchendo dados faltantes, nulos com a mediana
 
-
+percentual_dados_faltantes = (dados.isnull().sum() / len(dados['coluna'])) * 100  # percentual, porcentagem % de dados faltantes
 
 
