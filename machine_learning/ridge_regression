@@ -12,7 +12,13 @@ Etapa 2: Instanciar o método:
 Etapa 3: Separar os dados em dados de treino e dados de teste:
     x_treino, x_teste, y_treino, y_teste = train_teste_split(x, y, test_size=0.30, random_state=14) # Lembrando que o random state é apenas para congelar a amostra. 
 
-
+Etapa 4: Treinar o modelo com os dados de treino:
+    modeloRidge.fit(x_treino, y_treino)
+    
+Etapa 5: Calcular o R² e salvar em uma variável:
+    resultadoRidge = modeloRidge.score(x_teste, y_teste)
+    
+Etapa 6: Posso imprimir o resultado se quiser.
 
 
 
