@@ -1,1 +1,3 @@
+https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html # Documentação
+
 Esse tipo de regressão faz uma regularização: quando eu tenho impedir que alguma das variáveis acabe ganhando um peso muito grande.
