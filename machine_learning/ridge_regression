@@ -3,6 +3,8 @@ from sklearn.linear_model import Ridge
 
 Esse tipo de regressão faz uma regularização: quando eu tenho impedir que alguma das variáveis acabe ganhando um peso muito grande.
 
+Ela utiliza a regularização de L2 dentro do algoritmo de regressão linear
+
 
 Etapa 1: Tratar os dados, excluir colunas desnecessárias,
 
