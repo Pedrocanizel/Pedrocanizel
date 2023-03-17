@@ -1,3 +1,5 @@
+from sklearn.linear_model import ElasticNet
+
 é uma combinação das 2 regularizações, L1 e L2
 
 
