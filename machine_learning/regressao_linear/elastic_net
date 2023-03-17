@@ -3,6 +3,24 @@ from sklearn.linear_model import ElasticNet
 é uma combinação das 2 regularizações, L1 e L2
 
 
+Etapa 1: Tratar os dados, excluir colunas desnecessárias,
+
+Etapa 2: Instanciar o método:
+    modeloElasticNet = ElasticNet(alpha=1, l1_ratio=0.5, tol=0.1) # dentro do parênteses posso passar valor de alpha, quanto maior o valor, mais 
+    eu aumento o peso da regularização. Quanto menor o valor alpha, mais próximo fica de fazer a regressão linear comum, o l1_ratio é a % que estou usando da regulariza
+    ção L1, tol é a tolerância das variações.
+        
+Etapa 3: Separar os dados em dados de treino e dados de teste:
+    x_treino, x_teste, y_treino, y_teste = train_teste_split(x, y, test_size=0.30, random_state=14) # Lembrando que o random state é apenas para congelar a amostra. 
+
+Etapa 4: Treinar o modelo com os dados de treino:
+    modeloElasticNet.fit(x_treino, y_treino)
+    
+Etapa 5: Calcular o R² e salvar em uma variável:
+    resultadoElasticNet = modeloElasticNet.score(x_teste, y_teste)
+    
+Etapa 6: Posso imprimir o resultado se quiser.
+
 
 
 
