@@ -1,5 +1,34 @@
 Fazer todos os passos que são comuns de fazer nas regressões normais, desde tratar os dados, separar valores x e y, 
-separar dados de treino e dados de teste, o processo só muda na hora de
+separar dados de treino e dados de teste, o processo só muda na hora de instanciar as regressões e aplicar .
+
+def comparar_regresoes(a, b, c, d):
+    from sklearn.linear_model import LinearRegression
+    from sklearn.linear_model import Ridge
+    from sklearn.linear_model import Lasso
+    from sklearn.linear_model import ElasticNet
+    
+    x_treino = a
+    y_treino = b
+    x_teste = c
+    y_teste = d
+    
+    reg = LinearRegression()
+    ridge = Ridge()
+    lasso = Lasso()
+    elastic = ElasticNet()
+    
+    reg = red.fit(x_treino, y_treino)
+    ridge = ridge.fit(x_treino, y_treino)
+    lasso = lasso.fit(x_treino, y_treino)
+    elastic = elastic.fit(x_treino, y_treino)
+    
+    resul_reg = reg.score(x_teste, y_teste)
+    resul_ridge = ridge.score(x_teste, y_teste)
+    resul_lasso = lasso.score(x_teste, y_teste)
+    resul_elastic = elastic.score(x_teste, y_teste)
+    
+    print('Regressão Linear: ', resul_reg, 'Regressão Ridge: ', resul_ridge, 'Regressão Lasso: ', resul_lasso, 'Regressão Elastic: ', resul_elastic)
+    
 
 
 
