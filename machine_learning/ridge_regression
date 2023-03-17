@@ -1,3 +1,36 @@
 https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html # Documentação
+from sklearn.linear_model import Ridge
 
 Esse tipo de regressão faz uma regularização: quando eu tenho impedir que alguma das variáveis acabe ganhando um peso muito grande.
+
+
+Etapa 1: Tratar os dados, excluir colunas desnecessárias,
+
+Etapa 2: Instanciar o método:
+    modeloRidge = Ridge(alpha=1)
+        
+Etapa 3: Separar os dados em dados de treino e dados de teste:
+    x_treino, x_teste, y_treino, y_teste = train_teste_split(x, y, test_size=0.30, random_state=14) # Lembrando que o random state é apenas para congelar a amostra. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
