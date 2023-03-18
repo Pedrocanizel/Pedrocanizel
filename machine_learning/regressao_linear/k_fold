@@ -21,6 +21,7 @@ def modeloregressaokfols(a, b):
     from sklearn.linear_model import Ridge
     from sklearn.linear_model import Lasso
     from sklearn.linear_model import ElasticNet
+    kfold = KFold(n_splits=10)
     
     x = a
     y = b
