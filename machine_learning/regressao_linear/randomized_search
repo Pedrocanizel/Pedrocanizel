@@ -1,6 +1,7 @@
 from sklearn.model_selection import RandomizedSearchCV
 
 é uma forma de fazer testes com meus modelos de forma automatizada
+por definição a RandomizedSearchCV utiliza o kfold dentro dela, por isso infrmamos o cv
 
 
 
@@ -8,10 +9,14 @@ from sklearn.model_selection import RandomizedSearchCV
 valores = {'alpha': [0.1, 0.2, 0.5, 0.8, 1, 2, 5 10], 'l1_ratio': [0.02, 0.05, 0.1, 0.2]}
 
 modelo = ElasticNet()
-procura = RandomizedSearchCV(estimator =  modelo, param_distributions=valores, n_iter=150, cv=5, random_state=15)
+procura = RandomizedSearchCV(estimator =  modelo, param_distributions=valores, n_iter=150, cv=5, random_state=15) # n_iter é a quantidade de combinações que eu quero que faça, cv é o kfold
 procura.fit(x, y)
 
+# imprimindo resultado
 
+print('Melhor score: ', procura.best_score_)
+print('Melhor alpha : ' procura.best_estimator_.alpha)
+print('Melhor l1_ratio: 'procura.best_estimator_.l1ratio)
 
 
 
