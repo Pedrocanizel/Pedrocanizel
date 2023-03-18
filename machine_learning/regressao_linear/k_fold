@@ -37,7 +37,8 @@ def modeloregressaokfols(a, b):
     resul_elastic = cross_val_score(elastic, x, y, cv = kfold)
     
     dic_regmodels = {'Linear':resul_reg.mean(), 'Ridge':resul_ridge.mean(), 'Lasso':resul_lasso.mean(), 'Elastic':resul_elastic.mean()}
-    
+    melhor_modelo = max(dic_regmodels, key=dic_regmodels.get)
+    print('O melhor modelo foi: ', melhor_modelo, 'com o valor: ', dic_regmodels[melhor_modelo])  
 
 
 
