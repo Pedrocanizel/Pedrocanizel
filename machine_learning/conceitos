@@ -18,7 +18,7 @@ e os pontos do gráfico, é a mesma coisa q calcular a variância
 
 regularização: quando eu tenho impedir que alguma das variáveis acabe ganhando um peso muito grande.
 
-
+Validação cruzada dis respeito à separação dos dados para rodar o modelo de machine learning
 
 
 
