@@ -1,0 +1,29 @@
+from sklearn.model_selection import RandomizedSearchCV
+
+é uma forma de fazer testes com meus modelos de forma automatizada
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
