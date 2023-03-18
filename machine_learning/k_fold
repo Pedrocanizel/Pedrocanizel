@@ -4,11 +4,16 @@ from sklearn.model_selection import KFold
 # Abaixo um exemplo de como utilizar a função kfold junto com linearregression()
 
 modelo = LinearRegression() 
+
 kfold = KFold(n_splits=5) # O valor 5 aqui significa em quantas vezes vou fazer as separações, ou seja, o valor de K.
+
 resultado = cross_val_score(modelo, x, y, cv = kfold) # dentro do cross_val_score eu preciso informar o tipo da regressão linear que vou utilizar, que no cado é o que
 está instanciado na variável modelo, na documentação isso é chamado de estimator. x e y são as nossas variáveis escolhidas para modelo. cv é a função usada no 
 cross_val_score, ou seja, quantas partes vou dividir meu modelo para aplicar as funções.
 
+A variável resultado armazenará um lista contendo n R² onde é o valor passado no n_splits, aqui no caso é 5, como o que me interessa é a média, imprimo a média.
+
+print(resultado.mean())
 
 
 
