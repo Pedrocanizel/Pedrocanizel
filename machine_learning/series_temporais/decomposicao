@@ -1,11 +1,13 @@
 No mundo real as séries não constumam ser estacionárias, e por isso fica difícel trabalhar estatisticamente com séries temporais,
 para lidar com esse problema fazemos decomposição.
 
-
-O objetivo da decomposição é achar uma sequência de variáveis aleatórias correlacionadas e com média zero
 Modelo aditivo:
+    O objetivo da decomposição é achar uma sequência de variáveis aleatórias correlacionadas e com média zero
 
-O 
+Modelo multiplicativo:
+    Aumento do efeito sazonal,
+    aumento da variação aleatória,
+    Crescimento de tendência
 
 
 
