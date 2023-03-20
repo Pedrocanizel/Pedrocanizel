@@ -1,6 +1,11 @@
+1- Entender o contexto do problema;
 
+2- Transformação de dados;
+    A maioria dos modelos de séries temporais são mais eficientes com distribuições normais,
 
+3- Julgar a estacionariedade e tentar atingi-la por meio da decomposição de dados;
 
+4- Para séries estacionárias analisar a função de autocorrelação,
 
 
 
