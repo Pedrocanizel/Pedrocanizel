@@ -2,6 +2,10 @@ No mundo real as séries não constumam ser estacionárias, e por isso fica dif�
 para lidar com esse problema fazemos decomposição.
 
 
+O objetivo da decomposição é achar uma sequência de variáveis aleatórias correlacionadas e com média zero
+Modelo aditivo:
+
+O 
 
 
 
