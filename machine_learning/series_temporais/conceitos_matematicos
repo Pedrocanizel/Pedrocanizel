@@ -15,7 +15,7 @@ Etapas para analisar a estacionariedade de uma série:
     Para uma série temporal longa separar a série em blocos iguais e checar se há similaridade entre as médias, variâncias, e a covariância dos blocos. 
 
 
-
+Covariância é uma medida do grau de interdependência LINEAR entre duas variáveis aleatórias
 
 
 
