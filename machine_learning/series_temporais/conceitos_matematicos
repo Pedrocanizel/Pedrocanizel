@@ -1,6 +1,11 @@
 o que é ? É uma realização de uma variável aleatória medida em um fixo intervalo de tempo.
 
-
+As características probabilísticas da série temporal não mudam com o tempo(fraca estacionariedade):
+    
+    - A média deve ser constante, ou seja, não consideramos como variável aleatória,
+    - A variância deve ser constante, variância é desvio padrão ao quadrado,
+    - A covariância que é uma medida de interdependência da série, traduz a proximidade dos valores com a proximidade do tempo, ela pode até mudar mas depende apenas
+    da diferença do tempo das duas medidas.
 
 
 
