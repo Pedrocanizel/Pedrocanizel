@@ -14,3 +14,29 @@ CREATE TABLE public.hash_cadastro (
 );
 
 ALTER TABLE public.hash_login RENAME TO armazenador_hash;
+
+
+ALTER TABLE bitgcp.hash_db RENAME TO token_db;
+ALTER TABLE bitgcp.token_db RENAME COLUMN id_hash TO id_token;
+ALTER TABLE bitgcp.token_db RENAME COLUMN chave_hash TO chave_token;
+ALTER TABLE bitgcp.token_db RENAME COLUMN finalidade TO finalidade_token;
+ALTER TABLE bitgcp.token_db RENAME COLUMN hash_criado_em TO token_criado_em;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
