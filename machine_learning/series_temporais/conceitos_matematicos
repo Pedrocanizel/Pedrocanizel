@@ -7,6 +7,9 @@ As características probabilísticas da série temporal não mudam com o tempo(f
     - A covariância que é uma medida de interdependência da série, traduz a proximidade dos valores com a proximidade do tempo, ela pode até mudar mas depende apenas
     da diferença do tempo das duas medidas.
 
+Teste de estacionariedade.
+
+Uma das primeiras formas de se fazer uma análise é realizar uma análise visual,
 
 
 
