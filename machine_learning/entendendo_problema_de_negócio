@@ -1,3 +1,30 @@
+1- Entender qual é o contexto
+
+2- Buscar entender qual a causa raíz do problema
+   Por que fazer uma previsão de vendas?
+       Quer uma previsão para ter uma acurácia melhor da receita da sua loja?
+       Você quer para poder fazer uma compra de produtos maior?
+       Quer planejar melhor seu estoque?
+       Para fazer algun investimento?
+       Para reportar para os investidores?
+
+3- Quem é o dono do problema?
+   Quem é o maior interessado no problema?
+   Quem é o stakeholder?
+   
+4- Qual o formato da solução?
+   Aqui estamos falando sobre a GRANULARIDADE
+       Diária
+       Semanal
+       Mensal
+       Por loja
+       Por produto
+       Por categoria
+       Qual tipo do problema?
+           Problema de classificação?
+           Problema de previsão?
+           Problema de clusterização?
+           
 
 
 
