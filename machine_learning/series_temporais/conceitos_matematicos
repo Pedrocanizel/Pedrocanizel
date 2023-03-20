@@ -9,7 +9,10 @@ As características probabilísticas da série temporal não mudam com o tempo(f
 
 Teste de estacionariedade.
 
-Uma das primeiras formas de se fazer uma análise é realizar uma análise visual,
+Etapas da análise:
+    Uma das primeiras formas de se fazer uma análise é realizar uma análise visual,
+    Diagrama de autocorrelação,
+    Para uma série temporal longa separar a série em blocos iguais e checar se há similaridade entre as médias, variâncias, e a covariância dos blocos. 
 
 
 
