@@ -6,7 +6,12 @@ essa variações são naturais do sistema ou são consequências de eventos alea
 
 Variações sazonais em um gráfico são variações de vendas na época do natal por exemplo, em geral são previsíeis
 
-
+Características das séries temporais:
+    Variações aleatórias,
+    Medidas adjacentes tendem a ser correlatas,
+    Pode e costuma haver uma tendência, que é uma mudança sistemática da média,
+    Sazonalidade: variações sazonais ou periódicas,
+    Mudanças fundamentais/abruptas
 
 
 
