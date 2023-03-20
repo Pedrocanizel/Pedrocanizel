@@ -1,6 +1,41 @@
 A cada ciclo do crisp que vc finalizar, vc tem uma versão end to end da solução
 
+Etapas:
 
+    1- Questão do negócio;
+    
+    2- Entendimento do negócio;
+        Buscar a causa raíz,
+        Por que ela te pede aquilo?
+        Qual a dor dela?
+        O que ela passa para me pedir aquilo?
+    
+    3- Coleta dos dados;
+    
+    4- Limpeza dos dados;
+        tirar ç,
+        acentos,
+        caracteres especiais,
+        verifica se número é número,
+        se data é data,
+        caracter é caracter, 
+        
+    5- Exploração dos dados;
+        Aqui você descobre os fenômenos que impactam nos dados que você está trabalhando,
+        É aqui que você precisa entender por exemplo o que empurra as vendas para cima ou para baixo,
+        Quais fatores influenciam na venda,
+        
+    6- Modelagem dos dados;
+        Aqui entre por exemplo separar dados entre treino e teste,
+        Fazer encoding de variáveis categóricas que é transformar variáveis categóricas em numéricas,
+        Fazer transformações de dados,
+        
+    7- Aplicar os algoritmos de machine learning;
+    
+    8- Avaliar os algoritmos; 
+   
+    
+    
 
 
 
