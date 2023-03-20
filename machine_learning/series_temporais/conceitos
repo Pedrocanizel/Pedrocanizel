@@ -1,6 +1,8 @@
+Existe uma proximidade dos valores no tempo, essa é uma característica das séries temporais
 
-
-
+Vamos dar um exemplo de um gráfico que mostra a mortalidade média dos meses do ano, e vemos que em geral os gráficos seguem uma média de mortalidade por mês,
+e saindo do padrão médio vemos que em determinados meses, encontramos picos de mortalidade em determinados meses, como por exemplo janeiro e junho, 
+essa variações são naturais do sistema ou são consequências de eventos aleatórios?
 
 
 
