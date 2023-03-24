@@ -369,7 +369,8 @@ df['coluna_com_data_nula'] = df['coluna_com_data_nula'].apply(lambda x: x['date'
 df['coluna_com_data_nula'] = df['coluna_com_data_nula'].apply(lambda x: x['date'].year if math.isnan(x['coluna_com_data_nula']) else x['coluna_com_data_nula']) # Mesma coisa do de cima mas agora substituindo por ano
 df['coluna_com_data_nula'] = df['coluna_com_data_nula'].apply(lambda x: x['date'].week if math.isnan(x['coluna_com_data_nula']) else x['coluna_com_data_nula']) # Mesma coisa do de cima mas com week
 
-
+month_map = {1: 'Jan',  2: 'Fev', 3: 'Mar', 4: 'Abr', 5: 'Mai', 6: 'Jun', 7: 'Jul', 8: 'Ago', 9: 'Set', 10: 'Out', 11: 'Nov', 12: 'Dez'}
+df1['month_map'] = df1['date].dt.month.map(month_map) # Criando uma coluna de mês baseada em uma de data completa.
 
 
 
