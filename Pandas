@@ -350,6 +350,7 @@ series.str[1:-1].str.replace("'", "").str.spli(", ") # Substiruindo aspas simple
 df['data'] = pd.to_datetime(pd['data'])
 
 df['coluna'] = df['coluna'].astype(object) # Tipo de dado para object, mudando tipo, 
+df['coluna'] = df['coluna'].astype(int) # Tipo de dado para int, mudando tipo,
 
 dados['coluna'] = dados['coluna'].fillna(dados['coluna'].median() # Preenchendo dados faltantes, nulos com a mediana
 
