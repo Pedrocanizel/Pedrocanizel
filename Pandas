@@ -357,7 +357,11 @@ percentual_dados_faltantes = (dados.isnull().sum() / len(dados['coluna'])) * 100
 
 merged_df = pd.merge(df_1, df_2, how='left', on='store') # Igual fazer um join do sql
 
-
+renomeando colunas para snake_case:
+cols_old = [com os nomes das colunas do df]
+snake_case = lambda x: inflection.underscore(x) # não esquecer de importar inflection
+cols_new = list(map(snake_case, cols_old)) 
+df.columns = cols_new
 
 
 
