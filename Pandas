@@ -373,7 +373,8 @@ df['coluna_com_data_nula'] = df['coluna_com_data_nula'].apply(lambda x: x['date'
 month_map = {1: 'Jan',  2: 'Fev', 3: 'Mar', 4: 'Abr', 5: 'Mai', 6: 'Jun', 7: 'Jul', 8: 'Ago', 9: 'Set', 10: 'Out', 11: 'Nov', 12: 'Dez'}
 df1['month_map'] = df1['date].dt.month.map(month_map) # Criando uma coluna de mês baseada em uma de data completa.
 
-
+df_numerico = df.select_dtypes(include['int64', 'float64']) # Selecionando coluna por tipo de dado
+df_nao_numerico = df.select_dtypes(exclude['int64', 'float64', 'datetime64[ns]'])
 
 
 
