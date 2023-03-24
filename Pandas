@@ -367,7 +367,7 @@ df.columns = cols_new
 df['coluna_com_nulos'] = df['coluna_com_nulos'].apply(lambda x: 200000 if math.isnan(x) else x) # importat a lib math, no lugar de 200000 coloco o valor q desejo inserir na coluna
 df['coluna_com_data_nula'] = df['coluna_com_data_nula'].apply(lambda x: x['date'].month if math.isnan(x['coluna_com_data_nula']) else x['coluna_com_data_nula']) # Mesmo tratamento acima, mas dessa vêz pegando um dado de mês de outra coluna para usar
 df['coluna_com_data_nula'] = df['coluna_com_data_nula'].apply(lambda x: x['date'].year if math.isnan(x['coluna_com_data_nula']) else x['coluna_com_data_nula']) # Mesma coisa do de cima mas agora substituindo por ano
-
+df['coluna_com_data_nula'] = df['coluna_com_data_nula'].apply(lambda x: x['date'].week if math.isnan(x['coluna_com_data_nula']) else x['coluna_com_data_nula']) # Mesma coisa do de cima mas com week
 
 
 
