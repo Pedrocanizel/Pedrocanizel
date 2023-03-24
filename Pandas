@@ -355,4 +355,22 @@ dados['coluna'] = dados['coluna'].fillna(dados['coluna'].median() # Preenchendo 
 
 percentual_dados_faltantes = (dados.isnull().sum() / len(dados['coluna'])) * 100  # percentual, porcentagem % de dados faltantes
 
+pd.merge(df_1, df_2, how='left', on='store') # Igual fazer um join do sql
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
