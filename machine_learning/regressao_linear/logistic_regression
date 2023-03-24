@@ -1,0 +1,24 @@
+Depois de tratar os dados
+
+from sklearn.linear_model import LogicticRegression
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import StratifiedKfold
+
+stratifiedkfold = StratifiedKfold(n_splits=5)
+
+modelo = LogisticRegression()
+resultado = cross_val_score(modelo, x, y, cv=stratifiedkfold)
+print(resultado.mean()) # O valor impresso será a porcentagem de acerto que o modelo conseguiu fazer, ou seja, uma acurácia x%
+
+
+
+
+
+
+
+
+
+
+
+
+
