@@ -1,7 +1,7 @@
 O primeiro passo é dividir entre variáveis numéricas e categóricas
 
 df_numerico = df.select_dtypes(include['int64', 'float64'])
-df_nao_numerico = df.select_dtypes(exclude['int64', 'float64'])
+df_nao_numerico = df.select_dtypes(exclude['int64', 'float64', 'datetime64[ns]'])
 
 
 
