@@ -363,7 +363,7 @@ snake_case = lambda x: inflection.underscore(x) # não esquecer de importar infl
 cols_new = list(map(snake_case, cols_old)) 
 df.columns = cols_new
 
-
+df['coluna_com_nulos'] = df['coluna_com_nulos'].apply(lambda x: 200000 if math.isnan(x) else x) # importat a lib math, no lugar de 200000 coloco o valor q desejo inserir na coluna
 
 
 
