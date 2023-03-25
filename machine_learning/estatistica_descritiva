@@ -12,9 +12,9 @@ ct2 = pd.DataFrame(df_numerico.apply(np.median)).T # Criando um df com meus dado
 
 # Estatística de dispersão
 
-d1 = pd.DataFrame(df_numerico.apply(std)).T # Criando um df com meus dados e obtendo o desvio padrão e depois transpondo para melhor visualizar
-d2 = pd.DataFrame(df_numerico.apply(min())).T # Criando um df com meus dados e obtendo o mínimo e depois transpondo para melhor visualizar
-d3 = pd.DataFrame(df_numerico.apply(max())).T # Criando um df com meus dados e obtendo o máximo e depois transpondo para melhor visualizar
+d1 = pd.DataFrame(df_numerico.apply(np.std)).T # Criando um df com meus dados e obtendo o desvio padrão e depois transpondo para melhor visualizar
+d2 = pd.DataFrame(df_numerico.apply(min)).T # Criando um df com meus dados e obtendo o mínimo e depois transpondo para melhor visualizar
+d3 = pd.DataFrame(df_numerico.apply(max)).T # Criando um df com meus dados e obtendo o máximo e depois transpondo para melhor visualizar
 d4 = pd.DataFrame(df_numerico.apply(lambda x: x.max() - x.min())).T # Criando um df com meus dados e obtendo o range e depois transpondo para melhor visualizar
 d5 = pd.DataFrame(df_numerico.apply(lambda x: x.skew())).T # Criando um df com meus dados e obtendo o skew e depois transpondo para melhor visualizar
 d6 = pd.DataFrame(df_numerico.apply(lambda x: x.kurtosis())).T # Criando um df com meus dados e obtendo a kurtosis e depois transpondo para melhor visualizar
