@@ -23,6 +23,7 @@ d6 = pd.DataFrame(df_numerico.apply(lambda x: x.kurtosis())).T # Criando um df c
 
 m = pd.concat([d1, d2, d3, d4, d5, d6, ct1, ct2]).T.reset_index() # Concatenando na ordem que desejo ver meus dados, transpondo e resetando indice
 
+m.columns = ["name1", "name2", "name3", "name4", "name5", "name6", "name7", "name8"]
 
 
 
