@@ -19,7 +19,9 @@ d4 = pd.DataFrame(df_numerico.apply(lambda x: x.max() - x.min())).T # Criando um
 d5 = pd.DataFrame(df_numerico.apply(lambda x: x.skew())).T # Criando um df com meus dados e obtendo o skew e depois transpondo para melhor visualizar
 d6 = pd.DataFrame(df_numerico.apply(lambda x: x.kurtosis())).T # Criando um df com meus dados e obtendo a kurtosis e depois transpondo para melhor visualizar
 
+# Concatenar
 
+m = pd.concat([d1, d2, d3, d4, d5, d6, ct1, ct2]) # Concatenando na ordem que desejo ver meus dados
 
 
 
