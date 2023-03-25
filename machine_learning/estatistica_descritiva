@@ -3,6 +3,10 @@ O primeiro passo é dividir entre variáveis numéricas e categóricas
 df_numerico = df.select_dtypes(include['int64', 'float64']) # Selecionando apenas números
 df_nao_numerico = df.select_dtypes(exclude['int64', 'float64', 'datetime64[ns]']) # Selecionando apenas não números
 
+###Após separar meu dataframe em variáveis numéricas e não numéricas, eu posso começar aplicar alguns testes estatísticos.
+
+ct1 = pd.DataFrame(df_numerico.apply(np.mean)).T # Criando um df com meus dados e obtendo a média e depois transpondo para melhor visualizar
+ct2 = pd.DataFrame(df_numerico.apply(np.median)).T # Criando um df com meus dados e obtendo a mediana e depois transpondo para melhor visualizar
 
 
 
