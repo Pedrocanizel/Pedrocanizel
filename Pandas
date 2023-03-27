@@ -394,7 +394,7 @@ d6 = pd.DataFrame(df_numerico.apply(lambda x: x.kurtosis())).T # Criando um df c
 
 m = pd.concat([d1, d2, d3, d4, d5, d6, ct1, ct2]).T.reset_index() # Concatenando na ordem que desejo ver meus dados, transpondo e resetando indice
 
+vals_to_replace = {'a':1, 'b': 2, 'c':3, 'd':4} # replace multiple, many values
 
-
-
+store['StoreType'] = store['StoreType'].map(vals_to_replace)
 
