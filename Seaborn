@@ -37,6 +37,8 @@ ax.set_xlabel('Metros', fontsize=14) # Criando o label do eixo X com fonte 14
 sns.displot(tmdb.vote_average, norm_hist = False, kde= False) # Criando um histograma da média de votos, norm_hist e kde false são para eu ver os valores 
 e não as densidades
 
+sns.distplot(store['CompetitionOpenSinceYear'])
+plt.show() # Criando gráfico de distruibuição
 
 
 
