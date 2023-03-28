@@ -16,11 +16,13 @@ A variável resultado armazenará um lista contendo n R² onde é o valor passad
 print(resultado.mean())
 
 
-def modeloregressaokfols(a, b):
+def modeloregressaokfold(a, b):
     from sklearn.linear_model import LinearRegression
     from sklearn.linear_model import Ridge
     from sklearn.linear_model import Lasso
     from sklearn.linear_model import ElasticNet
+    from sklearn.model_selection import cross_val_score 
+    from sklearn.model_selection import KFold
     kfold = KFold(n_splits=10)
     
     x = a
