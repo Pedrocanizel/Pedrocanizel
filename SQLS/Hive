@@ -1,0 +1,39 @@
+create database company;
+
+show databases;
+
+use company;
+
+create table employees (id int, name string, country string, department string, salary int)
+
+row format delimited fields terminated by '-';
+
+show tables;
+
+load data inpath '/hdoop/employees.txt' overwrite into table employees;
+
+select * from employees;
+
+desc employees; # Describe data, diplay data, mostrar dados
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
