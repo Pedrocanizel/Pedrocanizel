@@ -19,14 +19,42 @@ desc employees; # Describe data, diplay data, mostrar dados
 select name,country from employees;
 
 
+HIVE AGGREGARTION FUNCTIONS
 
+select count(*) from employee; # Returns the count of all rows in a table including rows containing NULL values.
 
+select count(salary) from employee; # Returns the total number of rows for expression excluding null.
 
+select count(distinct gender, salary) from employee; Returns the count of distinct rows of expression (or expressions) excluding null values.
 
+select sum(salary) from employee;
 
+select sum(distinct salary) from employee;
 
+select age,sum(salary) from employee group by age;
 
+select avg(salary) from employee group by age;
 
+select avg(distinct salary) from employee group by age;
+
+select age,avg(salary) from employee group by age;
+
+select min(salary) from employee;
+
+select max(salary) from employee;
+
+select gender, collect_set(age) from employee group by gender; # Returns a set of objects with duplicate elements eliminated.
+
+select gender, collect_list(age) from employee group by gender; # Returns a list of objects with duplicates. 
+
+select variance(salary) from employee; # The variance() and var_pop() aggregation functions returns the statistical variance of column in a group.
+select var_pop(salary) from employee; # The variance() and var_pop() aggregation functions returns the statistical variance of column in a group.
+
+select var_samp(salary) from employee; # The var_samp() function returns the statistical variance of column in a group.
+
+select stddev_pop(salary) from employee; # The stddev_pop() aggregation function returns the statistical standard deviation of numeric column values provided in the group.
+
+select stddev_samp(salary) from employee; # The stddev_samp() aggregation function returns the statistical standard deviation of numeric column values provided in the group.
 
 
 
