@@ -60,7 +60,7 @@ SELECT * FROM TABLE LIMIT 2;
 
 create table table_name as select.............
 
-
+alter table table_name rename to novo_nome
 
 
 
