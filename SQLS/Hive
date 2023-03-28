@@ -58,7 +58,7 @@ select stddev_samp(salary) from employee; # The stddev_samp() aggregation functi
 
 SELECT * FROM TABLE LIMIT 2;
 
-
+create table table_name as select.............
 
 
 
