@@ -16,6 +16,8 @@ select * from employees;
 
 desc employees; # Describe data, diplay data, mostrar dados
 
+select name,country from employees;
+
 
 
 
