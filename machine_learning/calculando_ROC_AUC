@@ -1,0 +1,20 @@
+após fazer todo o processo de separar dado em treino teste, testar o modelo e fazer o score
+
+crio uma variável para fazer um tipo de predição que retorna a probabilidade, e não o valor em si.
+
+predicoes = modelo.predict_proba(x_teste)
+
+probs = predicoes[:, 1] # Salvo em uma variável todas as linhas da primeira coluna que foram salvas nas predicoes
+
+
+
+
+
+
+
+
+
+
+
+
+
