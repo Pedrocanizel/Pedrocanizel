@@ -1,4 +1,7 @@
+predicao = modelo.predict(x_teste)  # Quando quero fazer uma previsão, após o modelo ter sido treinado com os dados de treino, posso fazer a predição usando os dados de
+teste, que são os dados que o modelo ainda não viu.
 
+O resultado poder ser impresso na tela para q eu veja.
 
 
 
