@@ -6,7 +6,9 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 
 
-
+# primeira etapa depois que possuo os dados é normalizar
+normalizador = MinMaxScaller(feature_rang = (0, 1))
+x_norm = normalizador.fit_transform(x) 
 
 
 
