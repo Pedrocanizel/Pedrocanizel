@@ -15,7 +15,7 @@ x_treino, x_teste, y_treino, y_teste = train_test_split(x_norm, y, test_size=0.3
 modelo = KNeighborsClassifier(n_neighbors = 5) # n_neighbors é a quantdade de pontos próximos que o algoritmo vai buscar para fazer a classificação
 modelo.fit(x_treino, y_treino)
 
-
+resultado = modelo.score(x_teste, y_teste) # Nos dá a acurácia
 
 
 
