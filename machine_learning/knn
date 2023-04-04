@@ -1,4 +1,5 @@
 Muito utilizado para classificação
+Algoritmos de knn precisam de normalização dos dados
 
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import MinMaxScaler
