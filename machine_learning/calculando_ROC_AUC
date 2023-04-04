@@ -11,7 +11,9 @@ from sklearn.metrics import roc_curve
 
 fpr, tpr, thresholds = roc_curve(y_teste, probs) # passo pra ela os valores reais e os valores previstos
 
-
+print('TPR: ' tpr)
+print('FPR: ' fpr)
+print('THRESHOLDS: ' thresholds)
 
 
 
