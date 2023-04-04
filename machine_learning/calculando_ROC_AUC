@@ -19,7 +19,9 @@ print('THRESHOLDS: ' thresholds)
 plt.scatter(fpr, tpr) # Plotando para visualizar o gráfico
 plt.show() 
 
+from sklearn.metrics import roc_suc_score
 
+print(roc_auc_score(y_teste, pobs)) # Calculando a área abaixo da curva e imprimindo
 
 
 
