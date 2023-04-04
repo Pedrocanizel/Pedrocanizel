@@ -9,7 +9,7 @@ probs = predicoes[:, 1] # Salvo em uma variável todas as linhas da primeira col
 
 from sklearn.metrics import roc_curve
 
-fpr, tpr, thresholds = roc_curve(y_teste, probs)
+fpr, tpr, thresholds = roc_curve(y_teste, probs) # passo pra ela os valores reais e os valores previstos
 
 
 
