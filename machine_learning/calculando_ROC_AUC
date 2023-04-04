@@ -16,7 +16,8 @@ print('FPR: ' fpr)
 print('THRESHOLDS: ' thresholds)
 
 
-
+plt.scatter(fpr, tpr) # Plotando para visualizar o gráfico
+plt.show() 
 
 
 
