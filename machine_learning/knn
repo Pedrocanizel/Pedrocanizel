@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 normalizador = MinMaxScaller(feature_rang = (0, 1))
 x_norm = normalizador.fit_transform(x) # aqui no caso estou normalizando todas as variáveis preditoras
 
-
+x_treino, x_teste, y_treino, y_teste = train_test_split(x_norm, y, test_size=0.3, random_state=19) # observe que foi passado o x_nrom, random_state só passo se quiser
 
 
 
