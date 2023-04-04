@@ -1,5 +1,9 @@
 Muito utilizado para classificação
 
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+
 
 
 
