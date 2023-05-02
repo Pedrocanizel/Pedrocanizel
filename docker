@@ -151,3 +151,8 @@ docker run --name pg14 -e POSTGRES_PASSWORD=postgres --detach --publish 5432:543
 docker run -it --entrypoint /bin/bash <container_name> # Acessando o container internamente
 
 docker run -it --entrypoint /bin/bash <container_name
+
+####################################
+
+#Restartando conteiners sempre
+docker update --restart always cont_modbus_get_all cont_modbus_update cont_modbus_delete cont_modbus_insert
