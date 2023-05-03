@@ -42,7 +42,8 @@ y2 = max(df['temperatura']) -5
 eixo.annotate("Máximo", xy= (x1, y1)), fontsize=20, xytext=(x2, y2), arrowprops=dict(facecolor='k')) # Criando uma seta e apontando.
 
 
-
+#plotando um gráfico de linha
+dados.plot(x="coluna_x", y="coluna_y")
 
 
 
