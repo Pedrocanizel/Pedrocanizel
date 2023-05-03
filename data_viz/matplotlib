@@ -45,6 +45,9 @@ eixo.annotate("Máximo", xy= (x1, y1)), fontsize=20, xytext=(x2, y2), arrowprops
 #plotando um gráfico de linha
 dados.plot(x="coluna_x", y="coluna_y")
 
+#plotando um gráfico de barras
+dados.plot(x="coluna_x", y="coluna_y", kind=bar)
+
 
 
 
