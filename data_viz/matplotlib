@@ -51,7 +51,8 @@ dados.plot(x="coluna_x", y="coluna_y", kind=bar, figsize(9,6))
 #plotando um gráfico de barras com algumas configurações
 axis = dados.plot(x="coluna_x", y="coluna_y", kind=bar, figsize(9,6))
 axis.yaxis.set_major_formatter(ticker.Str.Method.Formatter("{x:.2f}")) # Com essa config estou fazendo uma configuração nos números do meu eixo y.
-
+plt.title("título")
+plt.show()
 
 
 
