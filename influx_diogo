@@ -1,0 +1,136 @@
+# import csv
+import datetime
+# import os.path
+import random
+import string
+import time as bibtime
+from random import randrange
+
+# import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from influxdb import InfluxDBClient
+
+db_influx = InfluxDBClient(host='localhost', port=8086, username='admin', password='adminInfluxBit', ssl=False, verify_ssl=True)
+db_influx.create_database('dbBitSaas')
+db_influx.switch_database('dbBitSaas')
+
+# query = pd.DataFrame(db_influx.query("DROP * FROM measBitLeaf WHERE tpCollector = Modbus").get_points())
+# print(query)
+
+query = pd.DataFrame(db_influx.query('DROP SERIES FROM "measBitLeaf"').get_points())
+# print(query)
+
+minutes = 60 * 24 * 7
+qtde = minutes
+
+# time alarmValue nmDevice nmEquipment    nmSensor    tagId tpCollector  tpSensor  valueFloat  valueInt
+
+measurement = 'measBitLeaf'
+
+now = datetime.datetime.now()
+delta = datetime.timedelta(minutes=minutes)
+time = now - delta
+
+print(time)
+
+nmEquipment = "golfinho"
+
+#nmSensorList = ["mod001-tag1", "mod001-tag2", "mod001-tag3"]
+nmSensorList = []
+
+for i in range(20):
+        sensor = f"tag{i+1}"
+        nmSensorList.append(sensor)
+
+print(nmSensorList)
+
+
+
+nmDevice = "device"
+alarmValue = "False"
+tagId = "8004"
+tpCollector = "MODBUS"
+tpSensor = "Alarme1"
+
+
+def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
+    return ''.join(random.choice(chars) for _ in range(size))
+
+
+for nmSensor in nmSensorList:
+    print(nmSensor)
+
+    for i in range(0, qtde):
+        # print(f'{i+1} de {qtde}')
+
+        if nmSensor == nmSensorList[0]:
+            medida = random.normalvariate(20, 7) + 20*(np.sin(2*np.pi*i/(60*24))*np.cos(2*np.pi*i/(60*24))**2)
+        elif nmSensor == nmSensorList[1]:
+            medida = random.normalvariate(30, 7) + 20*np.cos(2*np.pi*i/(60*24))+(14/5)*np.sin(4*np.pi*i/(60))
+        elif nmSensor == nmSensorList[2]:
+            medida = random.normalvariate(40, 6)
+        elif nmSensor == nmSensorList[3]:
+            medida = random.normalvariate(40, 6)
+        elif nmSensor == nmSensorList[4]:
+            medida = random.normalvariate(2, 1)
+        elif nmSensor == nmSensorList[5]:
+            medida = random.normalvariate(40, 20)
+        elif nmSensor == nmSensorList[6]:
+            medida = random.normalvariate(40, 30)
+        elif nmSensor == nmSensorList[7]:
+            medida = random.normalvariate(50, 20)
+        elif nmSensor == nmSensorList[8]:
+            medida = random.normalvariate(50, 25)
+        elif nmSensor == nmSensorList[9]:
+            medida = random.normalvariate(60, 30)
+        elif nmSensor == nmSensorList[10]:
+            medida = random.normalvariate(20, 2)
+        elif nmSensor == nmSensorList[11]:
+            medida = random.normalvariate(30, 4)
+        elif nmSensor == nmSensorList[12]:
+            medida = random.normalvariate(40, 6)
+        elif nmSensor == nmSensorList[13]:
+            medida = random.normalvariate(40, 6)
+        elif nmSensor == nmSensorList[14]:
+            medida = random.normalvariate(2, 1)
+        elif nmSensor == nmSensorList[15]:
+            medida = random.normalvariate(40, 20)
+        elif nmSensor == nmSensorList[16]:
+            medida = random.normalvariate(70, 10)
+        elif nmSensor == nmSensorList[17]:
+            medida = random.normalvariate(70, 20)
+        elif nmSensor == nmSensorList[18]:
+            medida = random.normalvariate(80, 15)
+        elif nmSensor == nmSensorList[19]:
+            medida = random.normalvariate(80, 50)
+
+        num_sorted = randrange(0, 1)
+        randBits = random.getrandbits(1)
+        json_body = [{
+            "measurement": measurement,
+            "tags": {
+                'nmDevices': nmDevice,
+                'alarmValue': alarmValue,
+                'nmEquipment': nmEquipment,
+                'nmSensor': nmSensor,
+                'tagId': tagId,
+                'tpCollector': tpCollector,
+                'tpSensor': tpSensor
+            },
+            "time": time + datetime.timedelta(minutes=i),
+            "fields":
+            {
+                # 'valueInt': int(10 * np.sin(2 * np.pi * i / 60)) + uniform(9, 36)  # if num_sorted == 3 else None,
+                'valueFloat': medida
+            }
+        }]
+        db_influx.write_points(json_body)
+
+
+##############################################################################
+# gerando os gráficos como exemplo:
+##############################################################################
+
+query = pd.DataFrame(db_influx.query("SELECT * FROM measBitLeaf").get_points())
+print(query)
