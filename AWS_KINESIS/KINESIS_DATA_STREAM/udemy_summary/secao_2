@@ -28,7 +28,7 @@ KINESIS DATA STREAM :
 
 - Uma vez que o dado está no KDS ele pode ser consumido por muitos consumers, como : KCL, SDK, kinesis data firehose, kinesis data analytics,
 
-
+- Quando o consumer recebe o dado (record) ele recebe a Partition Key, O Sequence nº que é onde o dado estava dentro do shard, e o dado (data Blob),
 
 
 
