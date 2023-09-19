@@ -3,3 +3,20 @@ Real Time - Kinesis data stream, SQS, IOT,
 Near Real Time - Kinesis data firehose, DMS (Database Migration Service).
 
 Batch - Snowball, Data Pipeline
+
+KINESIS DATA STREAM : 
+
+- Uma ferramenta para stremar dados em uma aplicação.
+
+- Feita de Shards (fragmentos),
+
+- Voce pode reservar essas shards antes do tempo,
+
+- A quantidade de shards determina sua capacidade de ingestão e consumo,
+
+- Producers enviam dados para o KDS,
+
+- Producers podem ser de diversas fontes como : aplicações, clients, sdk, kpl, kinesis agente...,
+
+- Producers vão produzir "records" no KDS, 
+
