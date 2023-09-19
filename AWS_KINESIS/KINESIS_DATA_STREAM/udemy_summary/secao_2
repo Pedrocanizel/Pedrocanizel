@@ -30,7 +30,7 @@ KINESIS DATA STREAM :
 
 - Quando o consumer recebe o dado (record) ele recebe a Partition Key, O Sequence nº que é onde o dado estava dentro do shard, e o dado (data Blob),
 
-
+- Para os consumers podemos ter o consumo de até 2 mb compartilhado por todos os consumers por shard, ou 2 mb por segundo por shard por consumer (Enhanced - que é uma forma mais cara)
 
 
 
