@@ -50,4 +50,12 @@ KINESIS DATA STREAM :
 
 - No formato on demand vc paga por stream, por hora e por Gigabites de dados que entram e saem,
 
+- No assunto segurança seu stream é entregue dentro de uma região, você pode controlar acessos no IAM policies, 
 
+- O dado é encriptado em flyght usando endpoints https e em rest usando KMS, 
+
+- Você pode implementar encriptação, 
+
+- Existem endpoints VPCs disponíveis para acesso ao kinesis, 
+
+- Você pode monitorar suas apis usando cloudtrail, 
