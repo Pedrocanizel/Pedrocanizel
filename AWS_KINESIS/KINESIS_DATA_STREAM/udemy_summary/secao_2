@@ -23,3 +23,5 @@ KINESIS DATA STREAM :
 - Um "Record" é composto de uma Partition Key e um Data Blob de até 1 mb,
 
 - A partition key do Record determina pra qual shard o dado(Record) vai,
+
+- Um producer pode enviar 1 mb de dados por segundo ou 1000 msg por segundo por shard.
