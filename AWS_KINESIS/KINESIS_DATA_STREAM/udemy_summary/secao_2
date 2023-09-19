@@ -20,3 +20,6 @@ KINESIS DATA STREAM :
 
 - Producers vão produzir "records" no KDS, 
 
+- Um "Record" é composto de uma Partition Key e um Data Blob de até 1 mb,
+
+- A partition key do Record determina pra qual shard o dado(Record) vai,
