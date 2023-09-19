@@ -32,8 +32,22 @@ KINESIS DATA STREAM :
 
 - Para os consumers podemos ter o consumo de até 2 mb compartilhado por todos os consumers por shard, ou 2 mb por segundo por shard por consumer (Enhanced - que é uma forma mais cara)
 
+- O período de retenção dentro do KDS é de 1 até 365 dias.
 
+- Por padrão tem a possibilidade de reprocessar o dado,
 
+- Uma vez que o dado é inserido no KDS ele não pode ser deletado (conceito de imutabilidade),
 
+- Dados que compartilham a mesma partição (Partition Key) vão para o mesmo shard,
+
+- Você pode provisionar shards com antecedência e pode também escalá-los manualmente ou por API,
+
+- Você paga por shard provisionado por hora,
+
+- Você pode utilizar o KDS de uma forma que é On-Demand, você não precisa provisionar os shards, eles serão ajustados ao longo do tempo conforme demanda, o padrão para esse modo é de 4 mb/seg ou 4000 msg/seg,
+
+- A escalabilidade desse modelo on-demand é feita automaticamente através dos picos dos últimos 30 dias,
+
+- No formato on demand vc paga por stream, por hora e por Gigabites de dados que entram e saem,
 
 
