@@ -25,3 +25,15 @@ KINESIS DATA STREAM :
 - A partition key do Record determina pra qual shard o dado(Record) vai,
 
 - Um producer pode enviar 1 mb de dados por segundo ou 1000 msg por segundo por shard.
+
+- Uma vez que o dado está no KDS ele pode ser consumido por muitos consumers, como : KCL, SDK, kinesis data firehose, kinesis data analytics,
+
+
+
+
+
+
+
+
+
+
