@@ -1,2 +1,5 @@
-Real Time - Kinesis data stream,
-Near Real Time - Kinesis data firehose
+Real Time - Kinesis data stream, SQS, IOT,
+
+Near Real Time - Kinesis data firehose, DMS (Database Migration Service).
+
+Batch - Snowball, Data Pipeline
