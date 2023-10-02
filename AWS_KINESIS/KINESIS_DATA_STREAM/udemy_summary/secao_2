@@ -88,3 +88,5 @@ KINESIS CONSUMERS / Vídeo 10:
 4 - Bibliotecas de terceiros como kafka, spark...
 
 Em geral ferramentas aws como cloud watch, aws iot podem enviar dados diretamente para o KDS.
+
+- o exame espera que vc saiba que você pode consumir diretamente do KDS através do spark.
