@@ -69,7 +69,8 @@ Existem 4 formas de se produzir dados para o KDS:
 2 - Kinesis producer library (que é uma lib mais avançada para produzir códigos). É configurada com C++ e java librarys, usada para alta performance. Possui configuração para retry. Possui apis síncronas (como o sdk) e assíncronas
 para excelentes performances. Sempre que vc escreve uma aplicação com KPL vc pode monirorá-la no cloud wacth. KPL possui uma configração que é o batching, com 2 sub configs, as 2 ativadas por padrão, as 2 vão ajudar a reduzir custos
 e melhorar o throughput, uma delas é o collect para vc coletar dados e escrever para vários shards na mesma requisição de API (putrecords() call), a outra é o aggregate, que aumenta latência mas melhora a eficiência tbm, você pode armazenar
-multiple records e passar do limite de 1000 por segundo e tbm te ajuda a aumentar o tamanho do payload para chegar mais fácilmente ao limite de 1 mb/s. KPL não faz compressão por default.
+multiple records e passar do limite de 1000 por segundo e tbm te ajuda a aumentar o tamanho do payload para chegar mais fácilmente ao limite de 1 mb/s. Para aumentar a eficiência do batching vc pode implementar o recordmaxbufferedtime
+por exemplo em 100ms, desse forma ele vai "esperar" para poder agregar e enviar seus dados em bloco. KPL não faz compressão por default.
 
 3 - Kinesis agent que é um programa linux que roda no seu server, te permite pegar um dados e enviar para o KDS.
 
