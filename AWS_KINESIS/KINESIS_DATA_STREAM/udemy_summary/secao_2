@@ -62,4 +62,10 @@ KINESIS DATA STREAM / Vídeo 8:
 
 KINESIS PRODUCERS / Vídeo 9: 
 
+Existem 3 formas de se produzir dados para o KDS:
 
+Kineses SDK (que é o que produz pelo CLI,
+
+Kinesis producer library (que é uma lib mais avançada para produzir códigos),
+
+Kinesis agent que é um programa linux que roda no seu server, te permite pegar um dados e enviar para o KDS.
