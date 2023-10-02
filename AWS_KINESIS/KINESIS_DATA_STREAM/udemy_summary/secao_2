@@ -76,6 +76,10 @@ por exemplo em 100ms, desse forma ele vai "esperar" para poder agregar e enviar 
 
 KINESIS CONSUMERS / Vídeo 10: 
 
+Podemos consumir do KDS de diferentes formas como:
+
+1 - Kinesis SDK (CLI): 
+
 ##########################################
 ##########################################
 ##########################################
