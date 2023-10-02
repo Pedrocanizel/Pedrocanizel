@@ -78,7 +78,10 @@ KINESIS CONSUMERS / Vídeo 10:
 
 Podemos consumir do KDS de diferentes formas como:
 
-1 - Kinesis SDK (CLI): 
+1 - Kinesis SDK (CLI): através do get records.
+
+Cada shard pode agregar até 2mb de dados totais para serem consumidos. Cada vez que você faz um getrecords() você pode receber até 10mb de dados, mas como vc pode receber apenas 2mb por segundo, se vc receber os 10mb vc vai precisar 
+esperar 5 segundos até a proxima requisição.
 
 ##########################################
 ##########################################
