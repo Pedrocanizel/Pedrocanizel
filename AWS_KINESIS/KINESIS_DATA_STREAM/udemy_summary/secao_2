@@ -72,7 +72,7 @@ e melhorar o throughput, uma delas é o collect para vc coletar dados e escrever
 multiple records e passar do limite de 1000 por segundo e tbm te ajuda a aumentar o tamanho do payload para chegar mais fácilmente ao limite de 1 mb/s. Para aumentar a eficiência do batching vc pode implementar o recordmaxbufferedtime
 por exemplo em 100ms, desse forma ele vai "esperar" para poder agregar e enviar seus dados em bloco. KPL não faz compressão por default. Quando não usar o KPL? quando sua aplicação não suporta o delay aumentado que o batching agrega.
 
-3 - Kinesis agent que é um programa linux que roda no seu server, te permite pegar um dados e enviar para o KDS.
+3 - Kinesis agent que é um programa linux que roda no seu server, te permite pegar um dados e enviar para o KDS. Também envia métrica para o cloud watch pq é construído encima do KPL.
 
 
 
