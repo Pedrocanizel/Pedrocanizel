@@ -64,7 +64,7 @@ KINESIS PRODUCERS / Vídeo 9:
 
 Existem 4 formas de se produzir dados para o KDS:
 
-1 - Kineses SDK (que é o que produz pelo CLI,
+1 - Kineses SDK (que é o que produz pelo CLI), você em geral usa o método putrecord() e o putrecords() para enviar os dados.
 
 2 - Kinesis producer library (que é uma lib mais avançada para produzir códigos),
 
