@@ -93,6 +93,10 @@ Se eu tenho 5 consumers em 1 shard, cada um pode fazer apenas 1 requisição por
 
 KINESIS DATA STREAM HANDS ON / Vídeo 11: 
 
+Enhanced fan out / Vídeo 12: 
+
+Faz com que possamos receber 2 mb per shard per consumer, ou seja, sem isso é apenas 2mb per shard por segundo, divididos entre n consumers.
+O enhanced fan out fez com que ficasse mto mais dinamico acessar os shards pelos consumers alem de reduzir a latencia em 70 ms
 
 
 
