@@ -226,9 +226,18 @@ CloudWatch subscription filters with Kinesis / Vídeo 17:
 
 Você pode streamar seus logs do cloudwatch em 3 destinos:
 
-1 - Kinesis data streams,
-2 - Kinesis data firehose,
-3 - Lambda
+1 - Kinesis data streams - real time,
+2 - Kinesis data firehose - near real time,
+3 - Lambda real time
+
+Caso eu queira fazer analytics em real time, é legal eu usar o KDS para receber os dados do cloudwatch pois então posso enviar diretamente para o Kinesis data analytics.
+
+
+
+
+
+
+
 
 
 
