@@ -173,9 +173,18 @@ Kinesis data firehose pode ler de diferentes fontes/Producers como:
 - Amazon Cloud watch (logs & events),
 - AWS IOT
 
+Você lê uma linha por vêz, podendo ter até 1 mb cada.
 
+Se você quiser transformar o dado, deve usar Lambda function.
 
+Após receber o dado, o KDF não evnvia instantâneamente, ele armazena para enviar de forma eficiente.
+Desta forma, é um serviço Near real time (próximo ao tempo real), não em tempo real.
 
+Podemos ter 3 destinos para os dados que chegam no KDF,
+
+1 - Amazon s3,
+2 - Amazon Redshift,
+3 - Amazon OpenSearch
 
 
 
