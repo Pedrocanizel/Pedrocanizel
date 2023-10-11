@@ -150,6 +150,16 @@ Um consumer retry pode fazer dado duplicado de 4 formas diferentes. Todas essas 
 3 - Quando shards são unidos(merges) ou divididos(splitting),
 4 - Quando é feito o deploy da aplicação.
 
+Solução: Fazer com que o destino final possa lidar com dado duplicado.
+
+Segurança / Vídeo 15:
+
+- Controlamos acessos e autorizações no kinesis usando IAM policies.
+- Possui encriptação no vôo (in flight) usando HTTPS endpoints, ou seja, não pode ser interceptado.
+- Podemos ter Encriptação at rest usando KMS
+- Caso vc deseje ter encriptação no seu lado, deve implementar.
+- Caso você queira acessar o Kineses de uma VPC (internet privada) e não pela internet pública, vc pode implementar VPC endpoints.
+
 
 
 
@@ -181,3 +191,10 @@ shards filhos. O Kinesis Client Library, possui isso implementado na sua lógica
 
 - Os Producers retries podem criar dados duplicados causados por "network timeous". É uma questão do exame. O producer não recebe um akwnoledgmente
 e acha que o dado não chegou. 
+
+Um consumer retry pode fazer dado duplicado de 4 formas diferentes. Todas essas 4 formas possuem relação com quando o record process restart.
+
+1 - Quando um worker termina inexperadamente,
+2 - Quando instancias de worker são adicionadas ou removidas,
+3 - Quando shards são unidos(merges) ou divididos(splitting),
+4 - Quando é feito o deploy da aplicação.
