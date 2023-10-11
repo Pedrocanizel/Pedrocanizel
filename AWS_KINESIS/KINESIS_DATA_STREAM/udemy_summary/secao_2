@@ -138,6 +138,10 @@ segundos para acabar. Por exemplo, se vc tem 1000 shards, levaria +- 30.000 segu
 
 Lidando com duplicados para Producers / Vídeo 14:
 
+Existem 2 formas do dado duplicar no KDS, do lado do Producer e do lado do Consumer.
+
+Os Producers retries podem criar dados duplicados causados por "network timeous".
+
 
 
 
@@ -168,3 +172,5 @@ consumer recebeu dado fora de ordem por algum motivo, e dizem que a razão para 
 dos shards filhos após o resharding, mas se você não leu todo o dado do shard pai ainda você pode ler o dado fora de ordem. O indicado aqui é que
 se leia todo o dado do shard pai após o reshard, até que não se tenha mais nenhum dado no shard pai para só depois ler dados dos
 shards filhos. O Kinesis Client Library, possui isso implementado na sua lógica.
+
+- Os Producers retries podem criar dados duplicados causados por "network timeous". É uma questão do exame.
