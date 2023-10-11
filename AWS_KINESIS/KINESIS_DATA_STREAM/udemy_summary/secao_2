@@ -120,7 +120,8 @@ Operações comuns quando se escala o Kinesis:
 10 shards, você pode receber até 10mb/s, caso queira receber mais do que isso, precisa aumentar o número de shards. Shard splitting pode ser 
 usado para dividir um hot shard, um shard que está sendo mais utilizado que os outros.
 
-
+- O que acontece quando você divide um Shard? O antigo é fechado e vai ser deletado quando o dado expirar. Outros 2 novos shards são criados 
+e "ocupam" funcionalmente o lugar do outro. Se você divide apenas uma vez, ao invés de receber 1 mb/s vc recebe 2 mb/s.
 
 
 
