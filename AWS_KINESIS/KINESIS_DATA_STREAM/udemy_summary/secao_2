@@ -153,4 +153,6 @@ Em geral ferramentas aws como cloud watch, aws iot podem enviar dados diretament
 
 - Muito comum na certificação, cair uma questão onde o producer está enviando dado pra o KDS, com a partição correta, e por algum motivo seu
 consumer recebeu dado fora de ordem por algum motivo, e dizem que a razão para isso seria o resharding. Quando você faz um resharding, vc pode ler
-dos shards filhos após o resharding, mas se você não leu todo o dado do shard pai ainda você pode ler o dado fora de ordem.
+dos shards filhos após o resharding, mas se você não leu todo o dado do shard pai ainda você pode ler o dado fora de ordem. O indicado aqui é que
+se leia todo o dado do shard pai após o reshard, até que não se tenha mais nenhum dado no shard pai para só depois ler dados dos
+shards filhos.
