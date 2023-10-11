@@ -210,6 +210,14 @@ SPARK e KCL não lêem do KDF.
 
 SPARK e KCL lêem apenas do KDS.
 
+Como conseguimos por todo o dado que passa pelo KDF no s3? A resposta é que isso é uma funcionalidade do KDF.
+
+
+
+
+
+
+
 
 
 
@@ -258,3 +266,6 @@ Um consumer retry pode fazer dado duplicado de 4 formas diferentes. Todas essas 
 SPARK e KCL não lêem do KDF.
 
 SPARK e KCL lêem apenas do KDS.
+
+Como conseguimos por todo o dado que passa pelo KDF no s3? A resposta é que isso é uma funcionalidade do KDF.
+
