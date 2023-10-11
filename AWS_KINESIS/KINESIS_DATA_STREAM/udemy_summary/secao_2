@@ -104,6 +104,11 @@ Quando eu :
            - Puder tolerar +- 200 ms de latência,
            - Quando eu quiser minimizar o custo
 
+Quando usar o Enhanced Fan-Out:
+Quando eu:
+           - Tiver multiplas aplicações consumindo meu Stream,
+           - Quando eu precisar de baixa latência +- 70 ms,
+            - Puder gastar mais.
 
 
 
