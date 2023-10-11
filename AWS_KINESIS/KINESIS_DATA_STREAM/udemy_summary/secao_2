@@ -116,12 +116,16 @@ Kinesis Scaling / Vídeo 13:
 
 Operações comuns quando se escala o Kinesis:
 
-           - Shard Splitting : Aumentar o número de shards. Pq fazer isso? Para aumentar a capacidade do seu stream, se por exemplo você possui 
+           - 1 - Shard Splitting : Aumentar o número de shards. Pq fazer isso? Para aumentar a capacidade do seu stream, se por exemplo você possui 
 10 shards, você pode receber até 10mb/s, caso queira receber mais do que isso, precisa aumentar o número de shards. Shard splitting pode ser 
 usado para dividir um hot shard, um shard que está sendo mais utilizado que os outros.
 
 - O que acontece quando você divide um Shard? O antigo é fechado e vai ser deletado quando o dado expirar. Outros 2 novos shards são criados 
-e "ocupam" funcionalmente o lugar do outro. Se você divide apenas uma vez, ao invés de receber 1 mb/s vc recebe 2 mb/s.
+e "ocupam" funcionalmente o lugar do outro. Se você divide apenas uma vez, ao invés de receber 1 mb/s vc recebe 2 mb/s. Nesse exemplo, se antes 
+eu tinha 3 shards para receber informação, agora eu tenho 4. 
+
+           - 2 - Merging Shards : Você diminui a sua capacidade de stream e economiza. Pode ser usado por exemplo para unir 2 shards com baixo uso.
+Os shards antigos serão deletados quando o dado que estiver neles expirar, e apenas o novo será usado.
 
 
 
