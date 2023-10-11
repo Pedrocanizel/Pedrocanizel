@@ -140,9 +140,15 @@ Lidando com duplicados para Producers / Vídeo 14:
 
 Existem 2 formas do dado duplicar no KDS, do lado do Producer e do lado do Consumer.
 
-Os Producers retries podem criar dados duplicados causados por "network timeous".
+Os Producers retries podem criar dados duplicados causados por "network timeous". O producer não recebe um akwnoledgmente
+e acha que o dado não chegou. Para lidar com esse problema é importante ter uma chave única produzida no lado do consumder.
 
+Um consumer retry pode fazer dado duplicado de 4 formas diferentes. Todas essas 4 formas possuem relação com quando o record process restart.
 
+1 - Quando um worker termina inexperadamente,
+2 - Quando instancias de worker são adicionadas ou removidas,
+3 - Quando shards são unidos(merges) ou divididos(splitting),
+4 - Quando é feito o deploy da aplicação.
 
 
 
@@ -173,4 +179,5 @@ dos shards filhos após o resharding, mas se você não leu todo o dado do shard
 se leia todo o dado do shard pai após o reshard, até que não se tenha mais nenhum dado no shard pai para só depois ler dados dos
 shards filhos. O Kinesis Client Library, possui isso implementado na sua lógica.
 
-- Os Producers retries podem criar dados duplicados causados por "network timeous". É uma questão do exame.
+- Os Producers retries podem criar dados duplicados causados por "network timeous". É uma questão do exame. O producer não recebe um akwnoledgmente
+e acha que o dado não chegou. 
