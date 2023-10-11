@@ -220,7 +220,7 @@ tamanho do buffer. A gente precisa definir um tamanho para esse buffer, por exem
 tempo para esse buffer como por exemplo 2 minutos, se esse tempo for atingido, ele dispara.
            - KDF pode automaticamente aumentar o tamanho do buffer para melhorar as entregas.
            - O mínimo de tempo possível para configurar é 1 min, e o mínimo de tamanho são poucos mb.
-
+KDF não armazena dado.
 
 
 
