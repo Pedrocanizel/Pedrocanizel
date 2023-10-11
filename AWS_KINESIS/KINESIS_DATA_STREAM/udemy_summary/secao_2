@@ -178,7 +178,7 @@ Você lê uma linha por vêz, podendo ter até 1 mb cada.
 Se você quiser transformar o dado, deve usar Lambda function.
 
 Após receber o dado, o KDF não evnvia instantâneamente, ele armazena para enviar de forma eficiente.
-Desta forma, é um serviço Near real time (próximo ao tempo real), não em tempo real.
+Desta forma, é um serviço Near real time (próximo ao tempo real), não em tempo real. 60 segundos de latência mínima para batches que não ficaram completos.
 
 Podemos ter 3 destinos para os dados que chegam no KDF,
 
@@ -186,12 +186,19 @@ Podemos ter 3 destinos para os dados que chegam no KDF,
 2 - Amazon Redshift,
 3 - Amazon OpenSearch
 
+4*** - Splunk
+
 KDF também pode enviar dados para alguns terceiros e tbm para destinos que possuam um endpont http válido.
 
 Você pode armazenar todos os dados do KDF no s3, ou apenas os dados que falharem.
 
+Possui escalabilidade automática.
 
+Possui suporte para muitos formatos de dados, 
 
+Possui suporte para conversão de JSON para Parquet/ORC apenas se vc usar o s3.
+
+Outras transformações de dados, vc vai precisar do Lambda.
 
 
 
