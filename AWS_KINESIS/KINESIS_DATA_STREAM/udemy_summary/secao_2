@@ -222,6 +222,17 @@ tempo para esse buffer como por exemplo 2 minutos, se esse tempo for atingido, e
            - O mínimo de tempo possível para configurar é 1 min, e o mínimo de tamanho são poucos mb.
 KDF não armazena dado.
 
+CloudWatch subscription filters with Kinesis / Vídeo 17:
+
+Você pode streamar seus logs do cloudwatch em 3 destinos:
+
+1 - Kinesis data streams,
+2 - Kinesis data firehose,
+3 - Lambda
+
+
+
+
 
 
 
@@ -275,4 +286,10 @@ SPARK e KCL não lêem do KDF.
 SPARK e KCL lêem apenas do KDS.
 
 Como conseguimos por todo o dado que passa pelo KDF no s3? A resposta é que isso é uma funcionalidade do KDF.
+
+Você pode streamar seus logs do cloudwatch em 3 destinos:
+
+1 - Kinesis data streams,
+2 - Kinesis data firehose,
+3 - Lambda
 
