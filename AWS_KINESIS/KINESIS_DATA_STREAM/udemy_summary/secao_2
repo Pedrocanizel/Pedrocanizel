@@ -112,6 +112,14 @@ Quando eu:
            - Por padrão vc ter um limite de 20 consumers usando enhanced dan-out por data stream, mas pode fazer uma solicitação para aumentar isso.
 
 
+Kinesis Scaling / Vídeo 13:
+
+Operações comuns quando se escala o Kinesis:
+
+           - Shard Splitting : Aumentar o número de shards. Pq fazer isso? Para aumentar a capacidade do seu stream, se por exemplo você possui 
+10 shards, você pode receber até 10mb/s, caso queira receber mais do que isso, precisa aumentar o número de shards. Shard splitting pode ser 
+usado para dividir um hot shard, um shard que está sendo mais utilizado que os outros.
+
 
 
 
