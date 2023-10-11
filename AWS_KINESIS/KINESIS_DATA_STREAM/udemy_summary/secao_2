@@ -163,7 +163,15 @@ Segurança / Vídeo 15:
 
 Kinesis Data Firehose / Vídeo 16:
 
+Kinesis data firehose pode ler de diferentes fontes/Producers como:
 
+- Aplicações,
+- Client,
+- SDK, KPL,
+- Kinesis Agent,
+- Kinesis data stream,
+- Amazon Cloud watch (logs & events),
+- AWS IOT
 
 
 
