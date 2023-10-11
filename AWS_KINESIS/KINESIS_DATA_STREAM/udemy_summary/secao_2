@@ -190,7 +190,7 @@ Podemos ter 3 destinos para os dados que chegam no KDF,
 
 KDF também pode enviar dados para alguns terceiros e tbm para destinos que possuam um endpont http válido.
 
-Você pode armazenar todos os dados do KDF no s3, ou apenas os dados que falharem.
+Você pode armazenar todos os dados do KDF no s3, ou apenas os dados que falharem tanto na transformação quanto na entrega.
 
 Possui escalabilidade automática.
 
@@ -212,7 +212,14 @@ SPARK e KCL lêem apenas do KDS.
 
 Como conseguimos por todo o dado que passa pelo KDF no s3? A resposta é que isso é uma funcionalidade do KDF.
 
+Você não perde dado com KDF.
 
+Como KDF funciona?
+           - Ele recebe uma quantidade de record e armazena isso em buffer, esse buffer possue regras para se armazenar, essas regras são baseadas no tempo e no 
+tamanho do buffer. A gente precisa definir um tamanho para esse buffer, por exemplo 32 mb. Se o buffer atingir esse tamanho, ele dispara. Precisamos definir um 
+tempo para esse buffer como por exemplo 2 minutos, se esse tempo for atingido, ele dispara.
+           - KDF pode automaticamente aumentar o tamanho do buffer para melhorar as entregas.
+           - O mínimo de tempo possível para configurar é 1 min, e o mínimo de tamanho são poucos mb.
 
 
 
