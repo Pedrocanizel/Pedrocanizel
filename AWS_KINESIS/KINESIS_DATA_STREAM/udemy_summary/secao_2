@@ -186,6 +186,18 @@ Podemos ter 3 destinos para os dados que chegam no KDF,
 2 - Amazon Redshift,
 3 - Amazon OpenSearch
 
+KDF também pode enviar dados para alguns terceiros e tbm para destinos que possuam um endpont http válido.
+
+Você pode armazenar todos os dados do KDF no s3, ou apenas os dados que falharem.
+
+
+
+
+
+
+
+
+
 
 
 
