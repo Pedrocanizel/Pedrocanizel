@@ -127,6 +127,18 @@ eu tinha 3 shards para receber informação, agora eu tenho 4.
            - 2 - Merging Shards : Você diminui a sua capacidade de stream e economiza. Pode ser usado por exemplo para unir 2 shards com baixo uso.
 Os shards antigos serão deletados quando o dado que estiver neles expirar, e apenas o novo será usado.
 
+Auto scaling não está implementado por padrão no KDS, mas existe uma API para mudar o número de shards. Pode se implementar o auto-scaling
+com Lambda.
+
+Limitações:
+
+Você não pode fazer resharding em paralelo. Por isso você deve se planejar para fazer isso. Você pode fazer apenas uma por vez e leva alguns 
+segundos para acabar. Por exemplo, se vc tem 1000 shards, levaria +- 30.000 segundos para dobrar o número de shards, ou seja, 8,3 horas
+
+
+Lidando com duplicados para Producers / Vídeo 14:
+
+
 
 
 
