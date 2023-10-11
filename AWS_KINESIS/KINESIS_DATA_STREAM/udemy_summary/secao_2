@@ -109,6 +109,14 @@ Quando eu:
            - Tiver multiplas aplicações consumindo meu Stream,
            - Quando eu precisar de baixa latência +- 70 ms,
             - Puder gastar mais.
+           - Por padrão vc ter um limite de 20 consumers usando enhanced dan-out por data stream, mas pode fazer uma solicitação para aumentar isso.
+
+
+
+
+
+
+
 
 
 
