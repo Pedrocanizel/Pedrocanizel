@@ -200,6 +200,15 @@ Possui suporte para conversão de JSON para Parquet/ORC apenas se vc usar o s3.
 
 Outras transformações de dados, vc vai precisar do Lambda.
 
+Suporta compressão,
+
+Apenas gzip pode ser carregado no Redshift,
+
+Você paga apenas pelo dado que passa através do KDF.
+
+SPARK e KCL não lêem do KDF.
+
+SPARK e KCL lêem apenas do KDS.
 
 
 
@@ -245,3 +254,7 @@ Um consumer retry pode fazer dado duplicado de 4 formas diferentes. Todas essas 
 2 - Quando instancias de worker são adicionadas ou removidas,
 3 - Quando shards são unidos(merges) ou divididos(splitting),
 4 - Quando é feito o deploy da aplicação.
+
+SPARK e KCL não lêem do KDF.
+
+SPARK e KCL lêem apenas do KDS.
