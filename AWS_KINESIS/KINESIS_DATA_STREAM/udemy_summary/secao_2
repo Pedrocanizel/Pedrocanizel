@@ -310,14 +310,21 @@ Pode fazer delay de mensagens,
 Escala dinamicamente.
 
 
+DMS Database migration service / Vídeo 25:
 
 
+Uma forma rápida e segura de migrar BD on primese pra nuvem,
+
+O banco origem fica disponível durante o processo,
+
+Suporta migração homogênea, por exemplo de Oracle pra Oracle e tbm heterogênea, de SQL server para Aurora.
+
+Suporta contínua replicação de dados com CDC,
+
+AWS SCT - Ferramenta para conversão de schema da AWS.
 
 
-
-
-
-
+DIRECT CONNECT / Vídeo 26:
 
 
 
