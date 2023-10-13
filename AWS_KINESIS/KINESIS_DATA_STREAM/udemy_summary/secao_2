@@ -237,7 +237,7 @@ SQS Overview / Vídeo 23:
 
 Pode escalar de 1 a 15.000 msg por segundo.
 
-Périodo de retenção de mensagens padrão é de 4 dias, máximo de 14 dias.
+Périodo de retenção de mensagens mínimo é de 1 minuto,  padrão é de 4 dias, máximo de 14 dias.
 
 Não há limites de quantas mensagens podem estar na fila;
 
@@ -262,6 +262,12 @@ SQS possui o limite de 120,000 msg em vôo sendo processados pelos consumers
 O COnteudo das msg só pode ser XML, JSON e texto sem formato.
 
 Standard queue possuem TPS (transações por segundo ilimitadas)
+
+Você paga por requisição de API no SQS e pelo uso de rede.
+
+Encriptação é em vôo usando endpoint https
+
+Pode encriptar pelo lado do cliente usando KMS.
 
 Existe o FIFO queue, é mais lento e com menos potencial.
 
