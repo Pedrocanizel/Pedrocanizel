@@ -353,6 +353,31 @@ Para Edge Computing : Snowcone, Snowball edge
 MSK Managed streaming for Kafka / Vídeo 28:
 
 
+Permite vc criar, atualizar e deletar clusters kafka,
+
+MSK cria e gerencia brokers kafka e nós zookeeper para vc.
+
+Vc faz o deploy do seu cluster na sua VPC
+
+Recovery automatico para falhas mo Kafka,
+
+Dado é armazenado em volumes EBS.
+
+Funciona de um modo muito parecido com o KDS, com o diferencial de poder ter algumas configurações específicas.
+
+Por padrão o tamamho da msg do kafka é de 1 MB mas vc pode confgurar para ela ter por exemplo 10 MB de tamanho.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
