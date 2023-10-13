@@ -324,7 +324,21 @@ Suporta contínua replicação de dados com CDC,
 AWS SCT - Ferramenta para conversão de schema da AWS.
 
 
-DIRECT CONNECT / Vídeo 26:
+DIRECT CONNECT (DX) / Vídeo 26:
+
+Serviço que provê uma conexão privada de uma internete remota com uma VPC
+
+Você precisa configurar uma Virtual private gateway na sua VPC.
+
+Qando você faz isso você aumenta sua largura de banda, o que ajuda com grandes datasets, 
+
+Sua rede fica mais consistente, o que permite usar melhor dados em tempo real, 
+
+Suporta ipv4 e ipv6,
+
+
+
+
 
 
 
