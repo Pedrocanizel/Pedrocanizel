@@ -249,6 +249,33 @@ Podem ter msg fora de ordem.
 
 Limite de 256kb por mensagem enviada
 
+A mensagem da SQS é definida entre corpo (string) e atributos (metadata) que é opcional.
+
+Delay delivery opcional, 
+
+Consumers podem receber 10 msg por vez.
+
+Após a mensagem ser consumida ela é deletada, sendo assim não pode ser consumida por n aplicações.
+
+SQS possui o limite de 120,000 msg em vôo sendo processados pelos consumers
+
+O COnteudo das msg só pode ser XML, JSON e texto sem formato.
+
+Standard queue possuem TPS (transações por segundo ilimitadas)
+
+Existe o FIFO queue, é mais lento e com menos potencial.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
