@@ -233,18 +233,21 @@ Você pode streamar seus logs do cloudwatch em 3 destinos:
 Caso eu queira fazer analytics em real time, é legal eu usar o KDS para receber os dados do cloudwatch pois então posso enviar diretamente para o Kinesis data analytics.
 
 
+SQS Overview / Vídeo 23:
 
+Pode escalar de 1 a 15.000 msg por segundo.
 
+Périodo de retenção de mensagens padrão é de 4 dias, máximo de 14 dias.
 
+Não há limites de quantas mensagens podem estar na fila;
 
+Extremamente baixa latência, menos de 10 ms em publicar e receber.
 
+Podem haver mensagens duplicadas.
 
+Podem ter msg fora de ordem.
 
-
-
-
-
-
+Limite de 256kb por mensagem enviada
 
 
 
