@@ -235,6 +235,7 @@ Caso eu queira fazer analytics em real time, é legal eu usar o KDS para receber
 
 SQS Overview / Vídeo 23:
 
+
 Pode escalar de 1 a 15.000 msg por segundo.
 
 Périodo de retenção de mensagens mínimo é de 1 minuto,  padrão é de 4 dias, máximo de 14 dias.
@@ -270,6 +271,43 @@ Encriptação é em vôo usando endpoint https
 Pode encriptar pelo lado do cliente usando KMS.
 
 Existe o FIFO queue, é mais lento e com menos potencial.
+
+
+SQS X KDS / Vídeo 24:
+
+
+KDS :
+
+Dado pode ser consumido por muitos consumers, muitas vezes,
+
+Dado é deletado apenas após o período de retenção,
+
+Ordenamento das msgs é mantido a nivel do shard até durante releituras,
+
+Pode-se construir n aplicações lendo do mesmo stream independentemente,
+
+Pode -se usar spark, flink...
+
+Pode se usar o mongoDB para fazer checkpoint de leituras.
+
+Pode usar no modo on demand ou provisioonado.
+
+
+SQS :
+
+Serviço de fila, usado para decoplar aplicações,
+
+Uma aplicação por fila,
+
+Registros são deletados instataneamente após consumidos,
+
+Mensagens são processadas independentemente na fila padrão,
+
+FIFO diminui o potencial,
+
+Pode fazer delay de mensagens,
+
+Escala dinamicamente.
 
 
 
