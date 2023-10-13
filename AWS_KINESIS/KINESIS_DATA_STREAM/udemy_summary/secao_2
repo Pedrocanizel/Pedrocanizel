@@ -367,13 +367,35 @@ Funciona de um modo muito parecido com o KDS, com o diferencial de poder ter alg
 
 Por padrão o tamamho da msg do kafka é de 1 MB mas vc pode confgurar para ela ter por exemplo 10 MB de tamanho.
 
+Algumas configurações do MSK:
+
+O numero de zonas de disponibilidade (AZ),
+
+Você escolhe a VPC e as subnets,
+
+Escolhe o tamanho do broker,
+
+Escolhe o número de brokers por AZ,
+
+Escolho o tamanho do EBS 1GB à 16 TB.
+
+SEgurança no MSK:
+
+Encriptação opcional em vôo usando TLS entre brokers, 
+
+Encriptação opcional em vôo usando TLS entre brokers e clients, 
+
+Encriptação em REST no colume EBS usando KMS
+
+Você pdoe autorizar especificos security groups para seus Apache kafka clients.
+
+Autenticação e autorização:
+
+Você define quem pode ler e quem pode escrever em qual tópico.
 
 
 
-
-
-
-
+MSK conect / Vídeo 29:
 
 
 
@@ -445,3 +467,16 @@ Você pode streamar seus logs do cloudwatch em 3 destinos:
 2 - Kinesis data firehose,
 3 - Lambda
 
+SEgurança no MSK:
+
+Encriptação opcional em vôo usando TLS entre brokers, 
+
+Encriptação opcional em vôo usando TLS entre brokers e clients, 
+
+Encriptação em REST no colume EBS usando KMS
+
+Você pdoe autorizar especificos security groups para seus Apache kafka clients.
+
+Autenticação e autorização:
+
+Você define quem pode ler e quem pode escrever em qual tópico.
