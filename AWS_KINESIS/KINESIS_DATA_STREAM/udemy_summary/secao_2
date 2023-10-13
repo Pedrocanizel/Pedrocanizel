@@ -398,6 +398,46 @@ Você define quem pode ler e quem pode escrever em qual tópico.
 MSK conect / Vídeo 29:
 
 
+Um framework para pegar dado e colocar num servidor kafka ou pegar do kafka e jogar para outro lugar.
+
+
+
+MSK serverless / Vídeo 30:
+
+
+MSK X KDS / Vídeo 31:
+
+
+KDS:
+
+Limite de 1 Mb de tamanho por mensagem,
+
+Data streams com shards,
+
+Você pode fazer divisão e merge de shards,
+
+TLS in flyght encriptação,
+
+KMS at rest encriptação,
+
+IAM policies para authenticação e autorização.
+
+MKS:
+
+1 MB de tamanho de msg padrão mas posso aumentar a configuração do tamanho,
+
+Tópicos kafka com partições,
+
+Pode apneas add partições num tópico, mas não pode fazer merge nem dividir,
+
+PLAINTEXT ou TLS in flight encryption,
+
+KMS at rest encryption,
+
+Security : Ver final do vídeo 31.
+
+
+
 
 
 
