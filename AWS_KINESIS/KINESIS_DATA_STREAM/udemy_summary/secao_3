@@ -43,6 +43,18 @@ e não tiver nenhum tipo de proibição (DENY).
 
 Encriptação: Objetos no s3 usam chaves de encriptação.
 
+s3 Replicação / Vídeo 38:
+
+CRR : Cross Region Replication
+SRR : Same Region Replication
+
+Para fazer replicação, primeiro devo habilitar o Versionamento dos buckets, tanto na região que eu estou, quanto
+na região de destino caso eu vá fazer CRR.
+
+Os buckets podem estar em diferentes contas da AWS,
+A cópia é assíncrona.
+
+É necessário dar permissões de leitura e escrita para o s3 para fazer a replicação.
 
 
 
