@@ -60,7 +60,8 @@ Depois que você ativa replicação, apenas os objetos novos são replicados.
 
 Caso você queira replicar os objetos que já existiam, vc deve usar o s3 Batch Replication.
 
-Você pode habilitar a replicação de delete markers,
+Você pode habilitar a replicação de delete markers, nesse caso, apenas os delete markers são replicados, não acontece a deleção real do objeto
+
 
 Não há encadeamento de replicações, ou seja, você replica apenas do bucket 1 para o bucket 2. Caso
 o bucket 2 possua replicação com o bucket 3, ele não encadeia a replicação do 1, para o 2, para o 3 e assim sucessivamente.
