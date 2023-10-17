@@ -16,6 +16,13 @@ Parecem um serviço global, mas são criados em região.
 Os objetos (arquivos) no bucket possuem uma chave, essa chave é o full path para esse objeto.
 exemplo: s3://my-bucket/my_file.txt, s3://my-bucket/one_folder/my_file.txt
 
+O tamanho máximo de um objeto é de 5tb,
+
+Caso o arquivo possua mais de 5tb vc deve usar o "multi-part upload",
+
+Os metadados do s3 são lista de chave/valor para identificar os objetos.
+
+O objeto pode ter uma 'version ID' se o versionamento estiver habilitado.
 
 
 
