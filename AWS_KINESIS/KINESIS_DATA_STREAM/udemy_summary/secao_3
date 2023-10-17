@@ -25,6 +25,22 @@ Os metadados do s3 são lista de chave/valor para identificar os objetos.
 O objeto pode ter uma 'version ID' se o versionamento estiver habilitado.
 
 
+Segurança no s3 / Vídeo 34 :
+
+Baseadas no usuário:
+
+IAM Policies que dão as permissões de quais apis o usuário possue permissão,
+
+Baseadas no recurso: 
+
+Regras no bucket a partir do console do s3, que dão permissões através das contas.
+ACL: Object acess control list, granularidade fina de permissões que pode ser desabilitado.
+ACL Bucket acess control list: Controle de acesso à nivel do bucket
+
+Então, quando uma pessoa pode acessar um objeto no s3? Se ela tiver permissão no IAM OU permissão no recurso
+e não tiver nenhum tipo de proibição (DENY).
+
+Encriptação: Objetos no s3 usam chaves de encriptação.
 
 
 
