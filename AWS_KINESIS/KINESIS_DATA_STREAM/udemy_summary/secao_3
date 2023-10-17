@@ -56,9 +56,9 @@ A cópia é assíncrona.
 
 É necessário dar permissões de leitura e escrita para o s3 para fazer a replicação.
 
+Depois que você ativa replicação, apenas os objetos novos são replicados.
 
-
-
+Caso você queira replicar os objetos que já existiam, vc deve usar o s3 Batch Replication.
 
 
 
