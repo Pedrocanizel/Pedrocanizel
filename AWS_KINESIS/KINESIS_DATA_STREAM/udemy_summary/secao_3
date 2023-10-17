@@ -22,7 +22,8 @@ Caso o arquivo possua mais de 5tb vc deve usar o "multi-part upload",
 
 Os metadados do s3 são lista de chave/valor para identificar os objetos.
 
-O objeto pode ter uma 'version ID' se o versionamento estiver habilitado.
+O objeto pode ter uma 'version ID' se o versionamento estiver habilitado, após desabilitar a opção de versionamento,
+as versões dos seus objetos não são deletadas.
 
 
 Segurança no s3 / Vídeo 34 :
