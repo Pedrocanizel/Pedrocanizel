@@ -7,6 +7,28 @@ Serve para:
 Backup, Armazenamento, Arquivamento de dados, Armazenamento de núvem hibrida, Hospedar aplicações, 
 Hospedar mímia, data lake, Analytics, Delivery de software,  Site estático.
 
+Nomes dos buckets devem ser globalmente únicos.
+
+Buckets são definidos à nivel regional,
+
+Parecem um serviço global, mas são criados em região.
+
+Os objetos (arquivos) no bucket possuem uma chave, essa chave é o full path para esse objeto.
+exemplo: s3://my-bucket/my_file.txt, s3://my-bucket/one_folder/my_file.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
