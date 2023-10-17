@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Pedrocanizela
-- 👀 I’m interested in to be the best Dev i can be !
-- 🌱 I’m currently learning Python and Django, and i'm a Product Manager!
+- 👀 I’m interested in to be the Professional i can be !
+- 🌱 I’m currently a Data Engineer!
 - 💞️ I’m looking to collaborate on everything you ask me, my heart is open source!
 - 📫 How to reach me: https://www.linkedin.com/in/pedrocanizela/ 
 - [![Build Status](https://app.travis-ci.com/Pedrocanizel/Pedrocanizel.svg?branch=main)](https://app.travis-ci.com/Pedrocanizel/Pedrocanizel)
