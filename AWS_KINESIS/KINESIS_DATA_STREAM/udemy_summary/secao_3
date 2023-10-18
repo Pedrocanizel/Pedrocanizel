@@ -67,6 +67,10 @@ Não há encadeamento de replicações, ou seja, você replica apenas do bucket 
 o bucket 2 possua replicação com o bucket 3, ele não encadeia a replicação do 1, para o 2, para o 3 e assim sucessivamente.
 
 
+s3 Storage classes / Vídeo 41:
+
+Você pode mudar manualmente entre as classes de armazenamento ou de forma automática usando configurações de ciclo de vida.
+
 
 
 
