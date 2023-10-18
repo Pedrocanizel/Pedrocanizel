@@ -86,8 +86,20 @@ s3 Standard -> Propósito geral:
 
 Use cases: Big Data Analytics, mobile & gaming aplication, content distribution...
 
+s3 infrequent acsees:
 
+- Para dados que são menos frequentemente acessados mas requerem acesso rapido quando preciso,
+- Menos custo do que s3 standard.
 
+S3 standard-Infrequent Acess (s3 Standard-IA)
+- 99,9% disponibilidae,
+- Usado para disaster recovery backups
+
+s3 one zone-infrequent acess(s3 One Zone-IA)
+- 99,999999999999999% durabilidade em uma unica AZ mas o dado é destruído quando a AZ é destruída.
+- 99,5% Disponibilidade.
+
+Use cases: backups secundários de cópias do on-premise ou dado q vc pode recriar.
 
 
 
