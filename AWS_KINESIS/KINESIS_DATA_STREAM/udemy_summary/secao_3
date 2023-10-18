@@ -183,6 +183,17 @@ s3 Encryption / Vídeo 49:
 É importante entender todos os tipos de encriptação para o exame.
 
 SSE-S3 encryption:
+- A chave usada para encruptação é lidada e gerenciada e possuída pela própria AWS, vc nunca tem acesso à essa chave,
+- O tipo de encriptação é o AES-256
+- Deve conter um header "..........."AES256"
+- Habilitada por padrão para novos buckets e novos objetos,
+
+SSE-KMS encryption:
+- Chaves de encriptação lidadas e gerenciadas pela AWS KMS(Key management Service),
+- Vantagens: Controle do usuário + chave para auditoria usando o Cloudtrail,
+- Objeto é encriptado pelo lado do servidor,
+- Deve ter um header "................"aws:kms",
+
 
 
 
