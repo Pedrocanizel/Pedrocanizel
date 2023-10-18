@@ -130,6 +130,14 @@ Deep archive access tiver (optional) config from 180 days to 700+ days.
 Ver o diagrama de comparação no final do módulo.
 
 
+s3 Lifecycle rules / Vídeo 43:
+
+Transition action: 
+- Configura objetos para serem movidos entre classes de armazenamento.
+
+Expiration actions:
+- Configura objetos para expirar, deletar após um tempo.
+
 
 
 
