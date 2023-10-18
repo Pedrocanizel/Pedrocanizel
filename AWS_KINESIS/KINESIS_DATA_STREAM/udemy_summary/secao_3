@@ -175,6 +175,15 @@ s3 byte-range fetches:
 - Pode buscar apenas uma determinada feixa de bytes.
 
 
+s3 Encryption / Vídeo 49:
+
+- SSE - Server side encryption,
+- CSE - Client side encryption,
+
+É importante entender todos os tipos de encriptação para o exame.
+
+SSE-S3 encryption:
+
 
 
 
