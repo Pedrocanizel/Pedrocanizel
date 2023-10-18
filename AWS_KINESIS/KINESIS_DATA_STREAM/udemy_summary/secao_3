@@ -193,6 +193,48 @@ SSE-KMS encryption:
 - Vantagens: Controle do usuário + chave para auditoria usando o Cloudtrail,
 - Objeto é encriptado pelo lado do servidor,
 - Deve ter um header "................"aws:kms",
+- Possui algumas limitações, você precisa acessar o KMS servicem decriptar, 
+
+SSE-C encryption:
+- Server-side encryption usando chaves gerenciadas pelo client fora da AWS,
+- s3 não armazena a chave de encriptação que vc provê.
+- HTTPS devem ser usados,
+- Chave de encriptação deve ser provida em HTTP headers para cada requisição HTTP feita.
+
+Client-Side encryption:
+- Usa bibliotecas para encriptação como amazon s3 client-side encryption library,
+- Cliente deve encriptar o dado antes de subir para o s3,
+- Clientes devem decriptar o dado depois que tiram ele do s3, 
+- Cliente gerencia as chaves e o ciclo de encriptação.
+
+Encriptação em trânsito/em vôo tbm chamada de SSL/TLS:
+s3 expõe 2 endpoints:
+- HTTP endpoint que não é encriptado,
+- HTTPS Endpoint que é encriptado em Vôo (recomendado),
+
+HTTPS é mandatório para SSE-C,
+
+Como forçar encriptação em trânsito?
+- Usar política no Bucket.
+Você nega getoperation colocando False para awssecuretransport, dessa forma o http é negado, apenas o https é permitido.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
