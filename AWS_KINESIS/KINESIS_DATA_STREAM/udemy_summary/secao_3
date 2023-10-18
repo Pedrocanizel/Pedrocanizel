@@ -154,6 +154,34 @@ Lambda function,
 Amazon eventbridge que pode levar esses eventos para + 18 ferramentas da aws.
 
 
+s3 Performance / Vídeo 47:
+
+Podemos ter até 3500 put/copy/post/delete requests/s
+ou
+5500 get/head requests/s por prefixo em um bucket
+
+Multi-part upload (ajuda paralelizar uploads para potencializar a largura de banda):
+- Recomendado para arquivos > 100mb,
+- Deve ser usado para arquivos > 5gb,
+
+s3 transfer acceleration : 
+- aumenta a velocidade de transferencia, tanto para download quanto para upload
+-  compativel com multi part upload
+
+s3 byte-range fetches:
+
+- Paraleliza gets por requisitar especificos ranges de bytes,
+- Melhor resiliencia em caso de falhas.
+- Pode buscar apenas uma determinada feixa de bytes.
+
+
+
+
+
+
+
+
+
 
 
 
