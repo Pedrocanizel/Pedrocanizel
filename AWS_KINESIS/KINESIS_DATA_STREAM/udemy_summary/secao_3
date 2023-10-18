@@ -101,6 +101,50 @@ s3 one zone-infrequent acess(s3 One Zone-IA)
 
 Use cases: backups secundários de cópias do on-premise ou dado q vc pode recriar.
 
+s3 Glacier Storage Classes:
+
+- menores custos por armazenamento,
+- Paga por armazenamento + acesso.
+
+S3 glacier instant retrieval:
+- Acesso em millisegundos, bom para dados acessados por trimestre
+- Mínimo de 90 dias guardado.
+
+s3 flacier flexible retrieval:
+- Expedited (1 a 5 min), Standard (3 a 5hr), Bulk (5 a 12hr)-free,
+- Mínimo de 180 dias armazenados.
+
+s3 Inteligent-Tiering:
+
+- Move objetos automaticamente entre as classes de armazenamento conforme uso.
+- Não tem custo para acessar o dado.
+
+A ordem de mudança dos objetos é:
+
+Frequent acess tier (automatic) default:
+Infrequent acess tier (automatic) objects not acessed for 30 days,
+Archive instant access tier (automatic) objects not acessed for 90 days,
+Archive acess tier (optional) configurable from 90 days to 700 + days
+Deep archive access tiver (optional) config from 180 days to 700+ days.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
