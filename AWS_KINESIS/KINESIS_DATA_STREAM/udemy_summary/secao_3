@@ -71,7 +71,20 @@ s3 Storage classes / Vídeo 41:
 
 Você pode mudar manualmente entre as classes de armazenamento ou de forma automática usando configurações de ciclo de vida.
 
+Conceito de durabilidade: Quanto um objeto vai durar na nuvem - 99,9999999999%, 11 9's
 
+A durabilidade é a mesma em todas das classes de armazenamento no s3.
+
+Disponibilidade diz quão disponível um serviço é, isso varia de classe para classe de armazenamento.
+
+s3 Standard -> Propósito geral:
+
+- 99,99% de disponibilidade,
+- Usado para acesso frequente aos dados,
+- Baixa Latência e alto throughput,
+- Sustain 2 concurrent facility failures?
+
+Use cases: Big Data Analytics, mobile & gaming aplication, content distribution...
 
 
 
