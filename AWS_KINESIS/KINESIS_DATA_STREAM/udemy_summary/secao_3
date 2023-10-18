@@ -144,6 +144,14 @@ lifecycle rules / Vídeo 44:
 - current version é a mais recente,
 
 
+s3 event notifications / Vídeo 45:
+
+Podem ser alvo das notificações:
+
+SNS, 
+SQS,
+Lambda function,
+Amazon eventbridge que pode levar esses eventos para + 18 ferramentas da aws.
 
 
 
