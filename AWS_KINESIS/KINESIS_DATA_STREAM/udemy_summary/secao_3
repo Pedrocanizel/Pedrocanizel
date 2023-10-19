@@ -248,11 +248,23 @@ DinamoDb é:
   - List, map,
   - Stringset, numberset, binaryset,
 
+O exame vai testar 2 ver se vc sabe quais as 2 formas de definir PKS no dynamoDB,
 
+Opção 1:
 
+Partition keys(HASH):
 
+- A partition key deve ser unica para da item(linha),
+- A partition key deve ser unica, então o dado pode ser distribuído,
+- Exemplo: user_id.
 
+Opção 2:
 
+Partition key + sort key(hash + range):
+
+- A combinação das 2 deve ser única,
+- Dado pe agrupado pela partition key,
+- Exemplo user_id, game_id.
 
 
 
