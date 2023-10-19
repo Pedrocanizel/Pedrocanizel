@@ -219,6 +219,45 @@ Como forçar encriptação em trânsito?
 Você nega getoperation colocando False para awssecuretransport, dessa forma o http é negado, apenas o https é permitido.
 
 
+DynamoDb overview / Vídeo 54:
+
+- NoSQL não suportam joins,
+- Todo dado necessário está presente em uma linha,
+- Não performam agregações,
+- Escala muito bem horizontalmente,
+
+
+DinamoDb é: 
+- Altamente disponível através de replicação em multiplas Azs,
+- Escala para massivos worloads e bancos de dados distribuidos,
+- Chega em miliões de requisições por segundo, 
+- Trilhões de linhas,
+- 100s de tb de armazenamento,
+- Rápido e consistente em performance, 
+- Integrado com IAM,
+- Permite programação dirigida por eventos com DynamoDb Streams,
+- Baixo custo e capacidade de auto escala,
+
+- Feito de tabelas,
+- Cada tabela possui uma PK que deve ser decidida na hora da criação,
+- Cada tabela pode ter infinitos numeros de linhas,
+- Cada item possui atributos (são equivalentes a colunas- pode ser nulo),
+- Cada item(linha) pode ter no máximo 400kb,
+- Tipos de dados suportados:
+  - String, num, binary, bool, null,
+  - List, map,
+  - Stringset, numberset, binaryset,
+
+
+
+
+
+
+
+
+
+
+
 
 
 
