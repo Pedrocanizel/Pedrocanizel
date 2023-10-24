@@ -267,6 +267,30 @@ Partition key + sort key(hash + range):
 - Exemplo user_id, game_id.
 
 
+DynamoDb Read/Write Capacity mode / Vídeo 57:
+
+Existem 2 modos básicos:
+
+1 - Provisionado (padrão):
+- Você especifica o número de leituras/escritas por segundo,
+- Você precisa planejar com antecedência,
+- Paga por unidades de escrita e leitura provisionada.
+
+2 - On-demand:
+- Leituras e escritas escalam automaticamente,
+- Não precisa se planejar,
+- Paga pelo uso mas mto mais caro.
+
+Você pode alternar entre os modos a cada 24 hr.
+
+
+
+
+
+
+
+
+
 
 
 
