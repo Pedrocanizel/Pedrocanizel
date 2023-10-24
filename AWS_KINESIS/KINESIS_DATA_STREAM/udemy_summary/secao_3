@@ -289,7 +289,10 @@ WCU: Write capacity units
 Fórmulas para calcular WCU e RCU,
 
 1 WCU representa uma escrita por segundo para um item de 1 kb.
-
+Se o item for maior que 1kb, mais WCUs são consumidos,
+Exemplo se eu escrevo 10 itens por segundo com 2kb cada, eu preciso de 20 WCUs.
+Exemplo se eu escrevo 6 itens por segungo com tamanho de 4,5KB precisarei de 30 WCUs pois não tem valor quebrado nos KB.
+Ao invés de calcular 6 x 4,5, calculo 6x5.
 
 
 
