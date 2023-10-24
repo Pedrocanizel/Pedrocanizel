@@ -294,7 +294,14 @@ Exemplo se eu escrevo 10 itens por segundo com 2kb cada, eu preciso de 20 WCUs.
 Exemplo se eu escrevo 6 itens por segungo com tamanho de 4,5KB precisarei de 30 WCUs pois não tem valor quebrado nos KB.
 Ao invés de calcular 6 x 4,5, calculo 6x5.
 
+Para calcular os RUC eu preciso primeiro definir o tipo de leitura que farei.
 
+Eventually consistent read: Default. Nesse tipo lemos logo após a escritam o que pode acontecer é que não encontremos o dado pois ainda não deu tempo de ser replicado.
+
+Stronlgy consistent read:
+Quando temos certeza que teremos o dado salvo, replicado antes de ler.
+Aumenta a latência,
+Custa o dobro de RCU.
 
 
 
