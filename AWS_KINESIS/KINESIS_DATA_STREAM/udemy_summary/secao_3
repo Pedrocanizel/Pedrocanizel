@@ -283,9 +283,12 @@ Existem 2 modos básicos:
 
 Você pode alternar entre os modos a cada 24 hr.
 
+RCU : Read capacity units,
+WCU: Write capacity units
 
+Fórmulas para calcular WCU e RCU,
 
-
+1 WCU representa uma escrita por segundo para um item de 1 kb.
 
 
 
