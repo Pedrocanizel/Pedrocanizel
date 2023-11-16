@@ -51,7 +51,15 @@ print(list.__getitem__('x'))
 #################################################################
 
 
+formatted_strings = []
 
+# Iterate through the DataFrame rows
+for index, row in df.iterrows():
+    row_string = ""
+    for column, value in row.iteritems():
+        # Format the string as "column_name: value"
+        row_string += f"{column}: {value}, "
+    formatted_strings.append(row_string.rstrip(', '))
 
 
 
