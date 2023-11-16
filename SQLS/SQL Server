@@ -756,3 +756,9 @@ SELECT ProductName, UnitPrice * (UnitsInStock + COALESCE(UnitsOnOrder, 0)) #Coal
 FROM Products;
 
  ###################################################################
+
+insert_queries = []
+for index, row in df.iterrows():
+    values = ", ".join([f"'{row['id']}'", f"'{row['name']}'"])
+    insert_query = f"INSERT INTO your_table_name (id, name) VALUES ({values})"
+    insert_queries.append(insert_query)
