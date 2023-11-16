@@ -62,7 +62,28 @@ for index, row in df.iterrows():
     formatted_strings.append(row_string.rstrip(', '))
 
 
+import pandas as pd
 
+# Create a Pandas DataFrame (you can replace this with your actual DataFrame)
+data = {'id': [1, 2, 3],
+        'name': ['Alice', 'Bob', 'Charlie'],
+        'age': [25, 30, 35]}
+df = pd.DataFrame(data)
+
+# Initialize an empty list to store the formatted strings
+formatted_strings = []
+
+# Iterate through the DataFrame rows
+for index, row in df.iterrows():
+    row_values = [f"{value}" for value in row.values]
+    row_string = "(" + ", ".join(row_values) + ")"
+    formatted_strings.append(row_string)
+
+# Concatenate the formatted strings with commas between them
+result = ", ".join(formatted_strings)
+
+# Print the result
+print(result)
 
 
 
