@@ -762,3 +762,10 @@ for index, row in df.iterrows():
     values = ", ".join([f"'{row['id']}'", f"'{row['name']}'"])
     insert_query = f"INSERT INTO your_table_name (id, name) VALUES ({values})"
     insert_queries.append(insert_query)
+
+
+query = f"""SELECT FPA.CLIENT_FINAL, FPA.ACCOUNTING_PERIOD_END_DATE, SUM(FPA.VG_FEE_REVENUE) AS VG_FEE_REVENUE
+            FROM ANALYTICS.DBT_MART_ROLLUP.DIM_FPA_BASE AS FPA
+            WHERE FPA.ACCOUNTING_PERIOD_END_DATE = '{date_filter}' AND FPA.VG_FEE_REVENUE > 0
+            GROUP BY ALL"""
+
