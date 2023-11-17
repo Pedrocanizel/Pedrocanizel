@@ -416,4 +416,4 @@ formatted_strings = []
             salesforce_query = f'INSERT INTO Opportunitylineitem EE_Invoiced_MRR_Last_12_Months__c VALUES {values_string};'
 
 
-
+SELECT FPA.CLIENT_FINAL, FPA.ACCOUNTING_PERIOD_END_DATE, SUM(FPA.VG_FEE_REVENUE) AS VG_FEE_REVENUE
