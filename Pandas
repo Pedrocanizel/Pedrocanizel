@@ -431,3 +431,4 @@ values_string = ", ".join(formatted_strings)
 # Construct the SQL query
 salesforce_query = f'INSERT INTO Opportunitylineitem (VG_FEE_REVENUE) VALUES {values_string};'
 
+column_list = df['YourColumnName'].tolist()
