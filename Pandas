@@ -417,3 +417,16 @@ formatted_strings = []
 
 
 SELECT FPA.CLIENT_FINAL, FPA.ACCOUNTING_PERIOD_END_DATE, SUM(FPA.VG_FEE_REVENUE) AS VG_FEE_REVENUE
+
+formatted_strings = []
+
+for index, row in df.iterrows():
+    # Directly use the numeric value of 'VG_FEE_REVENUE'
+    value = row['VG_FEE_REVENUE']
+    row_string = f"({value})"
+    formatted_strings.append(row_string)
+
+values_string = ", ".join(formatted_strings)
+
+# Construct the SQL query
+salesforce_query = f'INSERT INTO Opportunitylineitem (VG_FEE_REVENUE) VALUES {values_string};'
