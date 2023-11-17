@@ -398,3 +398,22 @@ vals_to_replace = {'a':1, 'b': 2, 'c':3, 'd':4} # replace multiple, many values
 
 store['StoreType'] = store['StoreType'].map(vals_to_replace)
 
+
+#criando uma query sql com dataframe pandas
+
+formatted_strings = []
+
+            for index, row in df.iterrows():
+                row_values = [f"'{value}'" for value in row.values]
+                row_string = "(" + ", ".join(row_values) + ")"
+                formatted_strings.append(row_string)
+
+            values_string = ", ".join(formatted_strings)
+
+            columns = ', '.join(df.columns)
+
+            # Combine the SQL query with the values string
+            salesforce_query = f'INSERT INTO Opportunitylineitem EE_Invoiced_MRR_Last_12_Months__c VALUES {values_string};'
+
+
+
