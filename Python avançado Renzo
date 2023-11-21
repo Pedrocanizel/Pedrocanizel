@@ -203,7 +203,7 @@ else:
 print(f'Last Month: {last_month}')
 
 
-
+exec_date = datetime.strptime(exec_date, '%Y-%m-%d')
 
 
 
