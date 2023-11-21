@@ -188,6 +188,19 @@ last_day_str = last_day.strftime('%Y-%m-%d')
 print(f'First Day of the Month: {first_day_str}')
 print(f'Last Day of the Month: {last_day_str}')
 
+# Your current month
+month = date_obj.month
+
+# Calculate the last month
+if month == 1:
+    # If the current month is January (1), set the last month to December (12)
+    last_month = 12
+else:
+    # For other months, subtract 1 to get the last month
+    last_month = month - 1
+
+# Print the last month
+print(f'Last Month: {last_month}')
 
 
 
