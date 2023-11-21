@@ -205,6 +205,10 @@ print(f'Last Month: {last_month}')
 
 exec_date = datetime.strptime(exec_date, '%Y-%m-%d')
 
+one_year_one_month_ago = exec_date - timedelta(days=365)
 
+one_year_one_month_ago = one_year_one_month_ago.replace(month=exec_date.month - 1)
 
+first_day_of_month = one_year_one_month_ago.replace(day=1)
 
+first_day_of_month_str = first_day_of_month.strftime('%Y-%m-%d')
