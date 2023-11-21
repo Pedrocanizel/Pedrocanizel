@@ -148,6 +148,19 @@ print(query)
 ###################################################
 
 
+from datetime import datetime
+
+# Your date string
+date_str = '2023-10-01'
+
+# Convert the date string to a datetime object
+date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+
+# Extract the month and save it in another variable
+month = date_obj.month
+
+# Print the extracted month
+print(f'Month: {month}')
 
 
 
