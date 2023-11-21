@@ -163,6 +163,30 @@ month = date_obj.month
 print(f'Month: {month}')
 
 
+from datetime import datetime, timedelta
+
+# Your date string
+date_str = '2023-10-01'
+
+# Convert the date string to a datetime object
+date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+
+# Extract the month from the date
+month = date_obj.month
+
+# Calculate the first day of the month
+first_day = date_obj.replace(day=1, month=month)
+
+# Calculate the last day of the month by adding one month and subtracting one day
+last_day = (first_day.replace(day=1) + timedelta(days=32)).replace(day=1) - timedelta(days=1)
+
+# Format the first and last days as strings in 'YYYY-MM-DD' format
+first_day_str = first_day.strftime('%Y-%m-%d')
+last_day_str = last_day.strftime('%Y-%m-%d')
+
+# Print the first and last days of the month
+print(f'First Day of the Month: {first_day_str}')
+print(f'Last Day of the Month: {last_day_str}')
 
 
 
