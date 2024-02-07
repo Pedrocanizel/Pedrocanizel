@@ -432,3 +432,18 @@ values_string = ", ".join(formatted_strings)
 salesforce_query = f'INSERT INTO Opportunitylineitem (VG_FEE_REVENUE) VALUES {values_string};'
 
 column_list = df['YourColumnName'].tolist()
+
+def csv_converter(df, file_name, file_path="csv_files/"):
+
+    """Gets a pandas df and save it into csv format;
+
+    Args:
+        df (pandas_df)
+        file_name (str)
+        file_path (str, optional): Defaults to "dags/csv_files/".
+    """
+
+    # Concats the file_path with file_name
+    final_path = os.path.join(file_path, file_name)
+
+    df.to_csv(final_path, index=False)
