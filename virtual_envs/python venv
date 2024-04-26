@@ -4,6 +4,8 @@ rmvirtualenv name_of_the_virtual_env ###Recomving a virtual env from  console.
 
 deactivate #deactivate the virtual enviorment
 
+source deactivate
+
 
 
 ________________________________________________
