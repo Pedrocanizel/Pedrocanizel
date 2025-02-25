@@ -10,7 +10,7 @@ source deactivate
 
 ________________________________________________
 
-Passo 1: python -m venv nome_do_ambiente
+Passo 1: python3 -m venv nome_do_ambiente
 
 Passo 2: .\venv\Scripts\Activate.ps1 # Ativar o ambiente virtual, lembrar de colocar contrabarra. .ps1 para powershell .bat para linux
 
